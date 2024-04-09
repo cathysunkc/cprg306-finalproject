@@ -29,7 +29,7 @@ export default function TrackImage({ track, artist }) {
                 setTrackImage(data);
   
         } catch (error) {
-            console.error(error);
+            //console.error(error);
         }
     }
   

@@ -55,6 +55,7 @@ export default function Page() {
   const [countries, setCountries] = useState(Countries);
   const [topArtist, setTopArtist] = useState([]);
   const [topTrack, setTopTrack] = useState([]);
+  const [error, setError] = useState(false);
 
   async function loadTopArtist() {
       try {
@@ -67,7 +68,8 @@ export default function Page() {
               setTopArtist(data);
 
       } catch (error) {
-          console.error(error);
+          //console.error(error);
+          setError(true);
       }
   }
 
@@ -82,7 +84,7 @@ export default function Page() {
             setTopTrack(data);
 
     } catch (error) {
-        console.error(error);
+      setError(true);
     }
 }
 
@@ -99,16 +101,16 @@ export default function Page() {
   
    return (
     <>
-    <main> 
+    <main > 
            
-<div class="py-8 mx-auto">
-<div class="sm:flex sm:flex-col sm:align-center">
+<div className="py-8 mx-auto">
+<div className="sm:flex sm:flex-col sm:align-center">
 
 
-<div class="relative self-center mt-6 rounded-lg p-0.5 flex border">
+<div className="relative self-center mt-6 rounded-lg p-0.5 flex border">
 
 <div style={{width: '100%', alignContent: 'right', width:'100%',float:'right', paddingBottom:'1em'}}>
-                <select onChange={handleCountryChange} style={{height: '2em', borderColor: 'black', borderRadius: '3px', float: 'right'}}>{
+                <select id='countryList' onChange={handleCountryChange} style={{height: '2em', borderColor: 'black', borderRadius: '3px', float: 'right'}}>{
                           countries.map((item, index) => (
 
                              
@@ -117,18 +119,18 @@ export default function Page() {
                              
                             ))
                           }
-                    </select>
+                    </select>                   
                     </div>
 
 </div>
 </div>
-<div class="flex flex-wrap justify-center gap-6  ">
-  <div class="flex flex-col  flex-1 ml-24">
-    
+<div className="flex flex-wrap justify-center gap-6  ">
+  <div className="flex flex-col  flex-1 ml-24">
     <div className='container'>    
-    <h1 class="text-3xl  leading-6 text-purple-800 mb-8">Top 10 Artists</h1>
+    
             {
               <>
+              <h1 className="text-3xl  leading-6 text-purple-800 mb-8">Top 10 Artists</h1>
                   <ul>                    
                       {
                           topArtist.map((item, index) => (
@@ -149,14 +151,14 @@ export default function Page() {
 
 </div>
 </div>
-<div class="flex flex-col  flex-1 mr-24 ">
+<div className="flex flex-col  flex-1 mr-24 ">
 
   
     <div className='container'>    
-    <h1 class="text-3xl leading-6 text-purple-800 mb-8">Top 10 Tracks</h1>
+    
             {
               <>             
-              
+              <h1 className="text-3xl leading-6 text-purple-800 mb-8">Top 10 Tracks</h1>
                   <ul>                    
                       {
                           topTrack.map((item, index) => (

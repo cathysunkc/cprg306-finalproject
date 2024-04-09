@@ -33,7 +33,6 @@ body {
   }
 }*/
 
-@import url('https://fonts.googleapis.com/css?family=Fredoka');
 
 body {
   color: #74049d;
@@ -42,6 +41,7 @@ body {
   position: relative;
     min-height: 100%;
     margin: 0;
+   
 }
 
 
@@ -55,7 +55,7 @@ header {
 } 
 
 main {
-  font-family: 'Fredoka';
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,Helvetica Neue,Helvetica,sans-serif;
 }
 
 .title {
