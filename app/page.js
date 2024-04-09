@@ -130,9 +130,10 @@ export default function Page() {
     
             {
               <>
-              <h1 className="text-3xl  leading-6 text-purple-800 mb-8">Top 10 Artists</h1>
+               <h1 className="text-3xl leading-6 text-purple-800 mb-8">Top 10 Artists</h1>
                   <ul>                    
                       {
+                        
                           topArtist.map((item, index) => (
                              
                               <li key={index} style={{fontSize: 'Larger' }}>
@@ -158,7 +159,7 @@ export default function Page() {
     
             {
               <>             
-              <h1 className="text-3xl leading-6 text-purple-800 mb-8">Top 10 Tracks</h1>
+             <h1 className="text-3xl leading-6 text-purple-800 mb-8">Top 10 Tracks</h1>
                   <ul>                    
                       {
                           topTrack.map((item, index) => (
