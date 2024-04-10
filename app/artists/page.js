@@ -16,11 +16,10 @@ import Link from 'next/link';
 
 async function fetchTrendingArtist() {
   
-  const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=40&format=json`);
+  const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=chart.getTopArtists&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=40&format=json`);
   const data = await response.json();
- // return data.artists.artist.slice(0,10);
- return data.topartists.artist;
-  //return data.data.slice(0, 10);
+ return data.artists.artist;
+ 
 }
 
 
@@ -32,7 +31,7 @@ export default function Page() {
   async function loadTopArtist() {
       try {
 
-          const data = await fetchTopArtist(country);
+          const data = await fetchTrendingArtist();
         
           if (!data)
               setTopArtist([]);            
@@ -82,48 +81,32 @@ export default function Page() {
 
 </div>
 </div>
-<div className="flex flex-wrap justify-center gap-6  ">
-  <div className="flex flex-col  flex-1 ml-24">
-    <div className='container'>    
-    
+
+<div className="flex flex-wrap justify-center gap-6 ml-20 mr-20 mt-5 mb-10 bg-white rounded p-1 py-3" style={{padding: '2.5em'}}>
+
+  <div className="flex flex-col  flex-1 ">
+  <h1 className="text-3xl leading-6 text-purple-800 mb-8">#Trending Artists</h1>
+ 
             {
               <>
-               <h1 className="text-3xl leading-6 text-purple-800 mb-8">Top 10 Artists</h1>
-                  <ul>                    
+                 <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6'>                      
                       {
                         
                         topArtist && topArtist.map((item, index) => (
                              
-                              <li key={index} style={{fontSize: 'Larger' }}>
-                                  <div style={{display: 'flex',  padding: '15px', margin: '5px', borderRadius: '5px', backgroundColor: 'white', height: '5em'}}>
-                                    <div style={{width: '30px', height: '30px', background: 'black', textAlign: 'center', color: 'white', borderRadius: '5px'}}>{index + 1}</div>
-                                    <div style={{marginLeft: '10px'}}>{item.name}</div>
+                              
+                                  <div key={index} style={{marginLeft: '10px'}}>{item.name}</div>
                                     
-                                  </div>
-                              </li> 
+                                
+                               
                             ))
                       }
-                  </ul>     
+                  </div>     
               </>               
             } 
    
-
 </div>
-</div>
-<div className="flex flex-col  flex-1 mr-24 ">
 
-  
-    <div className='container'>    
-    
-            {
-              <>             
-             <h1 className="text-3xl leading-6 text-purple-800 mb-8">Top 10 Tracks</h1>
-                  
-              </>               
-            } 
-        </div>
-
-  </div> 
         </div></div>
 
        
