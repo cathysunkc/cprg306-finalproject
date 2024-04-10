@@ -22,21 +22,53 @@ async function fetchTrendingArtist() {
  
 }
 
+async function fetchSingleArtist(artistName) {
+  
+    const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${artistName}&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=40&format=json`);
+    const data = await response.json();
+   return data.artist;
+   
+  }
 
-export default function Page() {
 
-  const [topArtist, setTopArtist] = useState([]);
+export default function ArtistPage() {
+ const [ artistName, setArtistName ] = useState("");
+  const [trendingArtist, setTrendingArtist] = useState([]);
+  const [singleArtist, setSingleArtist] = useState([]);
   const [error, setError] = useState(false);
 
-  async function loadTopArtist() {
+  async function loadArtist() {
       try {
 
-          const data = await fetchTrendingArtist();
+
+        if (artistName == "")
+        {
+             
+            const data = await fetchTrendingArtist();
         
           if (!data)
-              setTopArtist([]);            
+              setTrendingArtist([]);            
           else 
-              setTopArtist(data);
+          {
+                setSingleArtist([]);
+              setTrendingArtist(data);
+              
+          }
+        }
+        else 
+        {
+            
+            const data = await fetchSingleArtist();
+        
+            if (!data)
+                setSingleArtist([]);            
+            else 
+            {
+                setTrendingArtist([]);  
+                setSingleArtist(data);
+            }
+        }
+        
 
       } catch (error) {
           //console.error(error);
@@ -45,13 +77,19 @@ export default function Page() {
   }
 
   useEffect(() => {       
-    loadTopArtist();
+    loadArtist();
   });
 
+  const handleNameChange = (event) => {
+    setArtistName(event.target.value);
+};
+
   const handleSubmit = (event) => {
-    setCountry(event.target.value);
-    loadTopArtist();
-    loadTopTrack();
+    console.log(event.target.value);
+    setArtistName(event.target.value);
+    loadArtist();
+    
+
 };
   
    return (
@@ -65,15 +103,15 @@ export default function Page() {
 <div className="relative self-center mt-6 rounded-lg p-0.5 flex border">
 
 <div style={{width: '100%', alignContent: 'right', width:'100%',float:'right', paddingBottom:'1em'}}>
-<form onSubmit={handleSubmit}>
+<form>
           <input style={{height: '2em', borderColor: 'black', borderRadius: '3px', float: 'left', margin: '4px'}}
             placeholder="Enter Artist Name"
             type={"text"}
             id="artistName"
-            name="artistName"
+            name="artistName" 
           />
-        <a class="w-10 h-full text-[#fff] flex justify-center items-center rounded-full" href="/en/search?q=">
-        <Image src={searchIcon} alt="search icon" width="40" height="40" /></a>
+
+        <button type="submit" data-input="#artistName" onClick={(e)=>handleSubmit(e)}><Image src={searchIcon} alt="search icon" width="40" height="40" /></button>
                    
 </form>
                                
@@ -85,14 +123,15 @@ export default function Page() {
 <div className="flex flex-wrap justify-center gap-6 ml-20 mr-20 mt-5 mb-10 bg-white rounded p-1 py-3" style={{padding: '2.5em'}}>
 
   <div className="flex flex-col  flex-1 ">
-  <h1 className="text-3xl leading-6 text-purple-800 mb-8">#Trending Artists</h1>
+  
  
-            {
+            { trendingArtist && 
               <>
+              <h1 className="text-3xl leading-6 text-purple-800 mb-8"># Trending Artists</h1>
                  <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6'>                      
                       {
                         
-                        topArtist && topArtist.map((item, index) => (
+                        trendingArtist.map((item, index) => (
                              
                               
                                   <div key={index} style={{marginLeft: '10px'}}>{item.name}</div>
@@ -104,6 +143,17 @@ export default function Page() {
                   </div>     
               </>               
             } 
+           {
+                        
+                        artistName && 
+                             
+                              
+                                  <div style={{marginLeft: '10px'}}>{artistName}</div>
+                                    
+                                
+                               
+                           
+                      }
    
 </div>
 
