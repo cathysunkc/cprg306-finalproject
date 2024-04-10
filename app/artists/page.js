@@ -9,9 +9,10 @@
 "use client"
 
 import React, { useState, useEffect } from 'react';
-import TrackImage from "../components/trackImage";
 import Image from 'next/image';
 import searchIcon from '../images/search-icon.svg';
+import arrowIcon from '../images/arrow-icon.png';
+import Link from 'next/link';
 
 async function fetchTrendingArtist() {
   
@@ -60,7 +61,7 @@ export default function Page() {
            
 <div className="py-8 mx-auto">
 <div className="sm:flex sm:flex-col sm:align-center">
-
+<div className="relative flex flex-row text-gray-500 ml-24"><Link href='/' className='text-purple-800 hover:underline'>Home</Link> <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2' alt="arrow icon" /> Artist</div>
 
 <div className="relative self-center mt-6 rounded-lg p-0.5 flex border">
 

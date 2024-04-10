@@ -13,7 +13,7 @@ import TrackImage from "./components/trackImage";
 import Countries from "./data/countries.json";
 import Image from 'next/image';
 import arrowIcon from './images/arrow-icon.png';
-
+import Link from 'next/link';
 async function fetchTopArtist(country) {
   
   
@@ -105,7 +105,7 @@ export default function Page() {
            
 <div className="py-8 mx-auto">
 <div className="sm:flex sm:flex-col sm:align-center">
-<div className="relative flex flex-row text-gray-500">Home <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1' alt="arrow icon" /> Chart</div>
+<div className="relative flex flex-row text-gray-500 ml-24"><Link href='/' className='text-purple-800 hover:underline'>Home</Link>  <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2' alt="arrow icon" /> Chart</div>
 <div className=" relative self-center mt-6 rounded-lg p-0.5 flex border">
 
 <div style={{width: '100%', alignContent: 'right', width:'100%',float:'right', paddingBottom:'1em'}}>
