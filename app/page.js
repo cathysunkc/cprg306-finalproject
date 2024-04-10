@@ -9,10 +9,10 @@
 "use client"
 
 import React, { useState, useEffect } from 'react';
-import Footer from './components/footer';
 import TrackImage from "./components/trackImage";
 import Countries from "./data/countries.json";
-
+import Image from 'next/image';
+import arrowIcon from './images/arrow-icon.png';
 
 async function fetchTopArtist(country) {
   
@@ -105,9 +105,8 @@ export default function Page() {
            
 <div className="py-8 mx-auto">
 <div className="sm:flex sm:flex-col sm:align-center">
-
-
-<div className="relative self-center mt-6 rounded-lg p-0.5 flex border">
+<div className="relative flex flex-row text-gray-500">Home <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1' alt="arrow icon" /> Chart</div>
+<div className=" relative self-center mt-6 rounded-lg p-0.5 flex border">
 
 <div style={{width: '100%', alignContent: 'right', width:'100%',float:'right', paddingBottom:'1em'}}>
                 <select id='countryList' onChange={handleCountryChange} style={{height: '2em', borderColor: 'black', borderRadius: '3px', float: 'right'}}>{
@@ -134,7 +133,7 @@ export default function Page() {
                   <ul>                    
                       {
                         
-                          topArtist.map((item, index) => (
+                        topArtist && topArtist.map((item, index) => (
                              
                               <li key={index} style={{fontSize: 'Larger' }}>
                                   <div style={{display: 'flex',  padding: '15px', margin: '5px', borderRadius: '5px', backgroundColor: 'white', height: '5em'}}>
@@ -162,7 +161,7 @@ export default function Page() {
              <h1 className="text-3xl leading-6 text-purple-800 mb-8">Top 10 Tracks</h1>
                   <ul>                    
                       {
-                          topTrack.map((item, index) => (
+                           topTrack && topTrack.map((item, index) => (
                              
                               <li key={index} style={{fontSize: 'Larger', }}>
                                   <div style={{display: 'flex',  padding: '15px', margin: '5px', borderRadius: '5px', backgroundColor: 'white', height: '5em'}}>
