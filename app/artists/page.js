@@ -60,8 +60,11 @@ export default function Artists() {
   });
 
   function handleSubmit(e) {
-    e.preventDefault();
-    router.push('/artist-info?artistName=' + e.target.artistName.value);    
+    if (e.target.artistName.value && e.target.artistName.value != '')
+    {
+      e.preventDefault();
+      router.push('/artist-info?artistName=' + e.target.artistName.value);    
+    }
   }
 
 
