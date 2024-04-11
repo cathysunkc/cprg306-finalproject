@@ -77,10 +77,10 @@ export default function TrackInfo({ searchParams }) {
 <div className="sm:flex sm:flex-col sm:align-center">
 <div className="relative flex flex-row ml-24">
   
-<Link href='/' className='text-purple-800 hover:underline '>Home</Link>
+<Link href='/' className='text-purple-800 underline '>Home</Link>
 
     <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2' alt="arrow icon" /> 
-   <Link href='/tracks' className='text-purple-800 hover:underline '> Track</Link> 
+   <Link href='/tracks' className='text-purple-800 underline '> Track</Link> 
     <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2'  alt="arrow icon" />
     <div className='text-gray-800'>{trackName}</div>
   
@@ -103,7 +103,7 @@ export default function TrackInfo({ searchParams }) {
            {
              album && <>
                 
-                <h1 className="text-3xl leading-6 text-purple-800 mb-8">{trackName}</h1>
+                <h1 className="text-3xl leading-6 text-gray-800 mb-8">{trackName}</h1>
                 
 
                 <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-5 gap-6'><div><TrackImage  
@@ -111,10 +111,10 @@ export default function TrackInfo({ searchParams }) {
                                               artist={album.artist}
                                                                                         
                                             />    </div> 
-                <div><h1 className="text-3xl leading-6 text-purple-800 mb-8">Album: {album.title}</h1>
-                <h1 className="text-2xl leading-6 text-gray-800 mb-8">Artist: &nbsp;
+                <div><h1 className="text-2xl leading-6 text-gray-800 mb-8">Album: {album.title}</h1>
+                <h1 className="text-1xl leading-6 text-purple-800 mb-8">Artist: &nbsp;
                 
-                <Link style={{textDecoration: 'underline'}}  shallow={true} href={{
+                <Link className='underline text-purple-800'  shallow={true} href={{
                                                   pathname: '/artist-info',
                                                   query: {
                                                     artistName: album.artist
@@ -123,7 +123,7 @@ export default function TrackInfo({ searchParams }) {
                                               >{album.artist}</Link>
                 
                 </h1>
-                <div className='justify-normal' dangerouslySetInnerHTML={{__html:summary}}></div> 
+                <div className='justify-normal text-gray-800' dangerouslySetInnerHTML={{__html:summary}}></div> 
                 </div></div>
                 
              </> 

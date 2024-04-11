@@ -89,12 +89,12 @@ export default function ArtistInfo({ searchParams }) {
 <div className="sm:flex sm:flex-col sm:align-center">
 <div className="relative flex flex-row ml-24">
   
-<Link href='/' className='text-gray-800 hover:underline '>Home</Link>
+<Link href='/' className='text-purple-800 underline '>Home</Link>
 
-    <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2 text-purple-400' alt="arrow icon" /> 
-   <Link href='/artists'> Artist</Link> 
-    <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2 text-gray-400' alt="arrow icon" />
-    {artistName}
+    <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2' alt="arrow icon" /> 
+   <Link href='/artists' className='text-purple-800 underline '> Artist</Link> 
+    <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2' alt="arrow icon" />
+    <div className='text-gray-800'>{artistName}</div>
   
   
   
@@ -114,8 +114,8 @@ export default function ArtistInfo({ searchParams }) {
             
            {
              artistContent && <>
-                <h1 className="text-3xl leading-6 text-purple-800 mb-8">{artistName}</h1>
-                <div className='justify-normal' dangerouslySetInnerHTML={{__html:artistContent}}></div>   
+                <h1 className="text-3xl leading-6 text-gray-800 mb-8">{artistName}</h1>
+                <div className='justify-normal text-gray-800' dangerouslySetInnerHTML={{__html:artistContent}}></div>   
                 
              </> 
            }
@@ -131,7 +131,7 @@ export default function ArtistInfo({ searchParams }) {
 
           {
             artistAlbums && <>
-              <h1 className="text-3xl leading-6 text-purple-800 mb-8">Top Albums</h1>
+              <h1 className="text-3xl leading-6 text-gray-800 mb-8">Top Albums</h1>
                <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-6'>  
                
                            
@@ -147,7 +147,7 @@ export default function ArtistInfo({ searchParams }) {
                                     index == 2 &&                             
                                     <img key={index} src={Object.values(item).slice(0,1)} style={{paddingLeft: '10px', paddingRight: '10px'}}></img>
                               ))}  
-                               <div className='w-5/6 text-base'>{item.name}</div>
+                               <div className='w-5/6 text-base text-gray-800'>{item.name}</div>
                          </div>
                        ))
                     }                    

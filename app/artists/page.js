@@ -83,9 +83,9 @@ function reloadArtist(artistName)
 <div className="py-8 mx-auto">
 <div className="sm:flex sm:flex-col sm:align-center">
 <div className="relative flex flex-row ml-24">
-<Link href='/' className='text-gray-800 hover:underline '>Home</Link>
+<Link href='/' className='text-purple-800 underline '>Home</Link>
 
-    <><Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2 text-gray-800' alt="arrow icon" /> Artist</>
+    <><Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2' alt="arrow icon" />  <div className='text-gray-800'>Artist</div></>
 
     
   </div>
@@ -94,7 +94,7 @@ function reloadArtist(artistName)
 
 <div style={{width: '100%', alignContent: 'right', width:'100%',float:'right', paddingBottom:'1em'}}>
 <form onSubmit={handleSubmit}>
-          <input style={{height: '2em', borderColor: 'black', borderRadius: '3px', float: 'left', margin: '4px'}}
+          <input style={{height: '2em', borderColor: 'black', borderRadius: '3px', float: 'left', marginLeft:'10px', margin: '4px'}}
             placeholder="Enter Artist Name"
             type={"text"}
             id="artistName"
@@ -117,7 +117,7 @@ function reloadArtist(artistName)
  
             {
               !artistName && <>
-                <h1 className="text-3xl leading-6 text-purple-800 mb-8"># Trending Artists</h1>
+                <h1 className="text-3xl leading-6 text-gray-800 mb-8"># Trending Artists</h1>
                  <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6'>                      
                       {
                         

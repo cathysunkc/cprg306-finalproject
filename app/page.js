@@ -91,10 +91,10 @@ loadTopArtist();
                     <div className="sm:flex sm:flex-col sm:align-center">
                     <div className="relative flex flex-row ml-24">
                         
-                    <Link href='/' className='text-purple-800 hover:underline '>Home</Link>
+                    <Link href='/' className='text-purple-800 underline '>Home</Link>
 
 
-    <><Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2 text-gray-400' alt="arrow icon" /> Chart</> 
+    <><Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2' alt="arrow icon" />  <div className='text-gray-800'>Chart</div></> 
                         
                     </div>
                     <div className=" relative self-center mt-6 rounded-lg p-0.5 flex border">
@@ -120,7 +120,7 @@ loadTopArtist();
     
             {
               <>
-               <h1 className="text-3xl leading-6 text-purple-800 mb-8">Top 5 Artists</h1>
+               <h1 className="text-3xl leading-6 text-gray-800 mb-8">Top 5 Artists</h1>
                   <ul>                    
                       {
                         
@@ -155,7 +155,7 @@ loadTopArtist();
     
   {
               <>             
-             <h1 className="text-3xl leading-6 text-purple-800 mb-8">Top 5 Tracks</h1>
+             <h1 className="text-3xl leading-6 text-gray-800 mb-8">Top 5 Tracks</h1>
                   <ul>                    
                       {
                            topTrack && topTrack.map((item, index) => (

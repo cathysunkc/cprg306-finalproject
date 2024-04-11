@@ -83,9 +83,9 @@ function reloadTrack(trackName)
 <div className="py-8 mx-auto">
 <div className="sm:flex sm:flex-col sm:align-center">
 <div className="relative flex flex-row ml-24">
-<Link href='/' className='text-gray-800 hover:underline '>Home</Link>
+<Link href='/' className='text-purple-800 underline '>Home</Link>
 
-    <><Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2 text-gray-800' alt="arrow icon" /> Track</>
+    <><Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2' alt="arrow icon" /> <div className='text-gray-800 '>Track</div></>
 
     
   </div>
@@ -117,7 +117,7 @@ function reloadTrack(trackName)
  
             {
               !trackName && <>
-                <h1 className="text-3xl leading-6 text-purple-800 mb-8"># Trending Tracks</h1>
+                <h1 className="text-3xl leading-6 text-gray-800 mb-8"># Trending Tracks</h1>
                  <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6'>                      
                       {
                         
