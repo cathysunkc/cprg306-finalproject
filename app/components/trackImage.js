@@ -8,6 +8,7 @@ async function fetchTrackImage( { track}, { artist }) {
         const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key=fb2b87e326084e3dce78c5439ab49c61&artist=${artist}&track=${track}&format=json`, {Method: 'POST',  cache: 'no-store' });
         const data = await response.json();
         return (data.track.album.image);
+       
     } catch (error) {
         console.error(error);
     }
@@ -23,11 +24,9 @@ export default function TrackImage({ track, artist }) {
     async function loadTrackImage() {
         try {
   
-            const data = await fetchTrackImage({track}, {artist });
+            const data = await fetchTrackImage({track}, {artist});
           
-            if (!data)
-                setTrackImage([]);            
-            else 
+            if (data)
                 setTrackImage(data);
   
         } catch (error) {

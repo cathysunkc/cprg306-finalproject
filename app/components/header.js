@@ -1,10 +1,14 @@
+
+"use client"
+
 import Image from 'next/image';
 import React from 'react';
 import logo from '../images/music_world_logo.png';
 import Link from 'next/link';
-
+import { useRouter } from 'next/navigation';
 
 export default function Header() {
+  const router = useRouter();
     return ( 
       <>
         
@@ -16,13 +20,16 @@ export default function Header() {
                 <Image src={logo} priority="false" width="300px" alt="Music World Logo" />                 
                    </a>
                    <nav className="ml-6 space-x-2 lg:block">
-                    <Link href='/' shallow={true} className="relative w-1/2 bg-white shadow-sm border-2 border-purple-800 text-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap hover:bg-purple-800 hover:text-white ease-linear duration-200  sm:w-auto sm:px-8">Chart</Link>
-                    <Link href="../artists" shallow={true} className="relative w-1/2 bg-white shadow-sm border-2 border-purple-800 text-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap hover:bg-purple-800 hover:text-white ease-linear duration-200  sm:w-auto sm:px-8">Artists</Link>
-                    <Link href='../tracks' shallow={true} className="relative w-1/2 bg-white shadow-sm border-2 border-purple-800 text-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap hover:bg-purple-800 hover:text-white ease-linear duration-200  sm:w-auto sm:px-8">Tracks</Link>
-                    <Link href='../votes' shallow={true} className="relative w-1/2 bg-white shadow-sm border-2 border-purple-800 text-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap hover:bg-purple-800 hover:text-white ease-linear duration-200  sm:w-auto sm:px-8">Votes</Link>
+                    <button type='button' onClick={(e) => {
+      e.preventDefault();
+      window.location.href='/';
+      }} className="relative w-1/2 bg-white shadow-sm border-2 border-purple-800 text-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap hover:bg-purple-800 hover:text-white ease-linear duration-200  sm:w-auto sm:px-8">Chart</button>
+                    <button type='button' onClick={() => router.push('/artists')}  className="relative w-1/2 bg-white shadow-sm border-2 border-purple-800 text-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap hover:bg-purple-800 hover:text-white ease-linear duration-200  sm:w-auto sm:px-8">Artists</button>
+                    <Link href='../tracks'  className="relative w-1/2 bg-white shadow-sm border-2 border-purple-800 text-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap hover:bg-purple-800 hover:text-white ease-linear duration-200  sm:w-auto sm:px-8">Tracks</Link>
+                    <Link href='../votes'  className="relative w-1/2 bg-white shadow-sm border-2 border-purple-800 text-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap hover:bg-purple-800 hover:text-white ease-linear duration-200  sm:w-auto sm:px-8">Votes</Link>
                   </nav>
                   </div><div className="flex justify-end space-x-8">
-                  <Link href='/' shallow={true} className="relative w-1/2 bg-purple-800  shadow-sm text-white rounded-md m-1 py-2 text-s font-medium whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 focus:z-10 sm:w-auto sm:px-8">Login</Link>
+                  <Link href='/'  className="relative w-1/2 bg-purple-800  shadow-sm text-white rounded-md m-1 py-2 text-s font-medium whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 focus:z-10 sm:w-auto sm:px-8">Login</Link>
                    
                     </div></div></div>   
         

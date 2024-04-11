@@ -14,40 +14,54 @@ import searchIcon from '../images/search-icon.svg';
 import arrowIcon from '../images/arrow-icon.png';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import Header from '../components/header';
+import Breadcrumb from '../components/breadcrumb';
 
-async function fetchTrendingArtist() {
+
+
+
+async function fetchSingleArtist(artistName) {
   
-  try {
-  const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=chart.getTopArtists&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=40&format=json`, {Method: 'POST', cache: 'no-store' });
-  const data = await response.json();
-  return data.artists.artist;
-  } catch (error) {
-    console.error(error);
-    
-  } 
-}
+    const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${artistName}&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=40&format=json`, {Method: 'POST', cache: 'no-store' });
+    const data = await response.json();
+    return data.artist;
+   
+  }
 
 
-export default function Artists() {
+export default function SingleArtist(artistNameParam) {
   const router = useRouter();
   const [ artistName, setArtistName ] = useState('');
   const [trendingArtist, setTrendingArtist] = useState([]);
   const [artistContent, setArtistContent] = useState("");
 
 
-  async function loadArtist() {
-      try {    
-          
-          
-                const data = await fetchTrendingArtist();
+  async function loadArtist(artistName) {
+      try {       
+
+        if(artistNameParam && artistNameParam != '')
+          setArtistName(artistNameParam);
+        else
+          setArtistName('');
+
+        if (artistName == "")
+        {            
+            const data = await fetchTrendingArtist();
+        
+            if (data) {   
+              setArtistContent("");            
+              setTrendingArtist(data);
+            }                     
+        }
+        else 
+        {
             
-                if (data) {   
-                  setArtistContent("");            
-                  setTrendingArtist(data);
-                }                     
-            
-            
+            const data = await fetchSingleArtist(artistName);
+            if (data) {
+              setTrendingArtist([]);  
+              setArtistContent(data.bio.summary);
+            }    
+        }
+        
 
       } catch (error) {
           console.error(error);
@@ -59,11 +73,12 @@ export default function Artists() {
     loadArtist();
   });
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    router.push('/artist-info?artistName=' + e.target.artistName.value);    
-  }
-
+  
+function handleSubmit(e) {
+  e.preventDefault();
+  setArtistName(e.target.artistName.value);
+  loadArtist();
+}
 
 function reloadArtist(artistName)
 {
@@ -75,16 +90,23 @@ function reloadArtist(artistName)
    return (
     <>
     <main > 
-
-
+           
 <div className="py-8 mx-auto">
 <div className="sm:flex sm:flex-col sm:align-center">
 <div className="relative flex flex-row ml-24">
+  
 <Link href='/' className='text-gray-800 hover:underline '>Home</Link>
-
-    <><Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2 text-gray-800' alt="arrow icon" /> Artist</>
-
-    
+{artistName == '' &&   
+    <><Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2 text-gray-800' alt="arrow icon" /> Artist</>}
+{artistName != '' && 
+    <><Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2 text-purple-400' alt="arrow icon" /> 
+   <button type='button' onClick={() => reloadArtist('')}  >Artist</button> 
+    <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2 text-gray-400' alt="arrow icon" />
+    {artistName}
+    </>}
+  
+  
+  
   </div>
 
 <div className="relative self-center mt-6 rounded-lg p-0.5 flex border">
@@ -123,14 +145,9 @@ function reloadArtist(artistName)
                               
                                   <div key={index} style={{marginLeft: '10px'}}>
                                     
-                                    <Link style={{textDecoration: 'underline'}}  shallow={true} href={{
-                                                  pathname: '/artist-info',
-                                                  query: {
-                                                    artistName: item.name
-                                                  }
-                                                }}
-                                              >{item.name}</Link>
-                                   
+                                    
+                                    <button type='button' onClick={() => reloadArtist(item.name)} style={{textDecoration: 'underline'}}  
+                                              > {item.name}</button>
                                     
                                    </div>
                                     
@@ -141,7 +158,13 @@ function reloadArtist(artistName)
                   </div>     
               </>               
             } 
-            
+           {
+             artistContent && <>
+                <h1 className="text-3xl leading-6 text-purple-800 mb-8">{artistName}</h1>
+                <div dangerouslySetInnerHTML={{__html:artistContent}}></div>   
+                
+             </> 
+           }
    
 </div>
 
