@@ -14,62 +14,41 @@ import Countries from "./data/countries.json";
 import Image from 'next/image';
 import arrowIcon from './images/arrow-icon.png';
 import Link from 'next/link';
+
+
 async function fetchTopArtist(country) {
-  
-  
-
-
-  //const response = await fetch('https://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&api_key=fb2b87e326084e3dce78c5439ab49c61&format=json');
-  const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=geo.gettopartists&country=${country}&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=10&format=json`);
-  /*const response = await fetch('https://api.musixmatch.com/ws/1.1/chart.artists.get?page=1&page_size=10&country=ca&format=json&domain=https://localhost:3000&apikey=07cf4dce757310a5964161bf8a7bed74',{
-    method: 'GET', mode: 'no-cors',
-  headers: {
-      'Access-Control-Allow-Origin': '*',
-      "Content-Type": "application/json",
-    },
-    const data = (response.text());
-    console.log(data.message.body.artist_list);
-  return data;
-});*/
- //const response = await fetch('https://api.deezer.com/chart/0/artists');
-
+  const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=geo.gettopartists&country=${country}&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=5&format=json`, { Method: 'POST', cache: 'no-store' });
   const data = await response.json();
- // return data.artists.artist.slice(0,10);
- return data.topartists.artist;
-  //return data.data.slice(0, 10);
+   return data.topartists.artist;
+
 }
 
 async function fetchTopTrack(country) {
  
-//  const response = await fetch('https://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key=fb2b87e326084e3dce78c5439ab49c61&format=json');
-const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=geo.gettoptracks&country=${country}&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=10&format=json`);
+  const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=geo.gettoptracks&country=${country}&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=5&format=json`, { Method: 'POST', cache: 'no-store' });
   const data = await response.json();
   console.log({country});
-  //return data.tracks.track.slice(0,10);
   return data.tracks.track;
 }     
 
 
 export default function Page() {
+  
   const [country, setCountry] = useState('canada');
   const [countries, setCountries] = useState(Countries);
   const [topArtist, setTopArtist] = useState([]);
   const [topTrack, setTopTrack] = useState([]);
-  const [error, setError] = useState(false);
 
   async function loadTopArtist() {
       try {
 
           const data = await fetchTopArtist(country);
         
-          if (!data)
-              setTopArtist([]);            
-          else 
+          if (data)
               setTopArtist(data);
 
       } catch (error) {
-          //console.error(error);
-          setError(true);
+          console.error(error);
       }
   }
 
@@ -78,13 +57,11 @@ export default function Page() {
 
         const data = await fetchTopTrack(country);
       
-        if (!data)
-            setTopTrack([]);            
-        else 
+        if (data)
             setTopTrack(data);
 
     } catch (error) {
-      setError(true);
+       console.error(error);
     }
 }
 
@@ -129,7 +106,7 @@ export default function Page() {
     
             {
               <>
-               <h1 className="text-3xl leading-6 text-purple-800 mb-8">Top 10 Artists</h1>
+               <h1 className="text-3xl leading-6 text-purple-800 mb-8">Top 5 Artists</h1>
                   <ul>                    
                       {
                         
@@ -138,7 +115,15 @@ export default function Page() {
                               <li key={index} style={{fontSize: 'Larger' }}>
                                   <div style={{display: 'flex',  padding: '15px', margin: '5px', borderRadius: '5px', backgroundColor: 'white', height: '5em'}}>
                                     <div style={{width: '30px', height: '30px', background: 'black', textAlign: 'center', color: 'white', borderRadius: '5px'}}>{index + 1}</div>
-                                    <div style={{marginLeft: '10px'}}>{item.name}</div>
+                                    <Link style={{textDecoration: 'underline', marginLeft: '10px'}}  shallow={true}
+                                    
+                                     href={{
+    pathname: '/artists',
+    query: {
+      artistName: item.name
+    }
+  }}
+>{item.name}</Link>
                                     
                                   </div>
                               </li> 
@@ -152,13 +137,11 @@ export default function Page() {
 </div>
 </div>
 <div className="flex flex-col  flex-1 mr-24 ">
-
-  
-    <div className='container'>    
+  <div className='container'>    
     
             {
               <>             
-             <h1 className="text-3xl leading-6 text-purple-800 mb-8">Top 10 Tracks</h1>
+             <h1 className="text-3xl leading-6 text-purple-800 mb-8">Top 5 Tracks</h1>
                   <ul>                    
                       {
                            topTrack && topTrack.map((item, index) => (
@@ -174,7 +157,15 @@ export default function Page() {
                                       <div style={{display: 'grid', flexDirection: 'row'}}>
                                         
                                         <div style={{marginLeft: '10px', flex: 1, width: '100%'}}>{item.name}</div>
-                                        <div style={{marginLeft: '10px', flex: 1}} className="text-base">{item.artist.name}</div>
+                                        <div style={{marginLeft: '10px', flex: 1}} className="text-base">
+                                        <Link style={{textDecoration: 'underline'}}  shallow={true} href={{
+                                                  pathname: '/artists',
+                                                  query: {
+                                                    artistName: item.artist.name
+                                                  }
+                                                }}
+                                              >{item.artist.name}</Link>
+                                          </div>
                                       </div>
                                   </div>
                               </li> 
