@@ -10,14 +10,14 @@
 
 import React, { useState, useEffect, FormEvent } from 'react';
 import Image from 'next/image';
-
+import TrackImage from '../components/trackImage';
 import arrowIcon from '../images/arrow-icon.png';
 import Link from 'next/link';
 
 
 
 
-async function fetchSingleTrack(trackName, artistName) {
+async function fetchTrack(trackName, artistName) {
   
     const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=track.getInfo&track=${trackName}&artist=${artistName}&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=1&format=json`, {Method: 'POST',  cache: 'no-store' });
     const data = await response.json();
@@ -25,6 +25,7 @@ async function fetchSingleTrack(trackName, artistName) {
    
   }
 
+  
 
 
 
@@ -32,13 +33,11 @@ export default function TrackInfo({ searchParams }) {
   
   const [ trackName, setTrackName ] = useState('');
   const [ artistName, setArtistName ] = useState('');
-  const [summary, setSummary] = useState('');
-  const [album, setAlbum] = useState([]);
+  const [ album, setAlbum] = useState([]);
+  const [ summary, setSummary ] = useState([]);
 
   async function loadTrack() {
       try {       
-
-
         
         if(searchParams.trackName && searchParams.trackName != '')
           setTrackName(searchParams.trackName);
@@ -48,11 +47,12 @@ export default function TrackInfo({ searchParams }) {
 
         if (trackName != "" && artistName != "")        
         {
-            const track = await fetchSingleTrack(trackName, artistName);
-            if (track) {
-              setAlbum(track.album);
-              setSummary(track.wiki.summary);
-            }    
+            const data = await fetchTrack(trackName, artistName);
+            if (data) {
+              setAlbum(data.album);
+              setSummary(data.wiki.summary)
+            }  
+            
 
         }
         
@@ -77,12 +77,12 @@ export default function TrackInfo({ searchParams }) {
 <div className="sm:flex sm:flex-col sm:align-center">
 <div className="relative flex flex-row ml-24">
   
-<Link href='/' className='text-gray-800 hover:underline '>Home</Link>
+<Link href='/' className='text-purple-800 hover:underline '>Home</Link>
 
-    <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2 text-purple-400' alt="arrow icon" /> 
-   <Link href='/tracks'> Track</Link> 
-    <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2 text-gray-400' alt="arrow icon" />
-    {trackName}
+    <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2' alt="arrow icon" /> 
+   <Link href='/tracks' className='text-purple-800 hover:underline '> Track</Link> 
+    <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2'  alt="arrow icon" />
+    <div className='text-gray-800'>{trackName}</div>
   
   
   
@@ -101,24 +101,36 @@ export default function TrackInfo({ searchParams }) {
  
             
            {
-             summary && <>
+             album && <>
+                
                 <h1 className="text-3xl leading-6 text-purple-800 mb-8">{trackName}</h1>
-               
-                <div className='justify-normal' dangerouslySetInnerHTML={{__html:summary}}></div>   
+                
+
+                <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-5 gap-6'><div><TrackImage  
+                                              track={trackName}
+                                              artist={album.artist}
+                                                                                        
+                                            />    </div> 
+                <div><h1 className="text-3xl leading-6 text-purple-800 mb-8">Album: {album.title}</h1>
+                <h1 className="text-2xl leading-6 text-gray-800 mb-8">Artist: &nbsp;
+                
+                <Link style={{textDecoration: 'underline'}}  shallow={true} href={{
+                                                  pathname: '/artist-info',
+                                                  query: {
+                                                    artistName: album.artist
+                                                  }
+                                                }}
+                                              >{album.artist}</Link>
+                
+                </h1>
+                <div className='justify-normal' dangerouslySetInnerHTML={{__html:summary}}></div> 
+                </div></div>
                 
              </> 
-
+              
              
            }
-           {
-            album && <>
-              <h1 className="text-3xl leading-6 text-purple-800 mb-8">{album.artist}</h1>
-               <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-6'>  
-               <h1 className="text-3xl leading-6 text-purple-800 mb-8">{album.title}</h1>
-                                  
-                </div>     
-            </>               
-          } 
+           
 
 
    

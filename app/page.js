@@ -15,7 +15,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation'
 import Countries from "./data/countries.json";
-import logo from './images/music_world_logo.png';
 import TrackImage from './components/trackImage';
 import arrowIcon from './images/arrow-icon.png';
 
@@ -92,7 +91,7 @@ loadTopArtist();
                     <div className="sm:flex sm:flex-col sm:align-center">
                     <div className="relative flex flex-row ml-24">
                         
-                    <Link href='/' className='text-gray-800 hover:underline '>Home</Link>
+                    <Link href='/' className='text-purple-800 hover:underline '>Home</Link>
 
 
     <><Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2 text-gray-400' alt="arrow icon" /> Chart</> 
@@ -164,10 +163,11 @@ loadTopArtist();
                               <li key={index} style={{fontSize: 'Larger', }}>
                                   <div style={{display: 'flex',  padding: '15px', margin: '5px', borderRadius: '5px', backgroundColor: 'white', height: '5em'}}>
                                     <div style={{width: '30px', height: '30px', background: 'black', textAlign: 'center', color: 'white', borderRadius: '5px'}}>{index + 1}</div>
-                                    <div  style={{display: 'grid', flexDirection: 'column', }}><TrackImage  
+                                    <div  style={{display: 'grid', flexDirection: 'column', width:'90px' }}><TrackImage  
                                               track={item.name}
                                               artist={item.artist.name}
-                                              key={item.mbid}                                               
+                                              key={item.mbid}  
+                                                                                          
                                             /></div>
                                       <div style={{display: 'grid', flexDirection: 'row'}}>
                                         

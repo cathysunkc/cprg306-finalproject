@@ -47,7 +47,7 @@ export default function TrackImage({ track, artist }) {
                           
                           {
                           trackImage.map((item, index) => (
-                             index == 1 &&                             
+                             index == 3 &&                             
                                     
                                     <img key={index} src={Object.values(item).slice(0,1)} style={{paddingLeft: '10px', paddingRight: '10px'}}></img>
                                     
