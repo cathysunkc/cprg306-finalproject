@@ -14,12 +14,12 @@ import searchIcon from '../images/search-icon.svg';
 import arrowIcon from '../images/arrow-icon.png';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import Header from '../components/header';
+
 
 async function fetchTrendingArtist() {
   
   try {
-  const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=chart.getTopArtists&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=40&format=json`, {Method: 'POST', cache: 'no-store' });
+  const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=chart.getTopArtists&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=28&format=json`, {Method: 'POST', cache: 'no-store' });
   const data = await response.json();
   return data.artists.artist;
   } catch (error) {

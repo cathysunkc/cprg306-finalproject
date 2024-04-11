@@ -21,36 +21,51 @@ import Breadcrumb from '../components/breadcrumb';
 
 async function fetchSingleArtist(artistName) {
   
-    const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${artistName}&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=40&format=json`, {Method: 'POST', cache: 'no-store' });
+    const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${artistName}&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=1&format=json`, {Method: 'POST',  cache: 'no-store' });
     const data = await response.json();
-    return data.artist;
+       return data.artist;
    
   }
 
 
-export default function SingleArtist({ searchParams }) {
-  const router = useRouter();
+  async function fetchArtistAlbums(artistName) {
+  
+    const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.getTopAlbums&artist=${artistName}&limit=9&api_key=fb2b87e326084e3dce78c5439ab49c61&format=json`, {Method: 'POST',  cache: 'no-store' });
+    const data = await response.json();
+    return data.topalbums.album;
+   
+  }
+
+
+export default function ArtistInfo({ searchParams }) {
+  
   const [ artistName, setArtistName ] = useState('');
-  const [artistContent, setArtistContent] = useState("");
+  const [artistContent, setArtistContent] = useState('');
+  const [artistAlbums, setArtistAlbums] = useState([]);
 
 
   async function loadArtist() {
       try {       
 
-        const name = searchParams.artistName;
-        
-        if(name && name != '')
-          setArtistName(name);
 
-        if (artistName != "")
         
+        if(searchParams.artistName && searchParams.artistName != '')
+          setArtistName(searchParams.artistName);
+
+        if (artistName != "")        
         {
-            
-            const data = await fetchSingleArtist(artistName);
-            if (data) {
+            const artist = await fetchSingleArtist(artistName);
+            if (artist) {
              
-              setArtistContent(data.bio.summary);
+              setArtistContent(artist.bio.summary);
             }    
+            
+            const albums = await fetchArtistAlbums(artistName);
+            if (albums) {
+             
+              setArtistAlbums(albums);
+            } 
+
         }
         
 
@@ -75,14 +90,12 @@ export default function SingleArtist({ searchParams }) {
 <div className="relative flex flex-row ml-24">
   
 <Link href='/' className='text-gray-800 hover:underline '>Home</Link>
-{artistName == '' &&   
-    <><Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2 text-gray-800' alt="arrow icon" /> Artist</>}
-{artistName != '' && 
-    <><Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2 text-purple-400' alt="arrow icon" /> 
+
+    <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2 text-purple-400' alt="arrow icon" /> 
    <Link href='/artists'> Artist</Link> 
     <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2 text-gray-400' alt="arrow icon" />
     {artistName}
-    </>}
+  
   
   
   
@@ -93,7 +106,7 @@ export default function SingleArtist({ searchParams }) {
 </div>
 </div>
 
-<div className="flex flex-wrap justify-center gap-6 ml-20 mr-20 mt-5 mb-10 bg-white rounded p-1 py-3" style={{padding: '2.5em'}}>
+<div className="flex flex-wrap justify-center gap-6 ml-20 mr-20 mt-5 mb-5 bg-white rounded p-1 py-3" style={{padding: '2.5em'}}>
 
   <div className="flex flex-col  flex-1 ">
   
@@ -102,7 +115,7 @@ export default function SingleArtist({ searchParams }) {
            {
              artistContent && <>
                 <h1 className="text-3xl leading-6 text-purple-800 mb-8">{artistName}</h1>
-                <div dangerouslySetInnerHTML={{__html:artistContent}}></div>   
+                <div className='justify-normal' dangerouslySetInnerHTML={{__html:artistContent}}></div>   
                 
              </> 
            }
@@ -111,6 +124,58 @@ export default function SingleArtist({ searchParams }) {
 
         </div></div>
 
+        <div className="flex flex-wrap justify-center gap-6 ml-20 mr-20 mt-0 mb-10 bg-white rounded p-1 py-3" style={{padding: '2.5em'}}>
+
+<div className="flex flex-col  flex-1 ">
+
+
+          {
+            artistAlbums && <>
+              <h1 className="text-3xl leading-6 text-purple-800 mb-8">Top Albums</h1>
+               <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-6'>  
+               
+                           
+                    {
+                      
+                      artistAlbums.map((item, index) => (
+                           
+                            
+                                <div key={index} style={{textAlign:'center'}}>
+                                 
+                                 
+                                {  item.image.map((item, index) => (
+                             index == 2 &&                             
+                                    
+                                    <img key={index} src={Object.values(item).slice(0,1)} style={{paddingLeft: '10px', paddingRight: '10px'}}></img>
+                                 
+                              
+                              
+                            ))}  
+                               <div className='w-5/6 text-base'><Link style={{textDecoration: 'underline', marginRight: '5px'}} href='' >{item.name}</Link></div>
+                                  
+
+
+
+
+                                 </div>
+                                  
+                              
+                             
+                          ))
+                    }
+                    
+                </div>     
+            </>               
+          } 
+
+
+            
+ 
+</div>
+
+      </div>
+
+     
        
         
         

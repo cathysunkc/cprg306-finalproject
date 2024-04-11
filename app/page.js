@@ -195,7 +195,6 @@ loadTopArtist();
 </div></div>
 
 
-        <Footer />
   </main>
   
   </>
