@@ -32,8 +32,8 @@ export default function TrackInfo({ searchParams }) {
   
   const [ trackName, setTrackName ] = useState('');
   const [ artistName, setArtistName ] = useState('');
-  const [trackContent, setTrackContent] = useState('');
-
+  const [summary, setSummary] = useState('');
+  const [album, setAlbum] = useState([]);
 
   async function loadTrack() {
       try {       
@@ -44,14 +44,14 @@ export default function TrackInfo({ searchParams }) {
           setTrackName(searchParams.trackName);
 
         if(searchParams.artistName && searchParams.artistName != '')
-          setTrackName(searchParams.artistName);
+          setArtistName(searchParams.artistName);
 
         if (trackName != "" && artistName != "")        
         {
             const track = await fetchSingleTrack(trackName, artistName);
             if (track) {
-             
-              setTrackContent(track.wiki.summary);
+              setAlbum(track.album);
+              setSummary(track.wiki.summary);
             }    
 
         }
@@ -101,12 +101,26 @@ export default function TrackInfo({ searchParams }) {
  
             
            {
-             trackContent && <>
+             summary && <>
                 <h1 className="text-3xl leading-6 text-purple-800 mb-8">{trackName}</h1>
-                <div className='justify-normal' dangerouslySetInnerHTML={{__html:trackContent}}></div>   
+               
+                <div className='justify-normal' dangerouslySetInnerHTML={{__html:summary}}></div>   
                 
              </> 
+
+             
            }
+           {
+            album && <>
+              <h1 className="text-3xl leading-6 text-purple-800 mb-8">{album.artist}</h1>
+               <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-6'>  
+               <h1 className="text-3xl leading-6 text-purple-800 mb-8">{album.title}</h1>
+                                  
+                </div>     
+            </>               
+          } 
+
+
    
 </div>
 

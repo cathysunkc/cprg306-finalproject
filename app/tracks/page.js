@@ -33,7 +33,7 @@ export default function Tracks() {
   const router = useRouter();
   const [ trackName, setTrackName ] = useState('');
   const [trendingTrack, setTrendingTrack] = useState([]);
-  const [trackContent, setTrackContent] = useState("");
+
 
 
   async function loadTrack() {
@@ -129,7 +129,8 @@ function reloadTrack(trackName)
                                     <Link style={{textDecoration: 'underline'}}  shallow={true} href={{
                                                   pathname: '/track-info',
                                                   query: {
-                                                    trackName: item.name
+                                                    trackName: item.name,
+                                                    artistName: item.artist.name,
                                                   }
                                                 }}
                                               >{item.name}</Link>

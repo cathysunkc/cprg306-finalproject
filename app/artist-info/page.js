@@ -140,30 +140,17 @@ export default function ArtistInfo({ searchParams }) {
                       artistAlbums.map((item, index) => (
                            
                             
-                                <div key={index} style={{textAlign:'center'}}>
+                          <div key={index} style={{textAlign:'center'}}>
                                  
                                  
                                 {  item.image.map((item, index) => (
-                             index == 2 &&                             
-                                    
+                                    index == 2 &&                             
                                     <img key={index} src={Object.values(item).slice(0,1)} style={{paddingLeft: '10px', paddingRight: '10px'}}></img>
-                                 
-                              
-                              
-                            ))}  
+                              ))}  
                                <div className='w-5/6 text-base'>{item.name}</div>
-                                  
-
-
-
-
-                                 </div>
-                                  
-                              
-                             
-                          ))
-                    }
-                    
+                         </div>
+                       ))
+                    }                    
                 </div>     
             </>               
           } 
