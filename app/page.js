@@ -171,7 +171,16 @@ loadTopArtist();
                                             /></div>
                                       <div style={{display: 'grid', flexDirection: 'row'}}>
                                         
-                                        <div style={{marginLeft: '10px', flex: 1, width: '100%'}}>{item.name}</div>
+                                        <div style={{marginLeft: '10px', flex: 1, width: '100%'}}>
+                                        <Link style={{textDecoration: 'underline'}}  shallow={true} href={{
+                                                  pathname: '/track-info',
+                                                  query: {
+                                                    trackName: item.name,
+                                                    artistName: item.artist.name
+                                                  }
+                                                }}
+                                              >
+                                          {item.name}</Link></div>
                                         <div style={{marginLeft: '10px', flex: 1}} className="text-base">
                                         <Link style={{textDecoration: 'underline'}}  shallow={true} href={{
                                                   pathname: '/artist-info',

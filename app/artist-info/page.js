@@ -151,7 +151,7 @@ export default function ArtistInfo({ searchParams }) {
                               
                               
                             ))}  
-                               <div className='w-5/6 text-base'><Link style={{textDecoration: 'underline', marginRight: '5px'}} href='' >{item.name}</Link></div>
+                               <div className='w-5/6 text-base'>{item.name}</div>
                                   
 
 
