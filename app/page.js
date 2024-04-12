@@ -15,16 +15,25 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation'
 import Countries from './data/countries.json';
+
 import TrackImage from './components/trackImage';
 import arrowIcon from './images/arrow-icon.png';
 
 
 async function fetchTopArtist(country) {
   let response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=geo.gettopartists&country=${country}&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=5&format=json`, { Method: 'POST', cache: 'no-store' });
-  let data = await response.json();
+    let data = await response.json();
    return data.topartists.artist;
 
 }
+
+async function fetchTopArtistLocal(country) {
+    let response = await fetch('./data/topArtist.json');
+      let data = await response.json();
+     return data.topartists.artist;
+  
+  }
+
 
 async function fetchTopTrack(country) {
  
@@ -43,14 +52,21 @@ export default function Page() {
 
     async function loadTopArtist() {
       try {
-          
+        
+        
           let data = await fetchTopArtist(country);
         
           if (data)
               setTopArtist(data);
+          
+              
+              
 
       } catch (error) {
-         // console.error(error);
+        let data = await fetchTopArtistLocal(country);
+        
+        if (data)
+            setTopArtist(data);
       }
   }
 
@@ -77,6 +93,24 @@ useEffect(() => {
     loadTopArtist();
 });
 
+/***
+ * Country Selection
+ * <div className=" relative self-center mt-6 rounded-lg p-0.5 flex border">
+
+              <div style={{width: '100%', alignContent: 'right', width:'100%',float:'right', paddingBottom:'1em'}}>
+                <select id='countryList' onChange={handleCountryChange} style={{height: '2em', borderColor: 'black', borderRadius: '3px', float: 'right'}}>{
+                          countries.map((item, index) => (                            
+                                    <option key={index} value={Object.values(item).slice(3,4)}>{Object.values(item).slice(3,4)} </option>
+                             
+                             
+                            ))
+                          }
+                    </select>                   
+                        </div>
+
+                    </div>
+ */
+
   return (
     <>
 
@@ -95,22 +129,7 @@ useEffect(() => {
     <><Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2' alt="arrow icon" />  <div className='text-gray-800'>Chart</div></> 
                         
                     </div>
-                    <div className=" relative self-center mt-6 rounded-lg p-0.5 flex border">
-
-                        <div style={{width: '100%', alignContent: 'right', width:'100%',float:'right', paddingBottom:'1em'}}>
-                <select id='countryList' onChange={handleCountryChange} style={{height: '2em', borderColor: 'black', borderRadius: '3px', float: 'right'}}>{
-                          countries.map((item, index) => (
-
-                             
-                                    <option key={index} value={Object.values(item).slice(3,4)}>{Object.values(item).slice(3,4)} </option>
-                             
-                             
-                            ))
-                          }
-                    </select>                   
-                        </div>
-
-                    </div>
+              
             </div>
 <div className="flex flex-wrap justify-center gap-6  ">
   <div className="flex flex-col  flex-1 ml-24">
