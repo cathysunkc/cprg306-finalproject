@@ -63,7 +63,7 @@ export default function TrackInfo({ searchParams }) {
 
   useEffect(() => {   
     loadTrack();
-  });
+  }, []);
 
  
   

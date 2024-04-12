@@ -58,7 +58,7 @@ export default function Tracks() {
 
   useEffect(() => {   
     loadTrack();
-  });
+  }, []);
 
   function handleSubmit(e) {
     if (e.target.trackName.value && e.target.trackName.value != '')
