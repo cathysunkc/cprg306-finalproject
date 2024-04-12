@@ -20,16 +20,16 @@ import arrowIcon from './images/arrow-icon.png';
 
 
 async function fetchTopArtist(country) {
-  const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=geo.gettopartists&country=${country}&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=5&format=json`, { Method: 'POST', cache: 'no-store' });
-  const data = await response.json();
+  let response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=geo.gettopartists&country=${country}&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=5&format=json`, { Method: 'POST', cache: 'no-store' });
+  let data = await response.json();
    return data.topartists.artist;
 
 }
 
 async function fetchTopTrack(country) {
  
-  const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=geo.gettoptracks&country=${country}&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=5&format=json`, { Method: 'POST', cache: 'no-store' });
-  const data = await response.json();
+  let response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=geo.gettoptracks&country=${country}&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=5&format=json`, { Method: 'POST', cache: 'no-store' });
+  let data = await response.json();
   console.log({country});
   return data.tracks.track;
 } 
@@ -44,7 +44,7 @@ export default function Page() {
     async function loadTopArtist() {
       try {
           
-          const data = await fetchTopArtist(country);
+          let data = await fetchTopArtist(country);
         
           if (data)
               setTopArtist(data);
@@ -57,7 +57,7 @@ export default function Page() {
   async function loadTopTrack() {
     try {
 
-        const data = await fetchTopTrack(country);
+        let data = await fetchTopTrack(country);
       
         if (data)
             setTopTrack(data);

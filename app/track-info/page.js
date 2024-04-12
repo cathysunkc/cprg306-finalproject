@@ -19,8 +19,8 @@ import { useRouter } from 'next/navigation';
 
 async function fetchTrack(trackName, artistName) {
   
-    const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=track.getInfo&track=${trackName}&artist=${artistName}&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=1&format=json`, {Method: 'POST',  cache: 'no-store' });
-    const data = await response.json();
+    let response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=track.getInfo&track=${trackName}&artist=${artistName}&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=1&format=json`, {Method: 'POST',  cache: 'no-store' });
+    let data = await response.json();
        return data.track;
    
   }
@@ -46,7 +46,7 @@ export default function TrackInfo({ searchParams }) {
 
         if (trackName != "" && artistName != "")        
         {
-            const data = await fetchTrack(trackName, artistName);
+            let data = await fetchTrack(trackName, artistName);
             if (data) {
               setAlbum(data.album);
               setSummary(data.wiki.summary)

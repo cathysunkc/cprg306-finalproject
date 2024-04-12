@@ -16,8 +16,8 @@ import { useRouter } from 'next/navigation';
 
 async function fetchSingleArtist(artistName) {
   
-    const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${artistName}&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=1&format=json`, {Method: 'POST',  cache: 'no-store' });
-    const data = await response.json();
+    let response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${artistName}&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=1&format=json`, {Method: 'POST',  cache: 'no-store' });
+    let data = await response.json();
        return data.artist;
    
   }
@@ -25,8 +25,8 @@ async function fetchSingleArtist(artistName) {
 
   async function fetchArtistAlbums(artistName) {
   
-    const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.getTopAlbums&artist=${artistName}&limit=9&api_key=fb2b87e326084e3dce78c5439ab49c61&format=json`, {Method: 'POST',  cache: 'no-store' });
-    const data = await response.json();
+    let response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.getTopAlbums&artist=${artistName}&limit=9&api_key=fb2b87e326084e3dce78c5439ab49c61&format=json`, {Method: 'POST',  cache: 'no-store' });
+    let data = await response.json();
     return data.topalbums.album;
    
   }
@@ -50,13 +50,13 @@ export default function ArtistInfo({ searchParams }) {
 
         if (artistName != "")        
         {
-            const artist = await fetchSingleArtist(artistName);
+            let artist = await fetchSingleArtist(artistName);
             if (artist) {
              
               setArtistContent(artist.bio.summary);
             }    
             
-            const albums = await fetchArtistAlbums(artistName);
+            let albums = await fetchArtistAlbums(artistName);
             if (albums) {
              
               setArtistAlbums(albums);
