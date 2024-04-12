@@ -10,18 +10,13 @@
 
 import React, { useState, useEffect, FormEvent } from 'react';
 import Image from 'next/image';
-import searchIcon from '../images/search-icon.svg';
 import arrowIcon from '../images/arrow-icon.png';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import Breadcrumb from '../components/breadcrumb';
-
-
-
 
 async function fetchSingleArtist(artistName) {
   
-    const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${artistName}&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=1&format=json`, {Method: 'POST',  cache: 'no-store' });
+    const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${artistName}&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=1&format=json`, {Method: 'POST',  cache: 'force-cache' });
     const data = await response.json();
        return data.artist;
    
@@ -30,7 +25,7 @@ async function fetchSingleArtist(artistName) {
 
   async function fetchArtistAlbums(artistName) {
   
-    const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.getTopAlbums&artist=${artistName}&limit=9&api_key=fb2b87e326084e3dce78c5439ab49c61&format=json`, {Method: 'POST',  cache: 'no-store' });
+    const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.getTopAlbums&artist=${artistName}&limit=9&api_key=fb2b87e326084e3dce78c5439ab49c61&format=json`, {Method: 'POST',  cache: 'force-cache' });
     const data = await response.json();
     return data.topalbums.album;
    
@@ -38,10 +33,11 @@ async function fetchSingleArtist(artistName) {
 
 
 export default function ArtistInfo({ searchParams }) {
-  
+ 
   const [ artistName, setArtistName ] = useState('');
   const [artistContent, setArtistContent] = useState('');
   const [artistAlbums, setArtistAlbums] = useState([]);
+  const [error, setError] = useState(false);
 
 
   async function loadArtist() {
@@ -65,13 +61,16 @@ export default function ArtistInfo({ searchParams }) {
              
               setArtistAlbums(albums);
             } 
+            else {
+              setError(true);
+            }
 
         }
+       
         
 
       } catch (error) {
-          console.error(error);
-          
+        //setError(true);          
       }
   }
 
@@ -89,10 +88,10 @@ export default function ArtistInfo({ searchParams }) {
 <div className="sm:flex sm:flex-col sm:align-center">
 <div className="relative flex flex-row ml-24">
   
-<Link href='/' className='text-purple-800 underline '>Home</Link>
+<Link prefetch={false} href='/' className='text-purple-800 underline '>Home</Link>
 
     <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2' alt="arrow icon" /> 
-   <Link href='/artists' className='text-purple-800 underline '> Artist</Link> 
+   <Link prefetch={false} href='/artists' className='text-purple-800 underline '> Artist</Link> 
     <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2' alt="arrow icon" />
     <div className='text-gray-800'>{artistName}</div>
   
@@ -110,10 +109,10 @@ export default function ArtistInfo({ searchParams }) {
 
   <div className="flex flex-col  flex-1 ">
   
- 
+           { error && <div className="text-gray-800">No records found</div>}
             
            {
-             artistContent && <>
+             !error && artistContent && <>
                 <h1 className="text-3xl leading-6 text-gray-800 mb-8">{artistName}</h1>
                 <div className='justify-normal text-gray-800' dangerouslySetInnerHTML={{__html:artistContent}}></div>   
                 
@@ -126,11 +125,11 @@ export default function ArtistInfo({ searchParams }) {
 
         <div className="flex flex-wrap justify-center gap-6 ml-20 mr-20 mt-0 mb-10 bg-white rounded p-1 py-3" style={{padding: '2.5em'}}>
 
-<div className="flex flex-col  flex-1 ">
+        <div className="flex flex-col  flex-1 ">
 
 
           {
-            artistAlbums && <>
+            !error && artistAlbums && <>
               <h1 className="text-3xl leading-6 text-gray-800 mb-8">Top Albums</h1>
                <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-6'>  
                
@@ -153,19 +152,8 @@ export default function ArtistInfo({ searchParams }) {
                     }                    
                 </div>     
             </>               
-          } 
-
-
-            
- 
-</div>
-
+          } </div>
       </div>
-
-     
-       
-        
-        
   </main>
   
   </>

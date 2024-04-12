@@ -13,19 +13,17 @@ import Image from 'next/image';
 import TrackImage from '../components/trackImage';
 import arrowIcon from '../images/arrow-icon.png';
 import Link from 'next/link';
-
+import { useRouter } from 'next/navigation';
 
 
 
 async function fetchTrack(trackName, artistName) {
   
-    const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=track.getInfo&track=${trackName}&artist=${artistName}&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=1&format=json`, {Method: 'POST',  cache: 'no-store' });
+    const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=track.getInfo&track=${trackName}&artist=${artistName}&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=1&format=json`, {Method: 'POST',  cache: 'force-cache' });
     const data = await response.json();
        return data.track;
    
   }
-
-  
 
 
 
@@ -35,6 +33,7 @@ export default function TrackInfo({ searchParams }) {
   const [ artistName, setArtistName ] = useState('');
   const [ album, setAlbum] = useState([]);
   const [ summary, setSummary ] = useState([]);
+  const [ error, setError ] = useState(false);
 
   async function loadTrack() {
       try {       
@@ -52,13 +51,15 @@ export default function TrackInfo({ searchParams }) {
               setAlbum(data.album);
               setSummary(data.wiki.summary)
             }  
-            
+            else {
+              setError(true);
+            }
 
-        }
+        }      
         
 
       } catch (error) {
-          console.error(error);
+       // setError(true);
           
       }
   }
@@ -77,10 +78,10 @@ export default function TrackInfo({ searchParams }) {
 <div className="sm:flex sm:flex-col sm:align-center">
 <div className="relative flex flex-row ml-24">
   
-<Link href='/' className='text-purple-800 underline '>Home</Link>
+<Link prefetch={false} href='/' className='text-purple-800 underline '>Home</Link>
 
     <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2' alt="arrow icon" /> 
-   <Link href='/tracks' className='text-purple-800 underline '> Track</Link> 
+   <Link prefetch={false}  href='/tracks' className='text-purple-800 underline '>Track</Link> 
     <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2'  alt="arrow icon" />
     <div className='text-gray-800'>{trackName}</div>
   
@@ -98,15 +99,15 @@ export default function TrackInfo({ searchParams }) {
 
   <div className="flex flex-col  flex-1 ">
   
- 
+            { error && <div className="text-gray-800">No records found</div>}
             
            {
-             album && <>
+             !error && album && <>
                 
                 <h1 className="text-3xl leading-6 text-gray-800 mb-8">{trackName}</h1>
                 
 
-                <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-5 gap-6'><div><TrackImage  
+                <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6'><div><TrackImage  
                                               track={trackName}
                                               artist={album.artist}
                                                                                         
@@ -114,7 +115,7 @@ export default function TrackInfo({ searchParams }) {
                 <div><h1 className="text-2xl leading-6 text-gray-800 mb-8">Album: {album.title}</h1>
                 <h1 className="text-1xl leading-6 text-purple-800 mb-8">Artist: &nbsp;
                 
-                <Link className='underline text-purple-800'  shallow={true} href={{
+                <Link prefetch={false} className='underline text-purple-800'  shallow={true} href={{
                                                   pathname: '/artist-info',
                                                   query: {
                                                     artistName: album.artist

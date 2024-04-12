@@ -11,7 +11,7 @@ export default function Breadcrumb({pageName, artistName}) {
 return (
         <>
        
-            <Link href='/' className='text-purple-800 hover:underline '>Home</Link>
+            <Link href='/' prefetch={false} className='text-purple-800 hover:underline '>Home</Link>
 
             {pageName == 'home' &&  
                 <><Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2 text-gray-400' alt="arrow icon" /> Chart</> }

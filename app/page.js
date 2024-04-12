@@ -14,12 +14,10 @@ import Image from 'next/image';
 
 import Link from 'next/link';
 import { useRouter } from 'next/navigation'
-import Countries from "./data/countries.json";
+import Countries from './data/countries.json';
 import TrackImage from './components/trackImage';
 import arrowIcon from './images/arrow-icon.png';
 
-
-import Footer from './components/footer';
 
 async function fetchTopArtist(country) {
   const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=geo.gettopartists&country=${country}&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=5&format=json`, { Method: 'POST', cache: 'no-store' });
@@ -37,7 +35,7 @@ async function fetchTopTrack(country) {
 } 
 
 export default function Page() {
-  const router = useRouter();
+ 
     const [country, setCountry] = useState('canada');
     const [countries, setCountries] = useState(Countries);
     const [topArtist, setTopArtist] = useState([]);
@@ -52,7 +50,7 @@ export default function Page() {
               setTopArtist(data);
 
       } catch (error) {
-          console.error(error);
+         // console.error(error);
       }
   }
 
@@ -65,7 +63,7 @@ export default function Page() {
             setTopTrack(data);
 
     } catch (error) {
-       console.error(error);
+       //console.error(error);
     }
 }
 const handleCountryChange = (event) => {
@@ -75,8 +73,8 @@ const handleCountryChange = (event) => {
 };
 
 useEffect(() => {
-loadTopTrack();
-loadTopArtist();
+    loadTopTrack();
+    loadTopArtist();
 });
 
   return (
@@ -91,7 +89,7 @@ loadTopArtist();
                     <div className="sm:flex sm:flex-col sm:align-center">
                     <div className="relative flex flex-row ml-24">
                         
-                    <Link href='/' className='text-purple-800 underline '>Home</Link>
+                    <Link prefetch={false} href='/' prefetch={false} className='text-purple-800 underline '>Home</Link>
 
 
     <><Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2' alt="arrow icon" />  <div className='text-gray-800'>Chart</div></> 
@@ -129,7 +127,7 @@ loadTopArtist();
                               <li key={index} style={{fontSize: 'Larger' }}>
                                   <div style={{display: 'flex',  padding: '15px', margin: '5px', borderRadius: '5px', backgroundColor: 'white', height: '5em'}}>
                                     <div style={{width: '30px', height: '30px', background: 'black', textAlign: 'center', color: 'white', borderRadius: '5px'}}>{index + 1}</div>
-                                    <Link style={{textDecoration: 'underline', marginLeft: '10px'}}  
+                                    <Link prefetch={false} style={{textDecoration: 'underline', marginLeft: '10px'}}  
                                                                         
                                      href={{
     pathname: '/artist-info',
@@ -172,7 +170,7 @@ loadTopArtist();
                                       <div style={{display: 'grid', flexDirection: 'row'}}>
                                         
                                         <div style={{marginLeft: '10px', flex: 1, width: '100%'}}>
-                                        <Link style={{textDecoration: 'underline'}}  shallow={true} href={{
+                                        <Link prefetch={false} style={{textDecoration: 'underline'}}  shallow={true} href={{
                                                   pathname: '/track-info',
                                                   query: {
                                                     trackName: item.name,
@@ -182,7 +180,7 @@ loadTopArtist();
                                               >
                                           {item.name}</Link></div>
                                         <div style={{marginLeft: '10px', flex: 1}} className="text-base">
-                                        <Link style={{textDecoration: 'underline'}}  shallow={true} href={{
+                                        <Link prefetch={false} style={{textDecoration: 'underline'}}  shallow={true} href={{
                                                   pathname: '/artist-info',
                                                   query: {
                                                     artistName: item.artist.name

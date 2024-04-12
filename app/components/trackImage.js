@@ -10,7 +10,7 @@ async function fetchTrackImage( { track}, { artist }) {
         return (data.track.album.image);
        
     } catch (error) {
-        console.error(error);
+     //   console.error(error);
     }
    
 }     
@@ -30,7 +30,7 @@ export default function TrackImage({ track, artist }) {
                 setTrackImage(data);
   
         } catch (error) {
-            console.error(error);
+            //console.error(error);
         }
     }
   

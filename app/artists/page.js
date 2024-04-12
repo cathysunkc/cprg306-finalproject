@@ -19,7 +19,7 @@ import { useRouter } from 'next/navigation';
 async function fetchTrendingArtist() {
   
   try {
-  const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=chart.getTopArtists&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=28&format=json`, {Method: 'POST', cache: 'no-store' });
+  const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=chart.getTopArtists&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=28&format=json`, {Method: 'POST', cache: 'force-cache' });
   const data = await response.json();
   return data.artists.artist;
   } catch (error) {
@@ -30,7 +30,7 @@ async function fetchTrendingArtist() {
 
 
 export default function Artists() {
-  const router = useRouter();
+  
   const [ artistName, setArtistName ] = useState('');
   const [trendingArtist, setTrendingArtist] = useState([]);
   const [artistContent, setArtistContent] = useState("");
@@ -45,12 +45,10 @@ export default function Artists() {
                 if (data) {   
                   setArtistContent("");            
                   setTrendingArtist(data);
-                }                     
-            
-            
+                }         
 
       } catch (error) {
-          console.error(error);
+        //  console.error(error);
           
       }
   }
@@ -83,7 +81,7 @@ function reloadArtist(artistName)
 <div className="py-8 mx-auto">
 <div className="sm:flex sm:flex-col sm:align-center">
 <div className="relative flex flex-row ml-24">
-<Link href='/' className='text-purple-800 underline '>Home</Link>
+<Link prefetch={false} href='/' className='text-purple-800 underline '>Home</Link>
 
     <><Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2' alt="arrow icon" />  <div className='text-gray-800'>Artist</div></>
 
@@ -126,7 +124,7 @@ function reloadArtist(artistName)
                               
                                   <div key={index} style={{marginLeft: '10px'}}>
                                     
-                                    <Link style={{textDecoration: 'underline'}}  shallow={true} href={{
+                                    <Link prefetch={false} style={{textDecoration: 'underline'}}  shallow={true} href={{
                                                   pathname: '/artist-info',
                                                   query: {
                                                     artistName: item.name

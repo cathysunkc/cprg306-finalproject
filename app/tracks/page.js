@@ -19,18 +19,18 @@ import { useRouter } from 'next/navigation';
 async function fetchTrendingTrack() {
   
   try {
-  const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=chart.getTopTracks&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=28&format=json`, {Method: 'POST', cache: 'no-store' });
+  const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=chart.getTopTracks&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=28&format=json`, {Method: 'POST', cache: 'force-cache' });
   const data = await response.json();
   return data.tracks.track;
   } catch (error) {
-    console.error(error);
+ //   console.error(error);
     
   } 
 }
 
 
 export default function Tracks() {
-  const router = useRouter();
+
   const [ trackName, setTrackName ] = useState('');
   const [trendingTrack, setTrendingTrack] = useState([]);
 
@@ -43,14 +43,14 @@ export default function Tracks() {
                 const data = await fetchTrendingTrack();
             
                 if (data) {   
-                    setTrackName("");            
+                    setTrackName('');            
                     setTrendingTrack(data);
                 }                     
             
             
 
       } catch (error) {
-          console.error(error);
+         // console.error(error);
           
       }
   }
@@ -83,7 +83,7 @@ function reloadTrack(trackName)
 <div className="py-8 mx-auto">
 <div className="sm:flex sm:flex-col sm:align-center">
 <div className="relative flex flex-row ml-24">
-<Link href='/' className='text-purple-800 underline '>Home</Link>
+<Link prefetch={false} href='/' className='text-purple-800 underline '>Home</Link>
 
     <><Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2' alt="arrow icon" /> <div className='text-gray-800 '>Track</div></>
 
@@ -126,7 +126,7 @@ function reloadTrack(trackName)
                               
                                   <div key={index} style={{marginLeft: '10px'}}>
                                     
-                                    <Link style={{textDecoration: 'underline'}}  shallow={true} href={{
+                                    <Link  style={{textDecoration: 'underline'}}   href={{
                                                   pathname: '/track-info',
                                                   query: {
                                                     trackName: item.name,
