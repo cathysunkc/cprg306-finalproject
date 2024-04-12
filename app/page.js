@@ -140,7 +140,7 @@ useEffect(() => {
                                      href={{
     pathname: '/artist-info',
     query: {
-      artistName: item.name
+      artistName: item.name.trim()
     }
   }}
 >{item.name}</Link>
