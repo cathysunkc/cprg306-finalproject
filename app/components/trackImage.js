@@ -2,6 +2,7 @@
 "use client"
 
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 async function fetchTrackImage( { track}, { artist }) {
     try {
@@ -49,7 +50,7 @@ export default function TrackImage({ track, artist }) {
                           trackImage.map((item, index) => (
                              index == 3 &&                             
                                     
-                                    <img key={index} src={Object.values(item).slice(0,1)} style={{paddingLeft: '10px', paddingRight: '10px'}}></img>
+                                    <Image alt='' key={index} src={Object.values(item).slice(0,1)} style={{paddingLeft: '10px', paddingRight: '10px'}} />
                                     
                               
                               

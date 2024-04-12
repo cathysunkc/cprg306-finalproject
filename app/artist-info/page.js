@@ -141,7 +141,7 @@ export default function ArtistInfo({ searchParams }) {
                                  
                                 {  item.image.map((item, index) => (
                                     index == 2 &&                             
-                                    <img key={index} src={Object.values(item).slice(0,1)} style={{paddingLeft: '10px', paddingRight: '10px'}}></img>
+                                    <Image alt='' key={index} src={Object.values(item).slice(0,1)} style={{paddingLeft: '10px', paddingRight: '10px'}} />
                               ))}  
                                <div className='w-5/6 text-base text-gray-800'>{item.name}</div>
                          </div>
