@@ -20,7 +20,7 @@ async function fetchTrendingTrack() {
   
   try {
     //let response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=chart.getTopTracks&api_key=&limit=28&format=json`, {Method: 'POST', cache: 'no-store' });
-    let response = await fetch('https://raw.githubusercontent.com/cathysunkc/cprg306-finalproject/master/app/data/trendingTracks.json');
+    let response = await fetch('https://raw.githubusercontent.com/cathysunkc/cprg306-finalproject/master/app/data/trendingTracks.json', {Method: 'POST', cache: 'no-store' });
     let data = await response.json();
   return data.tracks.track;
   } catch (error) {

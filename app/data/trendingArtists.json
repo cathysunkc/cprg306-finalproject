@@ -29,7 +29,7 @@
                   "#text":"https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
                   "size":"mega"
                }
-            ],
+            ]
          },
          {
             "name":"Kanye West",
@@ -243,8 +243,8 @@
          },
          {
             "name":"Tyler, the Creator",
-            "playcount":"502942597",
-            "listeners":"2819951",
+            "playcount":"503361667",
+            "listeners":"2821390",
             "mbid":"f6beac20-5dfe-4d1f-ae02-0b0a740aafd6",
             "url":"https://www.last.fm/music/Tyler,+the+Creator",
             "streamable":"0",
@@ -273,8 +273,8 @@
          },
          {
             "name":"Rihanna",
-            "playcount":"375315291",
-            "listeners":"6671245",
+            "playcount":"375502491",
+            "listeners":"6672719",
             "mbid":"db36a76f-4cdf-43ac-8cd0-5e48092d2bae",
             "url":"https://www.last.fm/music/Rihanna",
             "streamable":"0",
@@ -393,8 +393,8 @@
          },
          {
             "name":"Olivia Rodrigo",
-            "playcount":"301816091",
-            "listeners":"2082414",
+            "playcount":"302406538",
+            "listeners":"2083777",
             "mbid":"",
             "url":"https://www.last.fm/music/Olivia+Rodrigo",
             "streamable":"0",
@@ -483,8 +483,8 @@
          },
          {
             "name":"Travis Scott",
-            "playcount":"316135440",
-            "listeners":"1988969",
+            "playcount":"316606781",
+            "listeners":"1990484",
             "mbid":"e4a51f17-a57b-47b1-b37b-f552d0f8e9e6",
             "url":"https://www.last.fm/music/Travis+Scott",
             "streamable":"0",
@@ -543,8 +543,8 @@
          },
          {
             "name":"Doja Cat",
-            "playcount":"279717132",
-            "listeners":"2475422",
+            "playcount":"280020397",
+            "listeners":"2476839",
             "mbid":"5df62a88-cac9-490a-b62c-c7c88f4020f4",
             "url":"https://www.last.fm/music/Doja+Cat",
             "streamable":"0",
@@ -573,8 +573,8 @@
          },
          {
             "name":"Lady Gaga",
-            "playcount":"551888377",
-            "listeners":"5806941",
+            "playcount":"552091071",
+            "listeners":"5808447",
             "mbid":"650e7db6-b795-4eb5-a702-5ea2fc46c848",
             "url":"https://www.last.fm/music/Lady+Gaga",
             "streamable":"0",
@@ -693,8 +693,8 @@
          },
          {
             "name":"Coldplay",
-            "playcount":"561983119",
-            "listeners":"7383001",
+            "playcount":"562106222",
+            "listeners":"7384289",
             "mbid":"cc197bad-dc9c-440d-a5b5-d52ba2e14234",
             "url":"https://www.last.fm/music/Coldplay",
             "streamable":"0",
@@ -753,40 +753,10 @@
          },
          {
             "name":"The Smiths",
-            "playcount":"331284838",
-            "listeners":"3763595",
+            "playcount":"331522320",
+            "listeners":"3764832",
             "mbid":"40f5d9e4-2de7-4f2d-ad41-e31a9a9fea27",
             "url":"https://www.last.fm/music/The+Smiths",
-            "streamable":"0",
-            "image":[
-               {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size":"small"
-               },
-               {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size":"medium"
-               },
-               {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size":"large"
-               },
-               {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size":"extralarge"
-               },
-               {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size":"mega"
-               }
-            ]
-         },
-         {
-            "name":"Hozier",
-            "playcount":"138219924",
-            "listeners":"2295218",
-            "mbid":"b4691384-50c3-4afd-9988-51d3ec5db65d",
-            "url":"https://www.last.fm/music/Hozier",
             "streamable":"0",
             "image":[
                {
@@ -870,43 +840,13 @@
                   "size":"mega"
                }
             ]
-         },
-         {
-            "name":"Kali Uchis",
-            "playcount":"175182668",
-            "listeners":"2019543",
-            "mbid":"",
-            "url":"https://www.last.fm/music/Kali+Uchis",
-            "streamable":"0",
-            "image":[
-               {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size":"small"
-               },
-               {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size":"medium"
-               },
-               {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size":"large"
-               },
-               {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size":"extralarge"
-               },
-               {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size":"mega"
-               }
-            ]
          }
       ],
       "@attr":{
          "page":"1",
-         "perPage":"30",
-         "totalPages":"192992",
-         "total":"5789756"
+         "perPage":"28",
+         "totalPages":"206789",
+         "total":"5790068"
       }
    }
 }

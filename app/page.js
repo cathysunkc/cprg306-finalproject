@@ -22,7 +22,7 @@ import arrowIcon from './images/arrow-icon.png';
 async function fetchTopArtist(country) {
 //  let response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=geo.gettopartists&country=${country}&api_key=&limit=5&format=json`, { Method: 'POST', cache: 'no-store' });
 
-  let response = await fetch('https://raw.githubusercontent.com/cathysunkc/cprg306-finalproject/master/app/data/topArtists.json');
+  let response = await fetch('https://raw.githubusercontent.com/cathysunkc/cprg306-finalproject/master/app/data/topArtists.json', { Method: 'POST', cache: 'no-store' });
   let data = await response.json();
    return data.topartists.artist;
 
@@ -31,9 +31,9 @@ async function fetchTopArtist(country) {
 async function fetchTopTrack(country) {
  
   // let response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=geo.gettoptracks&country=${country}&api_key=&limit=5&format=json`, { Method: 'POST', cache: 'no-store' });
-  let response = await fetch('https://raw.githubusercontent.com/cathysunkc/cprg306-finalproject/master/app/data/topTracks.json');
+  let response = await fetch('https://raw.githubusercontent.com/cathysunkc/cprg306-finalproject/master/app/data/topTracks.json', { Method: 'POST', cache: 'no-store' });
   let data = await response.json();
-  console.log({country});
+ // console.log({country});
   return data.tracks.track;
 } 
 
