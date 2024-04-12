@@ -19,7 +19,8 @@ import { useRouter } from 'next/navigation';
 async function fetchTrendingArtist() {
   
   try {
-  let response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=chart.getTopArtists&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=28&format=json`, {Method: 'POST', cache: 'no-store' });
+  //let response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=chart.getTopArtists&api_key=&limit=28&format=json`, {Method: 'POST', cache: 'no-store' });
+  let response = await fetch('https://raw.githubusercontent.com/cathysunkc/cprg306-finalproject/master/app/data/trendingArtists.json');
   let data = await response.json();
   return data.artists.artist;
   } catch (error) {
