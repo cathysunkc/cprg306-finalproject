@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 async function fetchTrackImage( { track}, { artist }) {
     try {
-        let response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key=fb2b87e326084e3dce78c5439ab49c61&artist=${artist}&track=${track}&format=json`, {Method: 'POST',  cache: 'no-store' });
+        let response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key=51de025812af79cb70f4a872936181a0&artist=${artist}&track=${track}&format=json`, {Method: 'POST',  cache: 'no-store' });
         let data = await response.json();
         return (data.track.album.image);
        
