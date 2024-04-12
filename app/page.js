@@ -15,25 +15,19 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation'
 import Countries from './data/countries.json';
-
+import TopArtistJSON from './data/topArtist.json';
 import TrackImage from './components/trackImage';
 import arrowIcon from './images/arrow-icon.png';
 
 
 async function fetchTopArtist(country) {
-  let response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=geo.gettopartists&country=${country}&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=5&format=json`, { Method: 'POST', cache: 'no-store' });
-    let data = await response.json();
+//  let response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=geo.gettopartists&country=${country}&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=5&format=json`, { Method: 'POST', cache: 'no-store' });
+
+  let response = await fetch('https://raw.githubusercontent.com/cathysunkc/cprg306-finalproject/master/app/data/topArtists.json');
+  let data = await response.json();
    return data.topartists.artist;
 
 }
-
-async function fetchTopArtistLocal(country) {
-    let response = await fetch('./data/topArtist.json');
-      let data = await response.json();
-     return data.topartists.artist;
-  
-  }
-
 
 async function fetchTopTrack(country) {
  
@@ -57,16 +51,11 @@ export default function Page() {
           let data = await fetchTopArtist(country);
         
           if (data)
-              setTopArtist(data);
-          
-              
+              setTopArtist(data);        
               
 
       } catch (error) {
-        let data = await fetchTopArtistLocal(country);
         
-        if (data)
-            setTopArtist(data);
       }
   }
 
