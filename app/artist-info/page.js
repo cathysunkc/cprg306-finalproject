@@ -26,7 +26,7 @@ async function fetchSingleArtist(artistName) {
 
   async function fetchArtistAlbums(artistName) {
     
-    let response = await fetch(`https://raw.githubusercontent.com/cathysunkc/cprg306-finalproject/master/app/data/album/${artistName.replace(' ', '')}.json`);
+    let response = await fetch(`https://raw.githubusercontent.com/cathysunkc/cprg306-finalproject/master/app/data/album/${artistName.replace(' ', '').replace(',', '')}.json`);
     //let response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.getTopAlbums&artist=${artistName}&limit=9&api_key=&format=json`, {Method: 'POST',  cache: 'no-store' });
     let data = await response.json();
     return data.topalbums.album;
