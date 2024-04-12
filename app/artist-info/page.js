@@ -16,7 +16,7 @@ import { useRouter } from 'next/navigation';
 
 async function fetchSingleArtist(artistName) {
   
-    const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${artistName}&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=1&format=json`, {Method: 'POST',  cache: 'force-cache' });
+    const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${artistName}&api_key=fb2b87e326084e3dce78c5439ab49c61&limit=1&format=json`, {Method: 'POST',  cache: 'no-store' });
     const data = await response.json();
        return data.artist;
    
@@ -25,7 +25,7 @@ async function fetchSingleArtist(artistName) {
 
   async function fetchArtistAlbums(artistName) {
   
-    const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.getTopAlbums&artist=${artistName}&limit=9&api_key=fb2b87e326084e3dce78c5439ab49c61&format=json`, {Method: 'POST',  cache: 'force-cache' });
+    const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.getTopAlbums&artist=${artistName}&limit=9&api_key=fb2b87e326084e3dce78c5439ab49c61&format=json`, {Method: 'POST',  cache: 'no-store' });
     const data = await response.json();
     return data.topalbums.album;
    
@@ -37,7 +37,7 @@ export default function ArtistInfo({ searchParams }) {
   const [ artistName, setArtistName ] = useState('');
   const [artistContent, setArtistContent] = useState('');
   const [artistAlbums, setArtistAlbums] = useState([]);
-  const [error, setError] = useState(false);
+
 
 
   async function loadArtist() {
@@ -61,12 +61,9 @@ export default function ArtistInfo({ searchParams }) {
              
               setArtistAlbums(albums);
             } 
-            else {
-              setError(true);
-            }
+           
 
-        }
-       
+        }     
         
 
       } catch (error) {
@@ -109,10 +106,10 @@ export default function ArtistInfo({ searchParams }) {
 
   <div className="flex flex-col  flex-1 ">
   
-           { error && <div className="text-gray-800">No records found</div>}
+          
             
            {
-             !error && artistContent && <>
+            artistContent && <>
                 <h1 className="text-3xl leading-6 text-gray-800 mb-8">{artistName}</h1>
                 <div className='justify-normal text-gray-800' dangerouslySetInnerHTML={{__html:artistContent}}></div>   
                 
@@ -129,7 +126,7 @@ export default function ArtistInfo({ searchParams }) {
 
 
           {
-            !error && artistAlbums && <>
+           artistAlbums && <>
               <h1 className="text-3xl leading-6 text-gray-800 mb-8">Top Albums</h1>
                <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-6'>  
                
