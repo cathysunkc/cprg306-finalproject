@@ -1,266 +1,277 @@
 {
-   "topalbums":{
-      "album":[
+   "topalbums": {
+      "album": [
          {
-            "name":"Views",
-            "playcount":56227825,
-            "url":"https://www.last.fm/music/Drake/Views",
-            "artist":{
-               "name":"Drake",
-               "mbid":"b49b81cc-d5b7-4bdd-aadb-385df8de69a6",
-               "url":"https://www.last.fm/music/Drake"
+            "name": "Views",
+            "playcount": 56227825,
+            "url": "https://www.last.fm/music/Drake/Views",
+            "artist": {
+               "name": "Drake",
+               "mbid": "b49b81cc-d5b7-4bdd-aadb-385df8de69a6",
+               "url": "https://www.last.fm/music/Drake"
             },
-            "image":[
+            "image": [
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/34s/99e7715edfbd4c4519e3483a1779d574.png",
-                  "size":"small"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/99e7715edfbd4c4519e3483a1779d574.png",
+                  "size": "small"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/64s/99e7715edfbd4c4519e3483a1779d574.png",
-                  "size":"medium"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/99e7715edfbd4c4519e3483a1779d574.png",
+                  "size": "medium"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/174s/99e7715edfbd4c4519e3483a1779d574.png",
-                  "size":"large"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/99e7715edfbd4c4519e3483a1779d574.png",
+                  "size": "large"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/300x300/99e7715edfbd4c4519e3483a1779d574.png",
-                  "size":"extralarge"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/99e7715edfbd4c4519e3483a1779d574.png",
+                  "size": "extralarge"
                }
             ]
          },
          {
-            "name":"So Far Gone",
-            "playcount":17824824,
-            "mbid":"f05567cc-6ed3-40e0-bad1-7812478eecbe",
-            "url":"https://www.last.fm/music/Drake/So+Far+Gone",
-            "artist":{
-               "name":"Drake",
-               "mbid":"b49b81cc-d5b7-4bdd-aadb-385df8de69a6",
-               "url":"https://www.last.fm/music/Drake"
+            "name": "So Far Gone",
+            "playcount": 17824824,
+            "mbid": "f05567cc-6ed3-40e0-bad1-7812478eecbe",
+            "url": "https://www.last.fm/music/Drake/So+Far+Gone",
+            "artist": {
+               "name": "Drake",
+               "mbid": "b49b81cc-d5b7-4bdd-aadb-385df8de69a6",
+               "url": "https://www.last.fm/music/Drake"
             },
-            "image":[
+            "image": [
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/34s/304e6995dd50bc5956633ee69a77542e.png",
-                  "size":"small"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/304e6995dd50bc5956633ee69a77542e.png",
+                  "size": "small"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/64s/304e6995dd50bc5956633ee69a77542e.png",
-                  "size":"medium"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/304e6995dd50bc5956633ee69a77542e.png",
+                  "size": "medium"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/174s/304e6995dd50bc5956633ee69a77542e.png",
-                  "size":"large"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/304e6995dd50bc5956633ee69a77542e.png",
+                  "size": "large"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/300x300/304e6995dd50bc5956633ee69a77542e.png",
-                  "size":"extralarge"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/304e6995dd50bc5956633ee69a77542e.png",
+                  "size": "extralarge"
                }
             ]
          },
          {
-            "name":"Scorpion",
-            "playcount":48350869,
-            "url":"https://www.last.fm/music/Drake/Scorpion",
-            "artist":{
-               "name":"Drake",
-               "mbid":"b49b81cc-d5b7-4bdd-aadb-385df8de69a6",
-               "url":"https://www.last.fm/music/Drake"
+            "name": "Scorpion",
+            "playcount": 48350869,
+            "url": "https://www.last.fm/music/Drake/Scorpion",
+            "artist": {
+               "name": "Drake",
+               "mbid": "b49b81cc-d5b7-4bdd-aadb-385df8de69a6",
+               "url": "https://www.last.fm/music/Drake"
             },
-            "image":[
+            "image": [
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/34s/b42f8bf1987f3e1e4dc55d46d9c7bc3d.png",
-                  "size":"small"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/b42f8bf1987f3e1e4dc55d46d9c7bc3d.png",
+                  "size": "small"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/64s/b42f8bf1987f3e1e4dc55d46d9c7bc3d.png",
-                  "size":"medium"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/b42f8bf1987f3e1e4dc55d46d9c7bc3d.png",
+                  "size": "medium"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/174s/b42f8bf1987f3e1e4dc55d46d9c7bc3d.png",
-                  "size":"large"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/b42f8bf1987f3e1e4dc55d46d9c7bc3d.png",
+                  "size": "large"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/300x300/b42f8bf1987f3e1e4dc55d46d9c7bc3d.png",
-                  "size":"extralarge"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/b42f8bf1987f3e1e4dc55d46d9c7bc3d.png",
+                  "size": "extralarge"
                }
             ]
          },
          {
-            "name":"More Life",
-            "playcount":55749369,
-            "url":"https://www.last.fm/music/Drake/More+Life",
-            "artist":{
-               "name":"Drake",
-               "mbid":"b49b81cc-d5b7-4bdd-aadb-385df8de69a6",
-               "url":"https://www.last.fm/music/Drake"
+            "name": "More Life",
+            "playcount": 55749369,
+            "url": "https://www.last.fm/music/Drake/More+Life",
+            "artist": {
+               "name": "Drake",
+               "mbid": "b49b81cc-d5b7-4bdd-aadb-385df8de69a6",
+               "url": "https://www.last.fm/music/Drake"
             },
-            "image":[
+            "image": [
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/34s/434a922ecca5474f1f9d6bbcc3a1050c.png",
-                  "size":"small"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/434a922ecca5474f1f9d6bbcc3a1050c.png",
+                  "size": "small"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/64s/434a922ecca5474f1f9d6bbcc3a1050c.png",
-                  "size":"medium"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/434a922ecca5474f1f9d6bbcc3a1050c.png",
+                  "size": "medium"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/174s/434a922ecca5474f1f9d6bbcc3a1050c.png",
-                  "size":"large"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/434a922ecca5474f1f9d6bbcc3a1050c.png",
+                  "size": "large"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/300x300/434a922ecca5474f1f9d6bbcc3a1050c.png",
-                  "size":"extralarge"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/434a922ecca5474f1f9d6bbcc3a1050c.png",
+                  "size": "extralarge"
                }
             ]
          },
          {
-            "name":"CERTIFIED LOVER BOY",
-            "playcount":63203636,
-            "url":"https://www.last.fm/music/Drake/CERTIFIED+LOVER+BOY",
-            "artist":{
-               "name":"Drake",
-               "mbid":"b49b81cc-d5b7-4bdd-aadb-385df8de69a6",
-               "url":"https://www.last.fm/music/Drake"
+            "name": "CERTIFIED LOVER BOY",
+            "playcount": 63203636,
+            "url": "https://www.last.fm/music/Drake/CERTIFIED+LOVER+BOY",
+            "artist": {
+               "name": "Drake",
+               "mbid": "b49b81cc-d5b7-4bdd-aadb-385df8de69a6",
+               "url": "https://www.last.fm/music/Drake"
             },
-            "image":[
+            "image": [
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/34s/b583ff3ab18082dfb733c1edeb92a262.png",
-                  "size":"small"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/b583ff3ab18082dfb733c1edeb92a262.png",
+                  "size": "small"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/64s/b583ff3ab18082dfb733c1edeb92a262.png",
-                  "size":"medium"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/b583ff3ab18082dfb733c1edeb92a262.png",
+                  "size": "medium"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/174s/b583ff3ab18082dfb733c1edeb92a262.png",
-                  "size":"large"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/b583ff3ab18082dfb733c1edeb92a262.png",
+                  "size": "large"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/300x300/b583ff3ab18082dfb733c1edeb92a262.png",
-                  "size":"extralarge"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/b583ff3ab18082dfb733c1edeb92a262.png",
+                  "size": "extralarge"
                }
             ]
          },
          {
-            "name":"Take Care (Deluxe)",
-            "playcount":37501113,
-            "url":"https://www.last.fm/music/Drake/Take+Care+(Deluxe)",
-            "artist":{
-               "name":"Drake",
-               "mbid":"b49b81cc-d5b7-4bdd-aadb-385df8de69a6",
-               "url":"https://www.last.fm/music/Drake"
+            "name": "Take Care (Deluxe)",
+            "playcount": 37501113,
+            "url": "https://www.last.fm/music/Drake/Take+Care+(Deluxe)",
+            "artist": {
+               "name": "Drake",
+               "mbid": "b49b81cc-d5b7-4bdd-aadb-385df8de69a6",
+               "url": "https://www.last.fm/music/Drake"
             },
-            "image":[
+            "image": [
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/34s/4055bae171c93fa4836623b731d1c681.png",
-                  "size":"small"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/4055bae171c93fa4836623b731d1c681.png",
+                  "size": "small"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/64s/4055bae171c93fa4836623b731d1c681.png",
-                  "size":"medium"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/4055bae171c93fa4836623b731d1c681.png",
+                  "size": "medium"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/174s/4055bae171c93fa4836623b731d1c681.png",
-                  "size":"large"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/4055bae171c93fa4836623b731d1c681.png",
+                  "size": "large"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/300x300/4055bae171c93fa4836623b731d1c681.png",
-                  "size":"extralarge"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/4055bae171c93fa4836623b731d1c681.png",
+                  "size": "extralarge"
                }
             ]
          },
          {
-            "name":"Nothing Was The Same (Deluxe)",
-            "playcount":22772000,
-            "url":"https://www.last.fm/music/Drake/Nothing+Was+The+Same+(Deluxe)",
-            "artist":{
-               "name":"Drake",
-               "mbid":"b49b81cc-d5b7-4bdd-aadb-385df8de69a6",
-               "url":"https://www.last.fm/music/Drake"
+            "name": "Nothing Was The Same (Deluxe)",
+            "playcount": 22772000,
+            "url": "https://www.last.fm/music/Drake/Nothing+Was+The+Same+(Deluxe)",
+            "artist": {
+               "name": "Drake",
+               "mbid": "b49b81cc-d5b7-4bdd-aadb-385df8de69a6",
+               "url": "https://www.last.fm/music/Drake"
             },
-            "image":[
+            "image": [
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/34s/4baa4183b3b34717769ca2f306f1f82d.png",
-                  "size":"small"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/4baa4183b3b34717769ca2f306f1f82d.png",
+                  "size": "small"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/64s/4baa4183b3b34717769ca2f306f1f82d.png",
-                  "size":"medium"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/4baa4183b3b34717769ca2f306f1f82d.png",
+                  "size": "medium"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/174s/4baa4183b3b34717769ca2f306f1f82d.png",
-                  "size":"large"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/4baa4183b3b34717769ca2f306f1f82d.png",
+                  "size": "large"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/300x300/4baa4183b3b34717769ca2f306f1f82d.png",
-                  "size":"extralarge"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/4baa4183b3b34717769ca2f306f1f82d.png",
+                  "size": "extralarge"
                }
             ]
          },
          {
-            "name":"If You're Reading This It's Too Late",
-            "playcount":36292603,
-            "url":"https://www.last.fm/music/Drake/If+You%27re+Reading+This+It%27s+Too+Late",
-            "artist":{
-               "name":"Drake",
-               "mbid":"b49b81cc-d5b7-4bdd-aadb-385df8de69a6",
-               "url":"https://www.last.fm/music/Drake"
+            "name": "If You're Reading This It's Too Late",
+            "playcount": 36292603,
+            "url": "https://www.last.fm/music/Drake/If+You%27re+Reading+This+It%27s+Too+Late",
+            "artist": {
+               "name": "Drake",
+               "mbid": "b49b81cc-d5b7-4bdd-aadb-385df8de69a6",
+               "url": "https://www.last.fm/music/Drake"
             },
-            "image":[
+            "image": [
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/34s/9f25933143434b6ccb25d7214133f34e.png",
-                  "size":"small"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/9f25933143434b6ccb25d7214133f34e.png",
+                  "size": "small"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/64s/9f25933143434b6ccb25d7214133f34e.png",
-                  "size":"medium"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/9f25933143434b6ccb25d7214133f34e.png",
+                  "size": "medium"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/174s/9f25933143434b6ccb25d7214133f34e.png",
-                  "size":"large"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/9f25933143434b6ccb25d7214133f34e.png",
+                  "size": "large"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/300x300/9f25933143434b6ccb25d7214133f34e.png",
-                  "size":"extralarge"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/9f25933143434b6ccb25d7214133f34e.png",
+                  "size": "extralarge"
                }
             ]
          },
          {
-            "name":"Dark Lane Demo Tapes",
-            "playcount":32438421,
-            "url":"https://www.last.fm/music/Drake/Dark+Lane+Demo+Tapes",
-            "artist":{
-               "name":"Drake",
-               "mbid":"b49b81cc-d5b7-4bdd-aadb-385df8de69a6",
-               "url":"https://www.last.fm/music/Drake"
+            "name": "Dark Lane Demo Tapes",
+            "playcount": 32438421,
+            "url": "https://www.last.fm/music/Drake/Dark+Lane+Demo+Tapes",
+            "artist": {
+               "name": "Drake",
+               "mbid": "b49b81cc-d5b7-4bdd-aadb-385df8de69a6",
+               "url": "https://www.last.fm/music/Drake"
             },
-            "image":[
+            "image": [
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/34s/e75cc42063c783b2efc46f0178530083.png",
-                  "size":"small"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/e75cc42063c783b2efc46f0178530083.png",
+                  "size": "small"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/64s/e75cc42063c783b2efc46f0178530083.png",
-                  "size":"medium"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/e75cc42063c783b2efc46f0178530083.png",
+                  "size": "medium"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/174s/e75cc42063c783b2efc46f0178530083.png",
-                  "size":"large"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/e75cc42063c783b2efc46f0178530083.png",
+                  "size": "large"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/300x300/e75cc42063c783b2efc46f0178530083.png",
-                  "size":"extralarge"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/e75cc42063c783b2efc46f0178530083.png",
+                  "size": "extralarge"
                }
             ]
          }
       ],
-      "@attr":{
-         "artist":"Drake",
-         "page":"1",
-         "perPage":"9",
-         "totalPages":"7244",
-         "total":"65189"
+      "@attr": {
+         "artist": "Drake",
+         "page": "1",
+         "perPage": "9",
+         "totalPages": "7244",
+         "total": "65189"
+      },
+      "bio": {
+         "links": {
+            "link": {
+               "#text": "",
+               "rel": "original",
+               "href": "https://last.fm/music/Drake/+wiki"
+            }
+         },
+         "published": "25 Mar 2006, 06:09",
+         "summary": "Aubrey \"Drake\" Graham (born October 24, 1986) is an Canadian rapper, singer, songwriter, record producer, actor, and businessman. Drake was an actor on the teen drama television series Degrassi: The Next Generation in the early 2000s. Intent on pursuing a career in music, he left the series in 2007 after releasing his debut mixtape, Room for Improvement. He released two further independent projects, Comeback Season and So Far Gone, before signing to Lil Wayne's Young Money Entertainment in June 2009. \u003Ca href=\"https://www.last.fm/music/Drake\"\u003ERead more on Last.fm\u003C/a\u003E"
       }
    }
 }

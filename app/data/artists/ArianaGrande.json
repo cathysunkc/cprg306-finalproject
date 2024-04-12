@@ -1,267 +1,279 @@
 {
-   "topalbums":{
-      "album":[
+   "topalbums": {
+      "album": [
          {
-            "name":"Thank U, Next",
-            "playcount":96775498,
-            "url":"https://www.last.fm/music/Ariana+Grande/Thank+U,+Next",
-            "artist":{
-               "name":"Ariana Grande",
-               "mbid":"f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387",
-               "url":"https://www.last.fm/music/Ariana+Grande"
+            "name": "Thank U, Next",
+            "playcount": 96775498,
+            "url": "https://www.last.fm/music/Ariana+Grande/Thank+U,+Next",
+            "artist": {
+               "name": "Ariana Grande",
+               "mbid": "f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387",
+               "url": "https://www.last.fm/music/Ariana+Grande"
             },
-            "image":[
+            "image": [
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/34s/bd58c238fe5df2db0409fcf36a678c58.png",
-                  "size":"small"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/bd58c238fe5df2db0409fcf36a678c58.png",
+                  "size": "small"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/64s/bd58c238fe5df2db0409fcf36a678c58.png",
-                  "size":"medium"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/bd58c238fe5df2db0409fcf36a678c58.png",
+                  "size": "medium"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/174s/bd58c238fe5df2db0409fcf36a678c58.png",
-                  "size":"large"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/bd58c238fe5df2db0409fcf36a678c58.png",
+                  "size": "large"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/300x300/bd58c238fe5df2db0409fcf36a678c58.png",
-                  "size":"extralarge"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/bd58c238fe5df2db0409fcf36a678c58.png",
+                  "size": "extralarge"
                }
             ]
          },
          {
-            "name":"Dangerous Woman",
-            "playcount":75314361,
-            "url":"https://www.last.fm/music/Ariana+Grande/Dangerous+Woman",
-            "artist":{
-               "name":"Ariana Grande",
-               "mbid":"f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387",
-               "url":"https://www.last.fm/music/Ariana+Grande"
+            "name": "Dangerous Woman",
+            "playcount": 75314361,
+            "url": "https://www.last.fm/music/Ariana+Grande/Dangerous+Woman",
+            "artist": {
+               "name": "Ariana Grande",
+               "mbid": "f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387",
+               "url": "https://www.last.fm/music/Ariana+Grande"
             },
-            "image":[
+            "image": [
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/34s/51b8cd76546763550af19d0937cae80a.png",
-                  "size":"small"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/51b8cd76546763550af19d0937cae80a.png",
+                  "size": "small"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/64s/51b8cd76546763550af19d0937cae80a.png",
-                  "size":"medium"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/51b8cd76546763550af19d0937cae80a.png",
+                  "size": "medium"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/174s/51b8cd76546763550af19d0937cae80a.png",
-                  "size":"large"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/51b8cd76546763550af19d0937cae80a.png",
+                  "size": "large"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/300x300/51b8cd76546763550af19d0937cae80a.png",
-                  "size":"extralarge"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/51b8cd76546763550af19d0937cae80a.png",
+                  "size": "extralarge"
                }
             ]
          },
          {
-            "name":"My Everything (Deluxe)",
-            "playcount":44745858,
-            "url":"https://www.last.fm/music/Ariana+Grande/My+Everything+(Deluxe)",
-            "artist":{
-               "name":"Ariana Grande",
-               "mbid":"f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387",
-               "url":"https://www.last.fm/music/Ariana+Grande"
+            "name": "My Everything (Deluxe)",
+            "playcount": 44745858,
+            "url": "https://www.last.fm/music/Ariana+Grande/My+Everything+(Deluxe)",
+            "artist": {
+               "name": "Ariana Grande",
+               "mbid": "f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387",
+               "url": "https://www.last.fm/music/Ariana+Grande"
             },
-            "image":[
+            "image": [
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/34s/75ffd9c318f5541c52fe571b73c01155.png",
-                  "size":"small"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/75ffd9c318f5541c52fe571b73c01155.png",
+                  "size": "small"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/64s/75ffd9c318f5541c52fe571b73c01155.png",
-                  "size":"medium"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/75ffd9c318f5541c52fe571b73c01155.png",
+                  "size": "medium"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/174s/75ffd9c318f5541c52fe571b73c01155.png",
-                  "size":"large"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/75ffd9c318f5541c52fe571b73c01155.png",
+                  "size": "large"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/300x300/75ffd9c318f5541c52fe571b73c01155.png",
-                  "size":"extralarge"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/75ffd9c318f5541c52fe571b73c01155.png",
+                  "size": "extralarge"
                }
             ]
          },
          {
-            "name":"positions",
-            "playcount":75612181,
-            "url":"https://www.last.fm/music/Ariana+Grande/positions",
-            "artist":{
-               "name":"Ariana Grande",
-               "mbid":"f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387",
-               "url":"https://www.last.fm/music/Ariana+Grande"
+            "name": "positions",
+            "playcount": 75612181,
+            "url": "https://www.last.fm/music/Ariana+Grande/positions",
+            "artist": {
+               "name": "Ariana Grande",
+               "mbid": "f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387",
+               "url": "https://www.last.fm/music/Ariana+Grande"
             },
-            "image":[
+            "image": [
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/34s/7b677490b99c7a515a3243aa9b60fc4a.png",
-                  "size":"small"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/7b677490b99c7a515a3243aa9b60fc4a.png",
+                  "size": "small"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/64s/7b677490b99c7a515a3243aa9b60fc4a.png",
-                  "size":"medium"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/7b677490b99c7a515a3243aa9b60fc4a.png",
+                  "size": "medium"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/174s/7b677490b99c7a515a3243aa9b60fc4a.png",
-                  "size":"large"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/7b677490b99c7a515a3243aa9b60fc4a.png",
+                  "size": "large"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/300x300/7b677490b99c7a515a3243aa9b60fc4a.png",
-                  "size":"extralarge"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/7b677490b99c7a515a3243aa9b60fc4a.png",
+                  "size": "extralarge"
                }
             ]
          },
          {
-            "name":"Sweetener",
-            "playcount":84330164,
-            "url":"https://www.last.fm/music/Ariana+Grande/Sweetener",
-            "artist":{
-               "name":"Ariana Grande",
-               "mbid":"f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387",
-               "url":"https://www.last.fm/music/Ariana+Grande"
+            "name": "Sweetener",
+            "playcount": 84330164,
+            "url": "https://www.last.fm/music/Ariana+Grande/Sweetener",
+            "artist": {
+               "name": "Ariana Grande",
+               "mbid": "f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387",
+               "url": "https://www.last.fm/music/Ariana+Grande"
             },
-            "image":[
+            "image": [
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/34s/cd8c5ce4dad43c822c00dec987d295ca.png",
-                  "size":"small"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/cd8c5ce4dad43c822c00dec987d295ca.png",
+                  "size": "small"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/64s/cd8c5ce4dad43c822c00dec987d295ca.png",
-                  "size":"medium"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/cd8c5ce4dad43c822c00dec987d295ca.png",
+                  "size": "medium"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/174s/cd8c5ce4dad43c822c00dec987d295ca.png",
-                  "size":"large"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/cd8c5ce4dad43c822c00dec987d295ca.png",
+                  "size": "large"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/300x300/cd8c5ce4dad43c822c00dec987d295ca.png",
-                  "size":"extralarge"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/cd8c5ce4dad43c822c00dec987d295ca.png",
+                  "size": "extralarge"
                }
             ]
          },
          {
-            "name":"Santa Tell Me",
-            "playcount":5780858,
-            "mbid":"79fd65e4-d145-46be-b8fa-b098c2ba5f12",
-            "url":"https://www.last.fm/music/Ariana+Grande/Santa+Tell+Me",
-            "artist":{
-               "name":"Ariana Grande",
-               "mbid":"f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387",
-               "url":"https://www.last.fm/music/Ariana+Grande"
+            "name": "Santa Tell Me",
+            "playcount": 5780858,
+            "mbid": "79fd65e4-d145-46be-b8fa-b098c2ba5f12",
+            "url": "https://www.last.fm/music/Ariana+Grande/Santa+Tell+Me",
+            "artist": {
+               "name": "Ariana Grande",
+               "mbid": "f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387",
+               "url": "https://www.last.fm/music/Ariana+Grande"
             },
-            "image":[
+            "image": [
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/34s/d8f11384b080fa197303a20c566eeb05.png",
-                  "size":"small"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/d8f11384b080fa197303a20c566eeb05.png",
+                  "size": "small"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/64s/d8f11384b080fa197303a20c566eeb05.png",
-                  "size":"medium"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/d8f11384b080fa197303a20c566eeb05.png",
+                  "size": "medium"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/174s/d8f11384b080fa197303a20c566eeb05.png",
-                  "size":"large"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/d8f11384b080fa197303a20c566eeb05.png",
+                  "size": "large"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/300x300/d8f11384b080fa197303a20c566eeb05.png",
-                  "size":"extralarge"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/d8f11384b080fa197303a20c566eeb05.png",
+                  "size": "extralarge"
                }
             ]
          },
          {
-            "name":"Yours Truly",
-            "playcount":22709396,
-            "mbid":"e32719b7-0528-479c-992e-1b5ec4ebbb4a",
-            "url":"https://www.last.fm/music/Ariana+Grande/Yours+Truly",
-            "artist":{
-               "name":"Ariana Grande",
-               "mbid":"f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387",
-               "url":"https://www.last.fm/music/Ariana+Grande"
+            "name": "Yours Truly",
+            "playcount": 22709396,
+            "mbid": "e32719b7-0528-479c-992e-1b5ec4ebbb4a",
+            "url": "https://www.last.fm/music/Ariana+Grande/Yours+Truly",
+            "artist": {
+               "name": "Ariana Grande",
+               "mbid": "f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387",
+               "url": "https://www.last.fm/music/Ariana+Grande"
             },
-            "image":[
+            "image": [
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/34s/975b6224803a49429561f0135e33c54d.png",
-                  "size":"small"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/975b6224803a49429561f0135e33c54d.png",
+                  "size": "small"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/64s/975b6224803a49429561f0135e33c54d.png",
-                  "size":"medium"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/975b6224803a49429561f0135e33c54d.png",
+                  "size": "medium"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/174s/975b6224803a49429561f0135e33c54d.png",
-                  "size":"large"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/975b6224803a49429561f0135e33c54d.png",
+                  "size": "large"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/300x300/975b6224803a49429561f0135e33c54d.png",
-                  "size":"extralarge"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/975b6224803a49429561f0135e33c54d.png",
+                  "size": "extralarge"
                }
             ]
          },
          {
-            "name":"eternal sunshine",
-            "playcount":52104556,
-            "url":"https://www.last.fm/music/Ariana+Grande/eternal+sunshine",
-            "artist":{
-               "name":"Ariana Grande",
-               "mbid":"f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387",
-               "url":"https://www.last.fm/music/Ariana+Grande"
+            "name": "eternal sunshine",
+            "playcount": 52104556,
+            "url": "https://www.last.fm/music/Ariana+Grande/eternal+sunshine",
+            "artist": {
+               "name": "Ariana Grande",
+               "mbid": "f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387",
+               "url": "https://www.last.fm/music/Ariana+Grande"
             },
-            "image":[
+            "image": [
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/34s/6d1923b22731e0eee921a4c7de3a3d88.png",
-                  "size":"small"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/6d1923b22731e0eee921a4c7de3a3d88.png",
+                  "size": "small"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/64s/6d1923b22731e0eee921a4c7de3a3d88.png",
-                  "size":"medium"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/6d1923b22731e0eee921a4c7de3a3d88.png",
+                  "size": "medium"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/174s/6d1923b22731e0eee921a4c7de3a3d88.png",
-                  "size":"large"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/6d1923b22731e0eee921a4c7de3a3d88.png",
+                  "size": "large"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/300x300/6d1923b22731e0eee921a4c7de3a3d88.png",
-                  "size":"extralarge"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/6d1923b22731e0eee921a4c7de3a3d88.png",
+                  "size": "extralarge"
                }
             ]
          },
          {
-            "name":"yes, and?",
-            "playcount":10747276,
-            "url":"https://www.last.fm/music/Ariana+Grande/yes,+and%3F",
-            "artist":{
-               "name":"Ariana Grande",
-               "mbid":"f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387",
-               "url":"https://www.last.fm/music/Ariana+Grande"
+            "name": "yes, and?",
+            "playcount": 10747276,
+            "url": "https://www.last.fm/music/Ariana+Grande/yes,+and%3F",
+            "artist": {
+               "name": "Ariana Grande",
+               "mbid": "f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387",
+               "url": "https://www.last.fm/music/Ariana+Grande"
             },
-            "image":[
+            "image": [
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/34s/f8c1b11b563b0d84eab693825f91eab5.png",
-                  "size":"small"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/f8c1b11b563b0d84eab693825f91eab5.png",
+                  "size": "small"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/64s/f8c1b11b563b0d84eab693825f91eab5.png",
-                  "size":"medium"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/f8c1b11b563b0d84eab693825f91eab5.png",
+                  "size": "medium"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/174s/f8c1b11b563b0d84eab693825f91eab5.png",
-                  "size":"large"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/f8c1b11b563b0d84eab693825f91eab5.png",
+                  "size": "large"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/300x300/f8c1b11b563b0d84eab693825f91eab5.png",
-                  "size":"extralarge"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/f8c1b11b563b0d84eab693825f91eab5.png",
+                  "size": "extralarge"
                }
             ]
          }
       ],
-      "@attr":{
-         "artist":"Ariana Grande",
-         "page":"1",
-         "perPage":"9",
-         "totalPages":"4639",
-         "total":"41747"
+      "@attr": {
+         "artist": "Ariana Grande",
+         "page": "1",
+         "perPage": "9",
+         "totalPages": "4639",
+         "total": "41747"
+      },
+      "bio": {
+         "links": {
+            "link": {
+               "#text": "",
+               "rel": "original",
+               "href": "https://last.fm/music/Ariana+Grande/+wiki"
+            }
+         },
+         "published": "22 Apr 2010, 15:54",
+         "summary": "Ariana Grande-Butera  is an American singer, songwriter and actress. She is a multi-platinum, Grammy Award-winning recording artist. Born in Boca Raton, Florida, Grande began her career in 2008 in the Broadway musical, at 13 years of age. She rose to prominence for her role as Cat Valentine in the Nickelodeon television series, Victorious (2010–2013) and in its spin-off, Sam & Cat (2013–2014). As she grew interested in pursuing a music career \u003Ca href=\"https://www.last.fm/music/Ariana+Grande\"\u003ERead more on Last.fm\u003C/a\u003E",
+         "content": "Ariana Grande-Butera  is an American singer, songwriter and actress. She is a multi-platinum, Grammy Award-winning recording artist. Born in Boca Raton, Florida, Grande began her career in 2008 in the Broadway musical, at 13 years of age. She rose to prominence for her role as Cat Valentine in the Nickelodeon television series, Victorious (2010–2013) and in its spin-off, Sam & Cat (2013–2014). As she grew interested in pursuing a music career, Grande recorded songs for the soundtrack of Victorious and signed with Republic Records in 2011 after the label's executives discovered videos of her covering songs that she uploaded onto YouTube. She released her debut album, Yours Truly, in 2013. A 1950s doo-wop-influenced pop and R&B album, it debuted atop the US Billboard 200 and spawned her first US top-ten single, \"The Way\", featuring rapper Mac Miller. \n\nGrande's second studio album, My Everything (2014), continued the pop-R&B sound of its predecessor and incorporated EDM elements. It topped the Billboard 200 and featured four US top-ten singles: \"Problem\", \"Break Free\", \"Bang Bang\", and \"Love Me Harder\" featuring The Weeknd, the most of any artist that year. Grande's pop-R&B styles extended on her third studio album, Dangerous Woman (2016), which was her first of three consecutive number-one albums in the UK, and spawned top ten hits such as the Grammy nominated title track and \"Side to Side\". \n\nOn her next two albums, Sweetener (2018) and Thank U, Next (2019), Grande experimented with trap while maintaining her characteristic pop-R&B tones; being projects with her most creative control yet and showing a more personal and vulnerable side, both debuted at number one in several countries and were acclaimed by music critics. The former won a Grammy for Best Pop Vocal Album and spawned the international top three hit \"No Tears Left to Cry\", while the latter broke several streaming records. Grande became the first solo artist to hold the top three spots on the Billboard Hot 100 simultaneously when \"7 Rings\", \"Break Up with Your Girlfriend, I'm Bored\" and \"Thank U, Next\" did so in 2019. She is also the first artist to have the lead singles from each of their first six studio albums debut within the top ten in the US.\n\nGrande released her sixth studio album, Positions (2020) with its lead single, \"Positions\" debuting at number one in the US and the UK simultaneously. The song became her third number one hit in the US following \"Stuck With U\" in collaboration with Justin Bieber and \"Rain On Me\", also in collaboration with Lady Gaga. A deluxe version of Positions was released in February 2021, with four new songs and a remix of \"34+35\" featuring Doja Cat and Megan Thee Stallion. The remix helped the song peak at number two, the highest-charting song credited to three or more female soloist since 2001 when \"Lady Marmalade\" performed by Christina Aguilera, Mýa, P!nk, and Lil Kim peaked at number one. The album debuted at number one on the Billboard 200, becoming her fifth album to do so. In April 2021, a remix of The Weeknd's \"Save Your Tears\" was released featuring Grande. The song reached number one in both the US Hot 100 and the Canadian Hot 100. It spent a total of 69 weeks in the US charts, becoming one of the ten longest-running songs in that chart since its publication. \n\nIn November 2021, it was announced that Grande would star in the two-part film adaptation of the musical Wicked. The movie is set to release on November 24th, 2024.\n\nAriana Grande’s highly anticipated seventh studio album “eternal sunshine\" was released on March 8th, 2024. The title references to one of her favourite films, “Eternal Sunshine of the Spotless Mind” which stars Jim Carrey. The lead single “yes, and?\" was released on January 12, 2024. This song was inspired by Madonna’s  “Vogue”and captures the sound of house. eternal sunshine had a debut at #1 on the Global Spotify charts, and earned the most streamed album in 2024 so far.\n\nGrande has received various accolades, including two Grammy Awards, one Brit Award, two Billboard Music Awards, and three American Music Awards. All five of Grande's full-length albums have been certified platinum by the RIAA. As one of the leading streaming pioneers in the world, she has amassed over 35 billion streams on platforms like YouTube, Spotify, and Apple Music and is the most listened female on the latter two. An influential figure on social media, she is an outspoken feminist and supporter for LGBT rights. She asserts control over her public image and is known for her ponytail hairdo and bold fashion statements. In February 2019, she became the most followed woman on Instagram. Forbes ranked her amongst the highest-paid celebrities in 2019, and Time named Grande as one of the 100 most influential people in the world in 2016 and 2019. Billboard recognized her as the \"Woman of the Year\" in 2018. \u003Ca href=\"https://www.last.fm/music/Ariana+Grande\"\u003ERead more on Last.fm\u003C/a\u003E. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply."
       }
    }
 }
