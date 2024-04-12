@@ -17,16 +17,19 @@ import { useRouter } from 'next/navigation';
 async function fetchSingleArtist(artistName) {
   
     
-    let response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${artistName}&api_key=51de025812af79cb70f4a872936181a0&limit=1&format=json`, {Method: 'POST',  cache: 'no-store' });
+    //let response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${artistName}&api_key=51de025812af79cb70f4a872936181a0&limit=1&format=json`, {Method: 'POST',  cache: 'no-store' });
+    //return data.artist;
+    let response = await fetch(`https://raw.githubusercontent.com/cathysunkc/cprg306-finalproject/master/app/data/artists/${artistName.replace(' ', '').replace(',', '')}.json`);
+    
     let data = await response.json();
-       return data.artist;
+    return data.topalbums;   
    
   }
 
 
   async function fetchArtistAlbums(artistName) {
     
-    let response = await fetch(`https://raw.githubusercontent.com/cathysunkc/cprg306-finalproject/master/app/data/album/${artistName.replace(' ', '').replace(',', '')}.json`);
+    let response = await fetch(`https://raw.githubusercontent.com/cathysunkc/cprg306-finalproject/master/app/data/artists/${artistName.replace(' ', '').replace(',', '')}.json`);
     //let response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.getTopAlbums&artist=${artistName}&limit=9&api_key=&format=json`, {Method: 'POST',  cache: 'no-store' });
     let data = await response.json();
     return data.topalbums.album;
