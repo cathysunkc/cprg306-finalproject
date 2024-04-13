@@ -1,0 +1,276 @@
+{
+  "topalbums": {
+    "album": [
+      {
+        "name": "DECIDE",
+        "playcount": 15353989,
+        "url": "https://www.last.fm/music/Djo/DECIDE",
+        "artist": {
+          "name": "Djo",
+          "mbid": "46207881-6a12-4872-b9b4-8cb80f979f47",
+          "url": "https://www.last.fm/music/Djo"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/34s/ffdc425993df98b4a3d40d92dcc2a331.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/64s/ffdc425993df98b4a3d40d92dcc2a331.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/174s/ffdc425993df98b4a3d40d92dcc2a331.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/ffdc425993df98b4a3d40d92dcc2a331.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Twenty Twenty",
+        "playcount": 9783636,
+        "url": "https://www.last.fm/music/Djo/Twenty+Twenty",
+        "artist": {
+          "name": "Djo",
+          "mbid": "46207881-6a12-4872-b9b4-8cb80f979f47",
+          "url": "https://www.last.fm/music/Djo"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2cf6a0d70602994b899a805989c09620.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2cf6a0d70602994b899a805989c09620.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2cf6a0d70602994b899a805989c09620.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2cf6a0d70602994b899a805989c09620.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Keep Your Head Up",
+        "playcount": 393843,
+        "url": "https://www.last.fm/music/Djo/Keep+Your+Head+Up",
+        "artist": {
+          "name": "Djo",
+          "mbid": "46207881-6a12-4872-b9b4-8cb80f979f47",
+          "url": "https://www.last.fm/music/Djo"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/34s/98beb9be422167b132953bffc54c51f5.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/64s/98beb9be422167b132953bffc54c51f5.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/174s/98beb9be422167b132953bffc54c51f5.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/98beb9be422167b132953bffc54c51f5.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Change",
+        "playcount": 478055,
+        "url": "https://www.last.fm/music/Djo/Change",
+        "artist": {
+          "name": "Djo",
+          "mbid": "46207881-6a12-4872-b9b4-8cb80f979f47",
+          "url": "https://www.last.fm/music/Djo"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/34s/8b01ca282e7b369a25bd22126c3278ef.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/64s/8b01ca282e7b369a25bd22126c3278ef.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/174s/8b01ca282e7b369a25bd22126c3278ef.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/8b01ca282e7b369a25bd22126c3278ef.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Gloom",
+        "playcount": 353630,
+        "url": "https://www.last.fm/music/Djo/Gloom",
+        "artist": {
+          "name": "Djo",
+          "mbid": "46207881-6a12-4872-b9b4-8cb80f979f47",
+          "url": "https://www.last.fm/music/Djo"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/34s/bfcca07eeedbac01be8c81d346cbfcce.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/64s/bfcca07eeedbac01be8c81d346cbfcce.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/174s/bfcca07eeedbac01be8c81d346cbfcce.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/bfcca07eeedbac01be8c81d346cbfcce.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Roddy",
+        "playcount": 232405,
+        "url": "https://www.last.fm/music/Djo/Roddy",
+        "artist": {
+          "name": "Djo",
+          "mbid": "46207881-6a12-4872-b9b4-8cb80f979f47",
+          "url": "https://www.last.fm/music/Djo"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/34s/7b79f25aeb956a7e5d58e327bd6f20d9.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/64s/7b79f25aeb956a7e5d58e327bd6f20d9.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/174s/7b79f25aeb956a7e5d58e327bd6f20d9.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/7b79f25aeb956a7e5d58e327bd6f20d9.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Chateau (Feel Alright)",
+        "playcount": 168981,
+        "url": "https://www.last.fm/music/Djo/Chateau+(Feel+Alright)",
+        "artist": {
+          "name": "Djo",
+          "mbid": "46207881-6a12-4872-b9b4-8cb80f979f47",
+          "url": "https://www.last.fm/music/Djo"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/34s/264bd619033654daec77a4b540cd0266.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/64s/264bd619033654daec77a4b540cd0266.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/174s/264bd619033654daec77a4b540cd0266.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/264bd619033654daec77a4b540cd0266.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "D-SIDES",
+        "playcount": 117155,
+        "url": "https://www.last.fm/music/Djo/D-SIDES",
+        "artist": {
+          "name": "Djo",
+          "mbid": "46207881-6a12-4872-b9b4-8cb80f979f47",
+          "url": "https://www.last.fm/music/Djo"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/34s/bd2b40811b55bb36fa12fa0906ba3ef9.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/64s/bd2b40811b55bb36fa12fa0906ba3ef9.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/174s/bd2b40811b55bb36fa12fa0906ba3ef9.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/bd2b40811b55bb36fa12fa0906ba3ef9.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Figure You Out",
+        "playcount": 243370,
+        "url": "https://www.last.fm/music/Djo/Figure+You+Out",
+        "artist": {
+          "name": "Djo",
+          "mbid": "46207881-6a12-4872-b9b4-8cb80f979f47",
+          "url": "https://www.last.fm/music/Djo"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/34s/415e7c20f698aaecd27b7f16b68aa724.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/64s/415e7c20f698aaecd27b7f16b68aa724.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/174s/415e7c20f698aaecd27b7f16b68aa724.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/415e7c20f698aaecd27b7f16b68aa724.png",
+            "size": "extralarge"
+          }
+        ]
+      }
+    ],
+    "@attr": {
+      "artist": "Djo",
+      "page": "1",
+      "perPage": "9",
+      "totalPages": "81",
+      "total": "727"
+    },
+    "bio": {
+      "links": {
+        "link": {
+          "#text": "",
+          "rel": "original",
+          "href": "https://last.fm/music/Djo/+wiki"
+        }
+      },
+      "published": "24 Jul 2019, 03:33",
+      "summary": "Djo is the musical moniker of American actor/musician Joe Keery, known for his role of Steve Harrington in the hit Netflix show Stranger Things, as well as being a former member of Chicago psychedelic rock band  Post Animal. In September 2019, he released his debut album 'Twenty Twenty', which was supported by the singles \"Roddy\" and \"Chateau (Feel Alright)\". After the success of his debut, Djo released 'DECIDE' in September 2022. \u003Ca href=\"https://www.last.fm/music/Djo\"\u003ERead more on Last.fm\u003C/a\u003E",
+    }
+  }
+}

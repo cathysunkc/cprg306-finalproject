@@ -1,0 +1,267 @@
+{
+  "topalbums": {
+    "album": [
+      {
+        "name": "greedy",
+        "playcount": 9878233,
+        "url": "https://www.last.fm/music/Tate+McRae/greedy",
+        "artist": {
+          "name": "Tate McRae",
+          "url": "https://www.last.fm/music/Tate+McRae"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/34s/ff9e4b944f7abd725ec3ad3c3d572f3c.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/64s/ff9e4b944f7abd725ec3ad3c3d572f3c.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/174s/ff9e4b944f7abd725ec3ad3c3d572f3c.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/ff9e4b944f7abd725ec3ad3c3d572f3c.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "you broke me first",
+        "playcount": 4767979,
+        "url": "https://www.last.fm/music/Tate+McRae/you+broke+me+first",
+        "artist": {
+          "name": "Tate McRae",
+          "url": "https://www.last.fm/music/Tate+McRae"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2e0ce3757c80b6a8407733d2b165e3ce.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2e0ce3757c80b6a8407733d2b165e3ce.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2e0ce3757c80b6a8407733d2b165e3ce.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2e0ce3757c80b6a8407733d2b165e3ce.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Think Later",
+        "playcount": 14964479,
+        "url": "https://www.last.fm/music/Tate+McRae/Think+Later",
+        "artist": {
+          "name": "Tate McRae",
+          "url": "https://www.last.fm/music/Tate+McRae"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/34s/944076781ccdf455ecf790edca9f2076.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/64s/944076781ccdf455ecf790edca9f2076.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/174s/944076781ccdf455ecf790edca9f2076.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/944076781ccdf455ecf790edca9f2076.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "I Used To Think I Could Fly",
+        "playcount": 8200659,
+        "url": "https://www.last.fm/music/Tate+McRae/I+Used+To+Think+I+Could+Fly",
+        "artist": {
+          "name": "Tate McRae",
+          "url": "https://www.last.fm/music/Tate+McRae"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/34s/c02c128a3d62e8607614dc4f5ab990ae.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/64s/c02c128a3d62e8607614dc4f5ab990ae.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/174s/c02c128a3d62e8607614dc4f5ab990ae.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/c02c128a3d62e8607614dc4f5ab990ae.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "all the things i never said",
+        "playcount": 2451435,
+        "url": "https://www.last.fm/music/Tate+McRae/all+the+things+i+never+said",
+        "artist": {
+          "name": "Tate McRae",
+          "url": "https://www.last.fm/music/Tate+McRae"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/34s/88c19501e614d3f103dc6ea9f47277aa.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/64s/88c19501e614d3f103dc6ea9f47277aa.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/174s/88c19501e614d3f103dc6ea9f47277aa.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/88c19501e614d3f103dc6ea9f47277aa.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "she's all i wanna be",
+        "playcount": 2005311,
+        "url": "https://www.last.fm/music/Tate+McRae/she%27s+all+i+wanna+be",
+        "artist": {
+          "name": "Tate McRae",
+          "url": "https://www.last.fm/music/Tate+McRae"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/34s/aad662c136ba4fc2eaddcf3916de1491.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/64s/aad662c136ba4fc2eaddcf3916de1491.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/174s/aad662c136ba4fc2eaddcf3916de1491.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/aad662c136ba4fc2eaddcf3916de1491.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Too Young to Be Sad",
+        "playcount": 1798752,
+        "url": "https://www.last.fm/music/Tate+McRae/Too+Young+to+Be+Sad",
+        "artist": {
+          "name": "Tate McRae",
+          "url": "https://www.last.fm/music/Tate+McRae"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/34s/1377dbe9f8f6da6299fc552e25a19084.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/64s/1377dbe9f8f6da6299fc552e25a19084.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/174s/1377dbe9f8f6da6299fc552e25a19084.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/1377dbe9f8f6da6299fc552e25a19084.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "exes",
+        "playcount": 2047240,
+        "url": "https://www.last.fm/music/Tate+McRae/exes",
+        "artist": {
+          "name": "Tate McRae",
+          "url": "https://www.last.fm/music/Tate+McRae"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/34s/ca873e53d20dd78284ebb908c1d12131.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/64s/ca873e53d20dd78284ebb908c1d12131.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/174s/ca873e53d20dd78284ebb908c1d12131.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/ca873e53d20dd78284ebb908c1d12131.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "One Day",
+        "playcount": 818749,
+        "url": "https://www.last.fm/music/Tate+McRae/One+Day",
+        "artist": {
+          "name": "Tate McRae",
+          "url": "https://www.last.fm/music/Tate+McRae"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/34s/103c1808e1a30234fb03e3b6121c6335.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/64s/103c1808e1a30234fb03e3b6121c6335.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/174s/103c1808e1a30234fb03e3b6121c6335.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/103c1808e1a30234fb03e3b6121c6335.png",
+            "size": "extralarge"
+          }
+        ]
+      }
+    ],
+    "@attr": {
+      "artist": "Tate McRae",
+      "page": "1",
+      "perPage": "9",
+      "totalPages": "330",
+      "total": "2963"
+    },
+    "bio": {
+      "links": {
+        "link": {
+          "#text": "",
+          "rel": "original",
+          "href": "https://last.fm/music/Tate+McRae/+wiki"
+        }
+      },
+      "published": "25 Jun 2020, 22:10",
+      "summary": "Tate Rosner McRae (born July 1, 2003) is a Canadian singer, songwriter, dancer and actress. At the age of thirteen, she gained prominence as the first Canadian finalist on the American reality TV show So You Think You Can Dance.\n\nMcRae caught the attention of RCA Records in 2019 after her 2017 song \"One Day\" gained virality on YouTube and TikTok, preceding the release of her debut extended play, all the things i never said. McRae soon gained wider recognition after her 2020 single \"You Broke Me First\" became an international hit \u003Ca href=\"https://www.last.fm/music/Tate+McRae\"\u003ERead more on Last.fm\u003C/a\u003E",
+    }
+  }
+}

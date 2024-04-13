@@ -1,0 +1,281 @@
+{
+    "topalbums": {
+        "album": [
+            {
+                "name": "Twilight",
+                "playcount": 31124424,
+                "mbid": "311ad921-98dc-43d5-ad37-ceba57618f52",
+                "url": "https://www.last.fm/music/b%C3%B4a/Twilight",
+                "artist": {
+                    "name": "bôa",
+                    "mbid": "ca1dcba2-792c-4550-abf2-7b45396e81ca",
+                    "url": "https://www.last.fm/music/b%C3%B4a"
+                },
+                "image": [
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/40564dd1a58f969fc3ee3c49bddffd23.png",
+                        "size": "small"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/40564dd1a58f969fc3ee3c49bddffd23.png",
+                        "size": "medium"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/40564dd1a58f969fc3ee3c49bddffd23.png",
+                        "size": "large"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/40564dd1a58f969fc3ee3c49bddffd23.png",
+                        "size": "extralarge"
+                    }
+                ]
+            },
+            {
+                "name": "Get There",
+                "playcount": 1908432,
+                "mbid": "1ff9a079-7512-4b64-b7d4-3896d91cf867",
+                "url": "https://www.last.fm/music/b%C3%B4a/Get+There",
+                "artist": {
+                    "name": "bôa",
+                    "mbid": "ca1dcba2-792c-4550-abf2-7b45396e81ca",
+                    "url": "https://www.last.fm/music/b%C3%B4a"
+                },
+                "image": [
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/62378e6d22f640d0c0ad3b10ae2471fc.png",
+                        "size": "small"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/62378e6d22f640d0c0ad3b10ae2471fc.png",
+                        "size": "medium"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/62378e6d22f640d0c0ad3b10ae2471fc.png",
+                        "size": "large"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/62378e6d22f640d0c0ad3b10ae2471fc.png",
+                        "size": "extralarge"
+                    }
+                ]
+            },
+            {
+                "name": "Duvet",
+                "playcount": 648608,
+                "mbid": "83af9b01-7e33-4961-b8da-4bdf5daa5a4b",
+                "url": "https://www.last.fm/music/b%C3%B4a/Duvet",
+                "artist": {
+                    "name": "bôa",
+                    "mbid": "ca1dcba2-792c-4550-abf2-7b45396e81ca",
+                    "url": "https://www.last.fm/music/b%C3%B4a"
+                },
+                "image": [
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/edb95c718cacddcfe052f6c63244a6db.png",
+                        "size": "small"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/edb95c718cacddcfe052f6c63244a6db.png",
+                        "size": "medium"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/edb95c718cacddcfe052f6c63244a6db.png",
+                        "size": "large"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/edb95c718cacddcfe052f6c63244a6db.png",
+                        "size": "extralarge"
+                    }
+                ]
+            },
+            {
+                "name": "Walk With Me",
+                "playcount": 62674,
+                "url": "https://www.last.fm/music/b%C3%B4a/Walk+With+Me",
+                "artist": {
+                    "name": "bôa",
+                    "mbid": "ca1dcba2-792c-4550-abf2-7b45396e81ca",
+                    "url": "https://www.last.fm/music/b%C3%B4a"
+                },
+                "image": [
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/5983c15cb4805f5bcf25e3d9a7ec9c27.png",
+                        "size": "small"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/5983c15cb4805f5bcf25e3d9a7ec9c27.png",
+                        "size": "medium"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/5983c15cb4805f5bcf25e3d9a7ec9c27.png",
+                        "size": "large"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/5983c15cb4805f5bcf25e3d9a7ec9c27.png",
+                        "size": "extralarge"
+                    }
+                ]
+            },
+            {
+                "name": "Duvet (ScummV Remix)",
+                "playcount": 58633,
+                "url": "https://www.last.fm/music/b%C3%B4a/Duvet+(ScummV+Remix)",
+                "artist": {
+                    "name": "bôa",
+                    "mbid": "ca1dcba2-792c-4550-abf2-7b45396e81ca",
+                    "url": "https://www.last.fm/music/b%C3%B4a"
+                },
+                "image": [
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/216a0c58f4b00bb0761cbf91bf854177.png",
+                        "size": "small"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/216a0c58f4b00bb0761cbf91bf854177.png",
+                        "size": "medium"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/216a0c58f4b00bb0761cbf91bf854177.png",
+                        "size": "large"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/216a0c58f4b00bb0761cbf91bf854177.png",
+                        "size": "extralarge"
+                    }
+                ]
+            },
+            {
+                "name": "(null)",
+                "playcount": 92725,
+                "url": "https://www.last.fm/music/B%C3%B4a/(null)",
+                "artist": {
+                    "name": "bôa",
+                    "mbid": "ca1dcba2-792c-4550-abf2-7b45396e81ca",
+                    "url": "https://www.last.fm/music/b%C3%B4a"
+                },
+                "image": [
+                    {
+                        "#text": "",
+                        "size": "small"
+                    },
+                    {
+                        "#text": "",
+                        "size": "medium"
+                    },
+                    {
+                        "#text": "",
+                        "size": "large"
+                    },
+                    {
+                        "#text": "",
+                        "size": "extralarge"
+                    }
+                ]
+            },
+            {
+                "name": "The Race of a Thousand Camels",
+                "playcount": 281691,
+                "mbid": "8bd70552-0a26-466e-bfaf-49f0e5b65e5d",
+                "url": "https://www.last.fm/music/b%C3%B4a/The+Race+of+a+Thousand+Camels",
+                "artist": {
+                    "name": "bôa",
+                    "mbid": "ca1dcba2-792c-4550-abf2-7b45396e81ca",
+                    "url": "https://www.last.fm/music/b%C3%B4a"
+                },
+                "image": [
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/8837dcb77a3d6cde298693762ec8a200.png",
+                        "size": "small"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/8837dcb77a3d6cde298693762ec8a200.png",
+                        "size": "medium"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/8837dcb77a3d6cde298693762ec8a200.png",
+                        "size": "large"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/8837dcb77a3d6cde298693762ec8a200.png",
+                        "size": "extralarge"
+                    }
+                ]
+            },
+            {
+                "name": "Tall Snake EP",
+                "playcount": 123933,
+                "mbid": "32856ffe-3c2e-4c61-8e95-9038ca7d7e8a",
+                "url": "https://www.last.fm/music/b%C3%B4a/Tall+Snake+EP",
+                "artist": {
+                    "name": "bôa",
+                    "mbid": "ca1dcba2-792c-4550-abf2-7b45396e81ca",
+                    "url": "https://www.last.fm/music/b%C3%B4a"
+                },
+                "image": [
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/9cf7b0de6bcbdf9c167e892a997ccf1a.png",
+                        "size": "small"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/9cf7b0de6bcbdf9c167e892a997ccf1a.png",
+                        "size": "medium"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/9cf7b0de6bcbdf9c167e892a997ccf1a.png",
+                        "size": "large"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/9cf7b0de6bcbdf9c167e892a997ccf1a.png",
+                        "size": "extralarge"
+                    }
+                ]
+            },
+            {
+                "name": "Serial Experiments Lain",
+                "playcount": 33576,
+                "url": "https://www.last.fm/music/b%C3%B4a/Serial+Experiments+Lain",
+                "artist": {
+                    "name": "bôa",
+                    "mbid": "ca1dcba2-792c-4550-abf2-7b45396e81ca",
+                    "url": "https://www.last.fm/music/b%C3%B4a"
+                },
+                "image": [
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/b502e79e26fd12af69655ee414f911a6.png",
+                        "size": "small"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/b502e79e26fd12af69655ee414f911a6.png",
+                        "size": "medium"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/b502e79e26fd12af69655ee414f911a6.png",
+                        "size": "large"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/b502e79e26fd12af69655ee414f911a6.png",
+                        "size": "extralarge"
+                    }
+                ]
+            }
+        ],
+        "@attr": {
+            "artist": "bôa",
+            "page": "1",
+            "perPage": "9",
+            "totalPages": "269",
+            "total": "2413"
+        },
+        "bio": {
+            "links": {
+                "link": {
+                    "#text": "",
+                    "rel": "original",
+                    "href": "https://last.fm/music/+noredirect/b%C3%B4a/+wiki"
+                }
+            },
+            "published": "10 Feb 2006, 19:29",
+            "summary": "bôa is a British alternative rock band formed in London in 1993 by drummer Ed Herten, keyboard player Paul Turrell, and guitarist/vocalist Steve Rodgers. Bôa's current lineup consists of Jasmine Rodgers (vocals), Steve Rodgers (vocals & guitar), Alex Caird (bass), and Lee Sullivan (drums & piano). The band progressed from a funk band to a rock band over the years. They produced two major albums, Twilight in 2001 and Get There in 2005. The band was \u003Ca href=\"https://www.last.fm/music/+noredirect/b%C3%B4a\"\u003ERead more on Last.fm\u003C/a\u003E",
+        }
+    }
+}

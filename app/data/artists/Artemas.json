@@ -1,0 +1,267 @@
+{
+    "topalbums": {
+        "album": [
+            {
+                "name": "I like the way you kiss me",
+                "playcount": 2449055,
+                "url": "https://www.last.fm/music/Artemas/I+like+the+way+you+kiss+me",
+                "artist": {
+                    "name": "Artemas",
+                    "url": "https://www.last.fm/music/Artemas"
+                },
+                "image": [
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/94ea8b4a5e7e022a67079609d27f92b1.png",
+                        "size": "small"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/94ea8b4a5e7e022a67079609d27f92b1.png",
+                        "size": "medium"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/94ea8b4a5e7e022a67079609d27f92b1.png",
+                        "size": "large"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/94ea8b4a5e7e022a67079609d27f92b1.png",
+                        "size": "extralarge"
+                    }
+                ]
+            },
+            {
+                "name": "if u think i'm pretty",
+                "playcount": 1489288,
+                "url": "https://www.last.fm/music/Artemas/if+u+think+i%27m+pretty",
+                "artist": {
+                    "name": "Artemas",
+                    "url": "https://www.last.fm/music/Artemas"
+                },
+                "image": [
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/66224e6c3251fb02f0ae581d69a07239.png",
+                        "size": "small"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/66224e6c3251fb02f0ae581d69a07239.png",
+                        "size": "medium"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/66224e6c3251fb02f0ae581d69a07239.png",
+                        "size": "large"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/66224e6c3251fb02f0ae581d69a07239.png",
+                        "size": "extralarge"
+                    }
+                ]
+            },
+            {
+                "name": "pretty",
+                "playcount": 1192871,
+                "url": "https://www.last.fm/music/Artemas/pretty",
+                "artist": {
+                    "name": "Artemas",
+                    "url": "https://www.last.fm/music/Artemas"
+                },
+                "image": [
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/f820eee88318305ffedd0db7f18acf83.png",
+                        "size": "small"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/f820eee88318305ffedd0db7f18acf83.png",
+                        "size": "medium"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/f820eee88318305ffedd0db7f18acf83.png",
+                        "size": "large"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/f820eee88318305ffedd0db7f18acf83.png",
+                        "size": "extralarge"
+                    }
+                ]
+            },
+            {
+                "name": "cross my heart",
+                "playcount": 211442,
+                "url": "https://www.last.fm/music/Artemas/cross+my+heart",
+                "artist": {
+                    "name": "Artemas",
+                    "url": "https://www.last.fm/music/Artemas"
+                },
+                "image": [
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/61fd6491914c222b11933c6c7bdbf4d6.png",
+                        "size": "small"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/61fd6491914c222b11933c6c7bdbf4d6.png",
+                        "size": "medium"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/61fd6491914c222b11933c6c7bdbf4d6.png",
+                        "size": "large"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/61fd6491914c222b11933c6c7bdbf4d6.png",
+                        "size": "extralarge"
+                    }
+                ]
+            },
+            {
+                "name": "You Were a Dream",
+                "playcount": 108857,
+                "url": "https://www.last.fm/music/Artemas/You+Were+a+Dream",
+                "artist": {
+                    "name": "Artemas",
+                    "url": "https://www.last.fm/music/Artemas"
+                },
+                "image": [
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/e638fd359b2b4078f791fac65e49fd95.png",
+                        "size": "small"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/e638fd359b2b4078f791fac65e49fd95.png",
+                        "size": "medium"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/e638fd359b2b4078f791fac65e49fd95.png",
+                        "size": "large"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/e638fd359b2b4078f791fac65e49fd95.png",
+                        "size": "extralarge"
+                    }
+                ]
+            },
+            {
+                "name": "Tattoos",
+                "playcount": 99951,
+                "url": "https://www.last.fm/music/Artemas/Tattoos",
+                "artist": {
+                    "name": "Artemas",
+                    "url": "https://www.last.fm/music/Artemas"
+                },
+                "image": [
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/d31d76604ebdd339cd4eee58735aec74.png",
+                        "size": "small"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/d31d76604ebdd339cd4eee58735aec74.png",
+                        "size": "medium"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/d31d76604ebdd339cd4eee58735aec74.png",
+                        "size": "large"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/d31d76604ebdd339cd4eee58735aec74.png",
+                        "size": "extralarge"
+                    }
+                ]
+            },
+            {
+                "name": "just want u to feel something",
+                "playcount": 103895,
+                "url": "https://www.last.fm/music/Artemas/just+want+u+to+feel+something",
+                "artist": {
+                    "name": "Artemas",
+                    "url": "https://www.last.fm/music/Artemas"
+                },
+                "image": [
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/6f712edca0eef87c88bf26c85feb1a22.png",
+                        "size": "small"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/6f712edca0eef87c88bf26c85feb1a22.png",
+                        "size": "medium"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/6f712edca0eef87c88bf26c85feb1a22.png",
+                        "size": "large"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/6f712edca0eef87c88bf26c85feb1a22.png",
+                        "size": "extralarge"
+                    }
+                ]
+            },
+            {
+                "name": "High 4 U",
+                "playcount": 95492,
+                "url": "https://www.last.fm/music/Artemas/High+4+U",
+                "artist": {
+                    "name": "Artemas",
+                    "url": "https://www.last.fm/music/Artemas"
+                },
+                "image": [
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2e07de99c95b6de12041a089eac46ff4.png",
+                        "size": "small"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2e07de99c95b6de12041a089eac46ff4.png",
+                        "size": "medium"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2e07de99c95b6de12041a089eac46ff4.png",
+                        "size": "large"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2e07de99c95b6de12041a089eac46ff4.png",
+                        "size": "extralarge"
+                    }
+                ]
+            },
+            {
+                "name": "i like the way you kiss me (burnt)",
+                "playcount": 63414,
+                "url": "https://www.last.fm/music/Artemas/i+like+the+way+you+kiss+me+(burnt)",
+                "artist": {
+                    "name": "Artemas",
+                    "url": "https://www.last.fm/music/Artemas"
+                },
+                "image": [
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/67b2adcb3930b6eee7b6455b0e80ba5b.png",
+                        "size": "small"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/67b2adcb3930b6eee7b6455b0e80ba5b.png",
+                        "size": "medium"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/67b2adcb3930b6eee7b6455b0e80ba5b.png",
+                        "size": "large"
+                    },
+                    {
+                        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/67b2adcb3930b6eee7b6455b0e80ba5b.png",
+                        "size": "extralarge"
+                    }
+                ]
+            }
+        ],
+        "@attr": {
+            "artist": "Artemas",
+            "page": "1",
+            "perPage": "9",
+            "totalPages": "23",
+            "total": "199"
+        },
+        "bio": {
+            "links": {
+                "link": {
+                    "#text": "",
+                    "rel": "original",
+                    "href": "https://last.fm/music/Artemas/+wiki"
+                }
+            },
+            "published": "08 Apr 2024, 14:35",
+            "summary": "Artemas Diamandis, known mononymously as Artemas, is an English-Cypriot singer, songwriter, and record producer. He gained prominence with his singles “If U Think I’m Pretty” and “I Like the Way You Kiss Me”.\n\nBorn on September 23, 1999, in Oxfordshire, England, Artemas grew up in a village where he nurtured his passion for music from a young age. Inspired by the documentary “Kurt Cobain: Montage of Heck,” he began writing songs at the age of 16. \u003Ca href=\"https://www.last.fm/music/Artemas\"\u003ERead more on Last.fm\u003C/a\u003E",
+        }
+    }
+}
