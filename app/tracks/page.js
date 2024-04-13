@@ -31,7 +31,7 @@ async function fetchTrendingTrack() {
 
 
 export default function Tracks() {
-
+  const router = useRouter();
   const [ trackName, setTrackName ] = useState('');
   const [trendingTrack, setTrendingTrack] = useState([]);
 

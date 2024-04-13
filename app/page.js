@@ -38,7 +38,7 @@ async function fetchTopTrack(country) {
 } 
 
 export default function Page() {
- 
+  const router = useRouter();
     const [country, setCountry] = useState('canada');
     const [countries, setCountries] = useState(Countries);
     const [topArtist, setTopArtist] = useState([]);

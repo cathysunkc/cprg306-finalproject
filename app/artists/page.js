@@ -31,7 +31,7 @@ async function fetchTrendingArtist() {
 
 
 export default function Artists() {
-  
+  const router = useRouter();
   const [ artistName, setArtistName ] = useState('');
   const [trendingArtist, setTrendingArtist] = useState([]);
   const [artistContent, setArtistContent] = useState("");
