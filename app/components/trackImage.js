@@ -39,7 +39,7 @@ export default function TrackImage({ track, artist }) {
   
     useEffect(() => {       
         loadTrackImage();      
-    }, []);
+    });
 
 
 
