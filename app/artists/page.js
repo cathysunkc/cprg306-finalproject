@@ -1,8 +1,8 @@
 /*
  * Web Development 2 - CPRG306D
- * Week 2 - Assignment
+ * Final Project
  * Name: Cathy Sun
- * Date: 2024 April 8
+ * Date: 2024 April 13
  */
 
 
@@ -34,21 +34,18 @@ export default function Artists() {
   const router = useRouter();
   const [ artistName, setArtistName ] = useState('');
   const [trendingArtist, setTrendingArtist] = useState([]);
-  const [artistContent, setArtistContent] = useState("");
-
+  const [artistContent, setArtistContent] = useState('');
 
   async function loadArtist() {
       try {    
-          let data = await fetchTrendingArtist();
-            
-                if (data) {   
-                  setArtistContent("");            
-                  setTrendingArtist(data);
-                }         
+          let data = await fetchTrendingArtist();            
 
+          if (data) {   
+            setArtistContent("");            
+            setTrendingArtist(data);
+          }         
       } catch (error) {
-        //  console.error(error);
-          
+        //  console.error(error);          
       }
   }
 
@@ -64,94 +61,66 @@ export default function Artists() {
     }
   }
 
-
-function reloadArtist(artistName)
-{
-  setArtistName(artistName);
-  loadArtist();
-}
+  function reloadArtist(artistName)
+  {
+    setArtistName(artistName);
+    loadArtist();
+  }
 
   
    return (
     <>
-    <main > 
+    <main>
+        <div className='py-8 mx-auto'>
+        <div className='sm:flex sm:flex-col sm:align-center'>
+          <div className='relative flex flex-row ml-24'>
+            <Link prefetch={false} href='/' className='text-purple-800 underline '>Home</Link>
+            <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2' alt='arrow icon' /> <div className='text-gray-800 '>Artist</div>
+        </div>
+        <div className='relative self-center bg-white mt-6 rounded-lg p-0.5 flex border'>
+        <div className='w-full max-w-md space-y-4 duration-1200 ease-in-out animate-in fade-in slide-in-from-bottom-4'>
+          <form onSubmit={handleSubmit} className='flex h-fit w-full flex-row items-center rounded-xl px-1 '>
+              <input className='h-10 w-full resize-none bg-transparent px-2 text-base text-white sm:text-sm  transition-all duration-300' 
+                placeholder='Enter Artist Name'
+                type={'text'}
+                id='artistName'
+                name='artistName' 
+              />
+          <button type='submit' className='flex aspect-square h-8 w-8 items-center justify-center rounded-lg text-white outline-0 ring-0 hover:bg-white/25'>
+            <Image src={searchIcon} alt='search icon' className='lucide lucide-corner-down-left shrink-0 -ml-px' /></button>
+          </form>
+          </div>
+        </div>
+      </div>
 
-
-<div className="py-8 mx-auto">
-<div className="sm:flex sm:flex-col sm:align-center">
-<div className="relative flex flex-row ml-24">
-<Link prefetch={false} href='/' className='text-purple-800 underline '>Home</Link>
-
-    <><Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2' alt="arrow icon" />  <div className='text-gray-800'>Artist</div></>
-
-    
-  </div>
-
-<div className="relative self-center mt-6 rounded-lg p-0.5 flex border">
-
-<div style={{width: '100%', alignContent: 'right', width:'100%',float:'right', paddingBottom:'1em'}}>
-<form onSubmit={handleSubmit}>
-          <input style={{height: '2em', borderColor: 'black', borderRadius: '3px', float: 'left', marginLeft:'10px', margin: '4px'}}
-            placeholder="Enter Artist Name"
-            type={"text"}
-            id="artistName"
-            name="artistName" 
-          />
-
-        <button type="submit"><Image src={searchIcon} alt="search icon" width="40" height="40" /></button>
-                   
-</form>
-                               
-                    </div>
-
-</div>
-</div>
-
-<div className="flex flex-wrap justify-center gap-6 ml-20 mr-20 mt-5 mb-10 bg-white rounded p-1 py-3" style={{padding: '2.5em'}}>
-
-  <div className="flex flex-col  flex-1 ">
-  
- 
+  <div className='flex flex-wrap justify-center gap-6 ml-20 mr-20 mt-5 mb-10 bg-white rounded p-10'>
+    <div className='flex flex-col  flex-1 '>
             {
-              !artistName && <>
-                <h1 className="text-3xl leading-6 text-gray-800 mb-8"># Trending Artists</h1>
+              !artistName && 
+                <>
+                <h1 className='text-3xl leading-6 text-gray-800 mb-8'># Trending Artists</h1>
                  <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6'>                      
                       {
                         
                          trendingArtist.map((item, index) => (
-                             
-                              
-                                  <div key={index} style={{marginLeft: '10px'}}>
-                                    
-                                    <Link prefetch={false} style={{textDecoration: 'underline'}}  shallow={true} href={{
-                                                  pathname: '/artist-info',
-                                                  query: {
-                                                    artistName: item.name
-                                                  }
-                                                }}
-                                              >{item.name}</Link>
-                                   
-                                    
-                                   </div>
-                                    
-                                
-                               
-                            ))
+                            <div key={index} className=' m-3'>                              
+                              <Link prefetch={false} className='underline' shallow={true} href={{
+                                      pathname: '/artist-info',
+                                      query: {
+                                        artistName: item.name
+                                      }
+                                    }}
+                                  >{item.name}</Link>
+                              </div>
+                          ))
                       }
                   </div>     
-              </>               
-            } 
-            
-   
-</div>
-
-        </div></div>
-
-       
-        
-        
+                </>               
+            }
+        </div>
+      </div>
+    </div>
   </main>
-  
   </>
   );
 }

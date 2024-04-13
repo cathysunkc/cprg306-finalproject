@@ -1,8 +1,8 @@
 /*
  * Web Development 2 - CPRG306D
- * Week 2 - Assignment
+ * Final Project
  * Name: Cathy Sun
- * Date: 2024 April 8
+ * Date: 2024 April 13
  */
 
 
