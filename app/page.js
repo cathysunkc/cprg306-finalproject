@@ -102,8 +102,8 @@ useEffect(() => {
         <div className='py-8 mx-auto'>
           <div className='sm:flex sm:flex-col sm:align-center'>
             <div className='relative flex flex-row ml-24'>
-               <Link prefetch={false} href='/' className='text-purple-800 underline '>Home</Link>
-               <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2' alt='arrow icon' />  <div className='text-gray-800'>Chart</div>
+              
+            
             </div>
           </div>
       <div className='flex flex-wrap justify-center gap-6'>

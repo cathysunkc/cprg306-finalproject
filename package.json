@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@nextui-org/breadcrumbs": "^2.0.4",
+    "encoding": "^0.1.13",
+    "firebase": "^10.11.0",
     "next": "14.1.4",
     "react": "^18",
     "react-dom": "^18"
