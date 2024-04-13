@@ -1,0 +1,47 @@
+{
+  "track": {
+    "name": "saturn",
+    "url": "https://www.last.fm/music/SZA/_/saturn",
+    "duration": "0",
+    "streamable": {
+      "#text": "0",
+      "fulltrack": "0"
+    },
+    "listeners": "390050",
+    "playcount": "3833181",
+    "artist": {
+      "name": "SZA",
+      "mbid": "272989c8-5535-492d-a25c-9f58803e027f",
+      "url": "https://www.last.fm/music/SZA"
+    },
+    "toptags": {
+      "tag": [
+        {
+          "name": "space",
+          "url": "https://www.last.fm/tag/space"
+        },
+        {
+          "name": "alternative rnb",
+          "url": "https://www.last.fm/tag/alternative+rnb"
+        },
+        {
+          "name": "soul",
+          "url": "https://www.last.fm/tag/soul"
+        },
+        {
+          "name": "Psychedelic Soul",
+          "url": "https://www.last.fm/tag/Psychedelic+Soul"
+        },
+        {
+          "name": "psychedelic pop",
+          "url": "https://www.last.fm/tag/psychedelic+pop"
+        }
+      ]
+    },
+    "wiki": {
+      "published": "01 Mar 2024, 01:56",
+      "summary": "\"Saturn\" is a song by American singer-songwriter SZA and the lead single of Lana, the upcoming reissue of her second studio album, SOS. It was surprise-released through Top Dawg Entertainment and RCA Records on February 22, 2024. \u003Ca href=\"http://www.last.fm/music/SZA/_/saturn\"\u003ERead more on Last.fm\u003C/a\u003E.",
+      "content": "\"Saturn\" is a song by American singer-songwriter SZA and the lead single of Lana, the upcoming reissue of her second studio album, SOS. It was surprise-released through Top Dawg Entertainment and RCA Records on February 22, 2024. \u003Ca href=\"http://www.last.fm/music/SZA/_/saturn\"\u003ERead more on Last.fm\u003C/a\u003E. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply."
+    }
+  }
+}
