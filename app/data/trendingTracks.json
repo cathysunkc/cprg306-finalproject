@@ -212,41 +212,6 @@
             ]
          },
          {
-            "name": "yes, and?",
-            "duration": "0",
-            "playcount": "13191347",
-            "listeners": "670617",
-            "mbid": "",
-            "url": "https://www.last.fm/music/Ariana+Grande/_/yes,+and%3F",
-            "streamable": {
-               "#text": "0",
-               "fulltrack": "0"
-            },
-            "artist": {
-               "name": "Ariana Grande",
-               "mbid": "f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387",
-               "url": "https://www.last.fm/music/Ariana+Grande"
-            },
-            "image": [
-               {
-                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size": "small"
-               },
-               {
-                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size": "medium"
-               },
-               {
-                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size": "large"
-               },
-               {
-                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size": "extralarge"
-               }
-            ]
-         },
-         {
             "name": "Lovers Rock",
             "duration": "213",
             "playcount": "23750231",
@@ -296,41 +261,6 @@
                "name": "Olivia Rodrigo",
                "mbid": "",
                "url": "https://www.last.fm/music/Olivia+Rodrigo"
-            },
-            "image": [
-               {
-                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size": "small"
-               },
-               {
-                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size": "medium"
-               },
-               {
-                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size": "large"
-               },
-               {
-                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size": "extralarge"
-               }
-            ]
-         },
-         {
-            "name": "TEXAS HOLD 'EM",
-            "duration": "0",
-            "playcount": "4127673",
-            "listeners": "466721",
-            "mbid": "",
-            "url": "https://www.last.fm/music/Beyonc%C3%A9/_/TEXAS+HOLD+%27EM",
-            "streamable": {
-               "#text": "0",
-               "fulltrack": "0"
-            },
-            "artist": {
-               "name": "Beyoncé",
-               "mbid": "859d0860-d480-4efd-970c-c05d5f1776b8",
-               "url": "https://www.last.fm/music/Beyonc%C3%A9"
             },
             "image": [
                {
@@ -422,76 +352,6 @@
             ]
          },
          {
-            "name": "FE!N (feat. Playboi Carti)",
-            "duration": "0",
-            "playcount": "11302082",
-            "listeners": "659023",
-            "mbid": "",
-            "url": "https://www.last.fm/music/Travis+Scott/_/FE%21N+(feat.+Playboi+Carti)",
-            "streamable": {
-               "#text": "0",
-               "fulltrack": "0"
-            },
-            "artist": {
-               "name": "Travis Scott",
-               "mbid": "e4a51f17-a57b-47b1-b37b-f552d0f8e9e6",
-               "url": "https://www.last.fm/music/Travis+Scott"
-            },
-            "image": [
-               {
-                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size": "small"
-               },
-               {
-                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size": "medium"
-               },
-               {
-                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size": "large"
-               },
-               {
-                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size": "extralarge"
-               }
-            ]
-         },
-         {
-            "name": "See You Again (feat. Kali Uchis)",
-            "duration": "0",
-            "playcount": "27525290",
-            "listeners": "1452130",
-            "mbid": "",
-            "url": "https://www.last.fm/music/Tyler,+the+Creator/_/See+You+Again+(feat.+Kali+Uchis)",
-            "streamable": {
-               "#text": "0",
-               "fulltrack": "0"
-            },
-            "artist": {
-               "name": "Tyler, the Creator",
-               "mbid": "f6beac20-5dfe-4d1f-ae02-0b0a740aafd6",
-               "url": "https://www.last.fm/music/Tyler,+the+Creator"
-            },
-            "image": [
-               {
-                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size": "small"
-               },
-               {
-                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size": "medium"
-               },
-               {
-                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size": "large"
-               },
-               {
-                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size": "extralarge"
-               }
-            ]
-         },
-         {
             "name": "TYPE SHIT",
             "duration": "0",
             "playcount": "2276891",
@@ -541,41 +401,6 @@
                "name": "Sabrina Carpenter",
                "mbid": "1882fe91-cdd9-49c9-9956-8e06a3810bd4",
                "url": "https://www.last.fm/music/Sabrina+Carpenter"
-            },
-            "image": [
-               {
-                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size": "small"
-               },
-               {
-                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size": "medium"
-               },
-               {
-                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size": "large"
-               },
-               {
-                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size": "extralarge"
-               }
-            ]
-         },
-         {
-            "name": "intro (end of the world)",
-            "duration": "0",
-            "playcount": "4706444",
-            "listeners": "412741",
-            "mbid": "",
-            "url": "https://www.last.fm/music/Ariana+Grande/_/intro+(end+of+the+world)",
-            "streamable": {
-               "#text": "0",
-               "fulltrack": "0"
-            },
-            "artist": {
-               "name": "Ariana Grande",
-               "mbid": "f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387",
-               "url": "https://www.last.fm/music/Ariana+Grande"
             },
             "image": [
                {
