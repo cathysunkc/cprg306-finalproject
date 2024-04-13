@@ -80,7 +80,7 @@ const handleCountryChange = (event) => {
 useEffect(() => {
     loadTopTrack();
     loadTopArtist();
-}, []);
+});
 
 /***
  * Country Selection
