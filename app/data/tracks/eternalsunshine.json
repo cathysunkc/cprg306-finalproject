@@ -1,0 +1,70 @@
+{
+    "track": {
+        "name": "eternal sunshine",
+        "url": "https://www.last.fm/music/Ariana+Grande/_/eternal+sunshine",
+        "duration": "210000",
+        "streamable": {
+            "#text": "0",
+            "fulltrack": "0"
+        },
+        "listeners": "375887",
+        "playcount": "4800138",
+        "artist": {
+            "name": "Ariana Grande",
+            "mbid": "f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387",
+            "url": "https://www.last.fm/music/Ariana+Grande"
+        },
+        "album": {
+            "artist": "Ariana Grande",
+            "title": "eternal sunshine [Clean] [Clean]",
+            "url": "https://www.last.fm/music/Ariana+Grande/eternal+sunshine+%5BClean%5D+%5BClean%5D",
+            "image": [
+                {
+                    "#text": "https://lastfm.freetls.fastly.net/i/u/34s/1b3c1507a905b6c40475d0d565f6bebc.png",
+                    "size": "small"
+                },
+                {
+                    "#text": "https://lastfm.freetls.fastly.net/i/u/64s/1b3c1507a905b6c40475d0d565f6bebc.png",
+                    "size": "medium"
+                },
+                {
+                    "#text": "https://lastfm.freetls.fastly.net/i/u/174s/1b3c1507a905b6c40475d0d565f6bebc.png",
+                    "size": "large"
+                },
+                {
+                    "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/1b3c1507a905b6c40475d0d565f6bebc.png",
+                    "size": "extralarge"
+                }
+            ]
+        },
+        "toptags": {
+            "tag": [
+                {
+                    "name": "trap",
+                    "url": "https://www.last.fm/tag/trap"
+                },
+                {
+                    "name": "rnb",
+                    "url": "https://www.last.fm/tag/rnb"
+                },
+                {
+                    "name": "AOTY",
+                    "url": "https://www.last.fm/tag/AOTY"
+                },
+                {
+                    "name": "pop",
+                    "url": "https://www.last.fm/tag/pop"
+                },
+                {
+                    "name": "female vocalists",
+                    "url": "https://www.last.fm/tag/female+vocalists"
+                }
+            ]
+        },
+        "wiki": {
+            "published": "08 Mar 2024, 07:38",
+            "summary": "“eternal sunshine“, the title track and fifth overall, is a direct nod to the film ‘Eternal Sunshine of The Spotless Mind’, which is a clear allusion towards the movie and its premise. It hones its narrative to be about Ariana and her Ex-husband, Dalton Gomez, desiring to wipe her mind as she would rather forget completely about the relationship than live through the pain of her divorce.\n\nNow being haunted by her ex-lover as stated by Elle Magazine \u003Ca href=\"http://www.last.fm/music/Ariana+Grande/_/eternal+sunshine\"\u003ERead more on Last.fm\u003C/a\u003E.",
+            "content": "“eternal sunshine“, the title track and fifth overall, is a direct nod to the film ‘Eternal Sunshine of The Spotless Mind’, which is a clear allusion towards the movie and its premise. It hones its narrative to be about Ariana and her Ex-husband, Dalton Gomez, desiring to wipe her mind as she would rather forget completely about the relationship than live through the pain of her divorce.\n\nNow being haunted by her ex-lover as stated by Elle Magazine, it juxtaposes the ordinary semantics of sunshine, highlighting the impossibility of forgetting with its pessimistic lyrics. \u003Ca href=\"http://www.last.fm/music/Ariana+Grande/_/eternal+sunshine\"\u003ERead more on Last.fm\u003C/a\u003E. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply."
+        }
+    }
+}

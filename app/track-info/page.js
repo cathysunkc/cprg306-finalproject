@@ -20,7 +20,7 @@ import { useRouter } from 'next/navigation';
 async function fetchTrack(trackName, artistName) {
   
     //let response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=track.getInfo&track=${trackName}&artist=${artistName}&api_key=&limit=1&format=json`, {Method: 'POST',  cache: 'no-store' });
-    let response = await fetch(`https://raw.githubusercontent.com/cathysunkc/cprg306-finalproject/master/app/data/tracks/${trackName.replace(/ /g, '').replace(/,/g, '').replace(/\(/g, '').replace(/\)/g, '').replace(/'/g, '')}.json`, {Method: 'POST', cache: 'no-store' });
+    let response = await fetch(`https://raw.githubusercontent.com/cathysunkc/cprg306-finalproject/master/app/data/tracks/${trackName.replace(/ /g, '').replace(/,/g, '').replace(/./g, '').replace(/'/g, '')}.json`, {Method: 'POST', cache: 'no-store' });
     
     let data = await response.json();
        return data.track;
