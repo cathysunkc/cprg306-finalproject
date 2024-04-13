@@ -81,9 +81,12 @@ export default function TrackInfo({ searchParams }) {
     { !error && album && <>
       <div className='text-3xl leading-6 text-gray-800 mb-8'>{trackName}</div>
         <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6'><div>
-          <TrackImage  
-            track={trackName}
-            artist={album.artist} />    
+              <TrackImage  
+                            track={trackName}
+                            artist={album.artist}
+                            key={album.mbid}  
+                                                                        
+                          />
         </div> 
         <div>
           <div className='text-2xl leading-6 text-gray-800 mb-8'>Album: {album.title}</div>

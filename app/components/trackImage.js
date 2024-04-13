@@ -16,7 +16,7 @@ async function fetchTrackImage( { track}, { artist }) {
        // let response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key=51de025812af79cb70f4a872936181a0&artist=${artist}&track=${track}&format=json`, {Method: 'POST',  cache: 'no-store' });
        let response = await fetch(`https://raw.githubusercontent.com/cathysunkc/cprg306-finalproject/master/app/data/tracks/${value}.json`, {Method: 'POST', cache: 'no-store' });
        let data = await response.json();
-        return (data.track.album.image);       
+        return (data.track.album.image);      
     
 }     
 
@@ -37,8 +37,7 @@ export default function TrackImage({ track, artist }) {
         } catch (error) {
             //console.error(error);
         }
-    }
-  
+    } 
    
   
     useEffect(() => {       
@@ -46,20 +45,15 @@ export default function TrackImage({ track, artist }) {
     });
 
 
-
     return (
         <>
-                          
-                          {
-                          trackImage.map((item, index) => (
-                             index == 3 &&                             
-                                    
-                                    <img key={index} src={Object.values(item).slice(0,1)} style={{paddingLeft: '10px', paddingRight: '10px'}}></img>
-                                    
-                              
-                              
-                            ))
-                      }
-   </>
+            {
+                trackImage.map((item, index) => (
+                    index == 3 &&     
+                    <img key={index} src={Object.values(item).slice(0,1)} style={{paddingLeft: '10px', paddingRight: '10px'}}></img>
+                    
+                ))
+            }
+         </>
     );
   }
