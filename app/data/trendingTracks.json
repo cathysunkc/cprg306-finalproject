@@ -597,41 +597,6 @@
             ]
          },
          {
-            "name": "Jolene",
-            "duration": "0",
-            "playcount": "1211276",
-            "listeners": "269383",
-            "mbid": "",
-            "url": "https://www.last.fm/music/Beyonc%C3%A9/_/Jolene",
-            "streamable": {
-               "#text": "0",
-               "fulltrack": "0"
-            },
-            "artist": {
-               "name": "Beyoncé",
-               "mbid": "859d0860-d480-4efd-970c-c05d5f1776b8",
-               "url": "https://www.last.fm/music/Beyonc%C3%A9"
-            },
-            "image": [
-               {
-                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size": "small"
-               },
-               {
-                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size": "medium"
-               },
-               {
-                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size": "large"
-               },
-               {
-                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size": "extralarge"
-               }
-            ]
-         },
-         {
             "name": "supernatural",
             "duration": "0",
             "playcount": "4617800",
@@ -681,41 +646,6 @@
                "name": "Tate McRae",
                "mbid": "",
                "url": "https://www.last.fm/music/Tate+McRae"
-            },
-            "image": [
-               {
-                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size": "small"
-               },
-               {
-                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size": "medium"
-               },
-               {
-                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size": "large"
-               },
-               {
-                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
-                  "size": "extralarge"
-               }
-            ]
-         },
-         {
-            "name": "Stargirl Interlude",
-            "duration": "0",
-            "playcount": "22281363",
-            "listeners": "1169137",
-            "mbid": "",
-            "url": "https://www.last.fm/music/The+Weeknd/_/Stargirl+Interlude",
-            "streamable": {
-               "#text": "0",
-               "fulltrack": "0"
-            },
-            "artist": {
-               "name": "The Weeknd",
-               "mbid": "c8b03190-306c-4120-bb0b-6f2ebfc06ea9",
-               "url": "https://www.last.fm/music/The+Weeknd"
             },
             "image": [
                {

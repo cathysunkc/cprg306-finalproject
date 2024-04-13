@@ -1,0 +1,70 @@
+{
+    "track": {
+        "name": "Not Allowed",
+        "url": "https://www.last.fm/music/TV+Girl/_/Not+Allowed",
+        "duration": "167000",
+        "streamable": {
+            "#text": "0",
+            "fulltrack": "0"
+        },
+        "listeners": "900944",
+        "playcount": "18550021",
+        "artist": {
+            "name": "TV Girl",
+            "mbid": "38f0c7ac-46eb-49ca-b3ab-c785ccd05a60",
+            "url": "https://www.last.fm/music/TV+Girl"
+        },
+        "album": {
+            "artist": "TV Girl",
+            "title": "Who Really Cares",
+            "url": "https://www.last.fm/music/TV+Girl/Who+Really+Cares",
+            "image": [
+                {
+                    "#text": "https://lastfm.freetls.fastly.net/i/u/34s/caafa78fe1a272f8a9e3af41a98dccf3.png",
+                    "size": "small"
+                },
+                {
+                    "#text": "https://lastfm.freetls.fastly.net/i/u/64s/caafa78fe1a272f8a9e3af41a98dccf3.png",
+                    "size": "medium"
+                },
+                {
+                    "#text": "https://lastfm.freetls.fastly.net/i/u/174s/caafa78fe1a272f8a9e3af41a98dccf3.png",
+                    "size": "large"
+                },
+                {
+                    "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/caafa78fe1a272f8a9e3af41a98dccf3.png",
+                    "size": "extralarge"
+                }
+            ]
+        },
+        "toptags": {
+            "tag": [
+                {
+                    "name": "indie pop",
+                    "url": "https://www.last.fm/tag/indie+pop"
+                },
+                {
+                    "name": "Neo-Psychedelia",
+                    "url": "https://www.last.fm/tag/Neo-Psychedelia"
+                },
+                {
+                    "name": "hypnagogic pop",
+                    "url": "https://www.last.fm/tag/hypnagogic+pop"
+                },
+                {
+                    "name": "indie",
+                    "url": "https://www.last.fm/tag/indie"
+                },
+                {
+                    "name": "pop",
+                    "url": "https://www.last.fm/tag/pop"
+                }
+            ]
+        },
+        "wiki": {
+            "published": "18 Feb 2024, 07:34",
+            "summary": "“Not Allowed” is the fifth track of the album Who Really Cares by TV Girl. It features samples of the tracks “You Suck,” “Not Allowed,” “Fuck Yourself,” and “Sue Your Friends” by The Yeastie Girlz.\n\nThe song presents the story of a man’s one-sided infatuation with an unnamed girl who does not return his feelings because she is in love with someone else. It is implied that the singer and the girl have been in a relationship before, but why it failed is unreliably narrated by the scorned party. \u003Ca href=\"http://www.last.fm/music/TV+Girl/_/Not+Allowed\"\u003ERead more on Last.fm\u003C/a\u003E.",
+            "content": "“Not Allowed” is the fifth track of the album Who Really Cares by TV Girl. It features samples of the tracks “You Suck,” “Not Allowed,” “Fuck Yourself,” and “Sue Your Friends” by The Yeastie Girlz.\n\nThe song presents the story of a man’s one-sided infatuation with an unnamed girl who does not return his feelings because she is in love with someone else. It is implied that the singer and the girl have been in a relationship before, but why it failed is unreliably narrated by the scorned party. \u003Ca href=\"http://www.last.fm/music/TV+Girl/_/Not+Allowed\"\u003ERead more on Last.fm\u003C/a\u003E. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply."
+        }
+    }
+}

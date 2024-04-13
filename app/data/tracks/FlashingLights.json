@@ -1,0 +1,75 @@
+{
+    "track": {
+        "name": "Flashing Lights",
+        "mbid": "345ebc54-2f7b-4566-8707-2ea928683753",
+        "url": "https://www.last.fm/music/Kanye+West/_/Flashing+Lights",
+        "duration": "238000",
+        "streamable": {
+            "#text": "0",
+            "fulltrack": "0"
+        },
+        "listeners": "1424937",
+        "playcount": "20870614",
+        "artist": {
+            "name": "Kanye West",
+            "mbid": "164f0d73-1234-4e2c-8743-d77bf2191051",
+            "url": "https://www.last.fm/music/Kanye+West"
+        },
+        "album": {
+            "artist": "Kanye West",
+            "title": "Graduation",
+            "mbid": "06a81817-093d-40f0-aef2-90673fa550ae",
+            "url": "https://www.last.fm/music/Kanye+West/Graduation",
+            "image": [
+                {
+                    "#text": "https://lastfm.freetls.fastly.net/i/u/34s/8ddd1959a2bef460a5149b3e0cf5e18a.png",
+                    "size": "small"
+                },
+                {
+                    "#text": "https://lastfm.freetls.fastly.net/i/u/64s/8ddd1959a2bef460a5149b3e0cf5e18a.png",
+                    "size": "medium"
+                },
+                {
+                    "#text": "https://lastfm.freetls.fastly.net/i/u/174s/8ddd1959a2bef460a5149b3e0cf5e18a.png",
+                    "size": "large"
+                },
+                {
+                    "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/8ddd1959a2bef460a5149b3e0cf5e18a.png",
+                    "size": "extralarge"
+                }
+            ],
+            "@attr": {
+                "position": "-1"
+            }
+        },
+        "toptags": {
+            "tag": [
+                {
+                    "name": "Hip-Hop",
+                    "url": "https://www.last.fm/tag/Hip-Hop"
+                },
+                {
+                    "name": "rap",
+                    "url": "https://www.last.fm/tag/rap"
+                },
+                {
+                    "name": "Kanye West",
+                    "url": "https://www.last.fm/tag/Kanye+West"
+                },
+                {
+                    "name": "hip hop",
+                    "url": "https://www.last.fm/tag/hip+hop"
+                },
+                {
+                    "name": "rnb",
+                    "url": "https://www.last.fm/tag/rnb"
+                }
+            ]
+        },
+        "wiki": {
+            "published": "12 Oct 2009, 08:01",
+            "summary": "\"Flashing Lights\" is an exploration of the idea of fame. In the song, Kanye reflects on how fame and wealth has changed his life and the lives of those close to him. He describes extravagant trips and luxury goods, as well as paparazzi and people hounding him everywhere he goes. He expresses both the positive and negative aspects of fame, from the freedom and excitement of living like a celebrity, to the loneliness of being recognized everywhere and never able to escape it. \u003Ca href=\"http://www.last.fm/music/Kanye+West/_/Flashing+Lights\"\u003ERead more on Last.fm\u003C/a\u003E.",
+            "content": "\"Flashing Lights\" is an exploration of the idea of fame. In the song, Kanye reflects on how fame and wealth has changed his life and the lives of those close to him. He describes extravagant trips and luxury goods, as well as paparazzi and people hounding him everywhere he goes. He expresses both the positive and negative aspects of fame, from the freedom and excitement of living like a celebrity, to the loneliness of being recognized everywhere and never able to escape it. The song also expresses nostalgia for simpler times, when things were not so overwhelming and difficult. The chorus serves as a warning to the listener, asking them to consider the consequences of seeking the fame that Kanye now has. \u003Ca href=\"http://www.last.fm/music/Kanye+West/_/Flashing+Lights\"\u003ERead more on Last.fm\u003C/a\u003E. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply."
+        }
+    }
+}
