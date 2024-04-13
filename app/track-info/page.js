@@ -8,7 +8,7 @@
 
 "use client"
 
-import React, { useState, useEffect, FormEvent } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import TrackImage from '../components/trackImage';
 import arrowIcon from '../images/arrow-icon.png';
@@ -35,7 +35,7 @@ export default function TrackInfo({ searchParams }) {
   const [ artistName, setArtistName ] = useState('');
   const [ album, setAlbum] = useState([]);
   const [ summary, setSummary ] = useState([]);
-
+  const [ error, setError ] = useState(false);
 
   async function loadTrack() {
       try {       
@@ -52,13 +52,12 @@ export default function TrackInfo({ searchParams }) {
             if (data) {
               setAlbum(data.album);
               setSummary(data.wiki.summary)
-            }  
-           
+            }             
         }      
         
 
       } catch (error) {
-       // setError(true);
+        setError(true);
           
       }
   }
@@ -94,14 +93,13 @@ export default function TrackInfo({ searchParams }) {
 </div>
 </div>
 
-<div className="flex flex-wrap justify-center gap-6 ml-20 mr-20 mt-5 mb-5 bg-white rounded p-1 py-3" style={{padding: '2.5em'}}>
+<div className='flex flex-wrap justify-center gap-6 ml-20 mr-20 mt-5 mb-5 bg-white rounded p-10'>
 
   <div className="flex flex-col  flex-1 ">
-  
-            
+  { error && <div className='text-gray-800'>No Record Found</div> }           
             
            {
-             album && <>
+             !error && album && <>
                 
                 <h1 className="text-3xl leading-6 text-gray-800 mb-8">{trackName}</h1>
                 
@@ -130,27 +128,10 @@ export default function TrackInfo({ searchParams }) {
               
              
            }
-           
-
-
-   
-</div>
-
- 
-
-
-            
- 
-</div>
-
-      </div>
-
-     
-       
-        
-        
-  </main>
-  
+    </div>
+  </div>
+</div>  
+</main>  
   </>
   );
 }

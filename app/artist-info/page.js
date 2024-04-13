@@ -45,7 +45,7 @@ export default function ArtistInfo({ searchParams }) {
   const [ artistName, setArtistName ] = useState('');
   const [artistContent, setArtistContent] = useState('');
   const [artistAlbums, setArtistAlbums] = useState([]);
-
+  const [error, setError] = useState(false);
 
 
   async function loadArtist() {
@@ -59,8 +59,7 @@ export default function ArtistInfo({ searchParams }) {
         if (artistName != "")        
         {
             let artist = await fetchSingleArtist(artistName);
-            if (artist) {
-             
+            if (artist) {             
               setArtistContent(artist.bio.summary);
             }    
             
@@ -69,13 +68,11 @@ export default function ArtistInfo({ searchParams }) {
              
               setArtistAlbums(albums);
             } 
-           
-
-        }     
+        }             
         
 
       } catch (error) {
-        console.log(error);        
+        setError(true);
       }
   }
 
@@ -110,14 +107,14 @@ export default function ArtistInfo({ searchParams }) {
 </div>
 </div>
 
-<div className="flex flex-wrap justify-center gap-6 ml-20 mr-20 mt-5 mb-5 bg-white rounded p-1 py-3" style={{padding: '2.5em'}}>
+<div className='flex flex-wrap justify-center gap-6 ml-20 mr-20 mt-5 mb-5 bg-white rounded p-10'>
 
   <div className="flex flex-col  flex-1 ">
-  
+  { error && <div className='text-gray-800'>No Record Found</div> }
           
             
            {
-            artistContent && <>
+            !error && artistContent && <>
                 <h1 className="text-3xl leading-6 text-gray-800 mb-8">{artistName}</h1>
                 <div className='justify-normal text-gray-800' dangerouslySetInnerHTML={{__html:artistContent}}></div>   
                 
@@ -128,13 +125,14 @@ export default function ArtistInfo({ searchParams }) {
 
         </div></div>
 
-        <div className="flex flex-wrap justify-center gap-6 ml-20 mr-20 mt-0 mb-10 bg-white rounded p-1 py-3" style={{padding: '2.5em'}}>
-
-        <div className="flex flex-col  flex-1 ">
-
+        
 
           {
-           artistAlbums && <>
+           !error && artistAlbums && <>
+           <div className="flex flex-wrap justify-center gap-6 ml-20 mr-20 mt-0 mb-10 bg-white rounded p-10">
+
+<div className="flex flex-col  flex-1 ">
+
               <h1 className="text-3xl leading-6 text-gray-800 mb-8">Top Albums</h1>
                <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-6'>  
                
@@ -155,10 +153,11 @@ export default function ArtistInfo({ searchParams }) {
                          </div>
                        ))
                     }                    
-                </div>     
+                </div> 
+                </div>
+              </div>    
             </>               
-          } </div>
-      </div>
+          } 
   </main>
   
   </>
