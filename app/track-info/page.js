@@ -54,6 +54,7 @@ export default function TrackInfo({ searchParams }) {
         }      
 
       } catch (error) {
+        console.log(error);
         setError(true);          
       }
   }

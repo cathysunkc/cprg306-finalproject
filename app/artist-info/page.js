@@ -60,7 +60,8 @@ export default function ArtistInfo({ searchParams }) {
             } 
         }             
       } 
-      catch (error) {
+      catch (error) { 
+        console.log(error);
         setError(true);
       }
   }
