@@ -19,17 +19,14 @@ import { useRouter } from 'next/navigation';
 
 
 async function fetchTrack(trackName, artistName) {
-  try {
+    
     let value = trackName.replace(/[\s\,\'\.\(\)]/g, '');
     //let response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=track.getInfo&track=${trackName}&artist=${artistName}&api_key=&limit=1&format=json`, {Method: 'POST',  cache: 'no-store' });
     let response = await fetch(`https://raw.githubusercontent.com/cathysunkc/cprg306-finalproject/master/app/data/tracks/${value}.json`, {Method: 'POST', cache: 'no-store' });
     
     let data = await response.json();
     return data.track; 
-  }
-  catch (error) {
-   return null;
-  }     
+     
   }
 
 export default function TrackInfo({ searchParams }) {
@@ -46,30 +43,44 @@ export default function TrackInfo({ searchParams }) {
         if(searchParams.trackName && searchParams.trackName != '')
           setTrackName(searchParams.trackName);
 
-        if(searchParams.artistName && searchParams.artistName != '')
-          setArtistName(searchParams.artistName);
-
-        if (trackName != "" && artistName != "")        
+          
+        if (trackName != "" )        
         {
             let data = await fetchTrack(trackName, artistName);
-            if (data) {
-              setAlbum(data.album);
-              setSummary(data.wiki.summary)
-            }      
-            else {
-              setAlbum([]);
-              setSummary([]);
-            }       
+            setAlbum(data.album);
+           
         }      
 
       } catch (error) {
-        console.log(error);
+
         setError(true);          
       }
   }
 
+  async function loadSummary() {
+    try {       
+      
+     
+      if(searchParams.trackName && searchParams.trackName != '')
+      setTrackName(searchParams.trackName);
+
+      
+    if (trackName != "" )         
+      {
+          let data = await fetchTrack(trackName, artistName);
+          setSummary(data.wiki.summary)
+                          
+      }      
+
+    } catch (error) {
+     // console.log(error);
+      setError(true);          
+    }
+}
+
   useEffect(() => {   
     loadTrack();
+    loadSummary();
   });
 
   return (
