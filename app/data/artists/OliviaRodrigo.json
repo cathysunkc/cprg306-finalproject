@@ -1,1 +1,106 @@
-{"topalbums":{"album":[{"name":"(null)","playcount":288,"url":"https://www.last.fm/music/OliviaRodrigo/(null)","artist":{"name":"OliviaRodrigo","url":"https://www.last.fm/music/OliviaRodrigo"},"image":[{"#text":"","size":"small"},{"#text":"","size":"medium"},{"#text":"","size":"large"},{"#text":"","size":"extralarge"}]},{"name":"SOUR","playcount":5,"url":"https://www.last.fm/music/OliviaRodrigo/SOUR","artist":{"name":"OliviaRodrigo","url":"https://www.last.fm/music/OliviaRodrigo"},"image":[{"#text":"","size":"small"},{"#text":"","size":"medium"},{"#text":"","size":"large"},{"#text":"","size":"extralarge"}]},{"name":"GUTS","playcount":1,"url":"https://www.last.fm/music/OliviaRodrigo/GUTS","artist":{"name":"OliviaRodrigo","url":"https://www.last.fm/music/OliviaRodrigo"},"image":[{"#text":"","size":"small"},{"#text":"","size":"medium"},{"#text":"","size":"large"},{"#text":"","size":"extralarge"}]}],"@attr":{"artist":"OliviaRodrigo","page":"1","perPage":"9","totalPages":"1","total":"3"}}}
+{
+    "topalbums": {
+        "album": [
+            {
+                "name": "(null)",
+                "playcount": 288,
+                "url": "https://www.last.fm/music/OliviaRodrigo/(null)",
+                "artist": {
+                    "name": "OliviaRodrigo",
+                    "url": "https://www.last.fm/music/OliviaRodrigo"
+                },
+                "image": [
+                    {
+                        "#text": "",
+                        "size": "small"
+                    },
+                    {
+                        "#text": "",
+                        "size": "medium"
+                    },
+                    {
+                        "#text": "",
+                        "size": "large"
+                    },
+                    {
+                        "#text": "",
+                        "size": "extralarge"
+                    }
+                ]
+            },
+            {
+                "name": "SOUR",
+                "playcount": 5,
+                "url": "https://www.last.fm/music/OliviaRodrigo/SOUR",
+                "artist": {
+                    "name": "OliviaRodrigo",
+                    "url": "https://www.last.fm/music/OliviaRodrigo"
+                },
+                "image": [
+                    {
+                        "#text": "",
+                        "size": "small"
+                    },
+                    {
+                        "#text": "",
+                        "size": "medium"
+                    },
+                    {
+                        "#text": "",
+                        "size": "large"
+                    },
+                    {
+                        "#text": "",
+                        "size": "extralarge"
+                    }
+                ]
+            },
+            {
+                "name": "GUTS",
+                "playcount": 1,
+                "url": "https://www.last.fm/music/OliviaRodrigo/GUTS",
+                "artist": {
+                    "name": "OliviaRodrigo",
+                    "url": "https://www.last.fm/music/OliviaRodrigo"
+                },
+                "image": [
+                    {
+                        "#text": "",
+                        "size": "small"
+                    },
+                    {
+                        "#text": "",
+                        "size": "medium"
+                    },
+                    {
+                        "#text": "",
+                        "size": "large"
+                    },
+                    {
+                        "#text": "",
+                        "size": "extralarge"
+                    }
+                ]
+            }
+        ],
+        "@attr": {
+            "artist": "OliviaRodrigo",
+            "page": "1",
+            "perPage": "9",
+            "totalPages": "1",
+            "total": "3"
+        },
+        "bio": {
+            "links": {
+                "link": {
+                    "#text": "",
+                    "rel": "original",
+                    "href": "https://last.fm/music/OliviaRodrigo/+wiki"
+                }
+            },
+            "published": "01 Jan 1970, 00:00",
+            "summary": " \u003Ca href=\"https://www.last.fm/music/OliviaRodrigo\"\u003ERead more on Last.fm\u003C/a\u003E",
+            "content": ""
+        }
+    }
+}
