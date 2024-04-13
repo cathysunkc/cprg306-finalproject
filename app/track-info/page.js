@@ -19,12 +19,17 @@ import { useRouter } from 'next/navigation';
 
 
 async function fetchTrack(trackName, artistName) {
+  try {
     let value = trackName.replace(/[\s\,\'\.\(\)]/g, '');
     //let response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=track.getInfo&track=${trackName}&artist=${artistName}&api_key=&limit=1&format=json`, {Method: 'POST',  cache: 'no-store' });
     let response = await fetch(`https://raw.githubusercontent.com/cathysunkc/cprg306-finalproject/master/app/data/tracks/${value}.json`, {Method: 'POST', cache: 'no-store' });
     
     let data = await response.json();
-    return data.track;   
+    return data.track; 
+  }
+  catch (error) {
+   return null;
+  }     
   }
 
 export default function TrackInfo({ searchParams }) {
@@ -50,7 +55,11 @@ export default function TrackInfo({ searchParams }) {
             if (data) {
               setAlbum(data.album);
               setSummary(data.wiki.summary)
-            }             
+            }      
+            else {
+              setAlbum([]);
+              setSummary([]);
+            }       
         }      
 
       } catch (error) {
