@@ -1,0 +1,278 @@
+{
+  "topalbums": {
+    "album": [
+      {
+        "name": "Abbey Road (Remastered)",
+        "playcount": 36975100,
+        "url": "https://www.last.fm/music/The+Beatles/Abbey+Road+(Remastered)",
+        "artist": {
+          "name": "The Beatles",
+          "mbid": "b10bbbfc-cf9e-42e0-be17-e2c3e1d2600d",
+          "url": "https://www.last.fm/music/The+Beatles"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/34s/a4bbf73ba62024be279364e867b0ca20.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/64s/a4bbf73ba62024be279364e867b0ca20.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/174s/a4bbf73ba62024be279364e867b0ca20.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/a4bbf73ba62024be279364e867b0ca20.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Abbey Road",
+        "playcount": 43787919,
+        "mbid": "e12f53a3-e912-321d-bdc7-ed17ec525ec0",
+        "url": "https://www.last.fm/music/The+Beatles/Abbey+Road",
+        "artist": {
+          "name": "The Beatles",
+          "mbid": "b10bbbfc-cf9e-42e0-be17-e2c3e1d2600d",
+          "url": "https://www.last.fm/music/The+Beatles"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/34s/f304ba0296794c6fc9d0e1cccd194ed0.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/64s/f304ba0296794c6fc9d0e1cccd194ed0.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/174s/f304ba0296794c6fc9d0e1cccd194ed0.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/f304ba0296794c6fc9d0e1cccd194ed0.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "The Beatles (Remastered)",
+        "playcount": 28873004,
+        "url": "https://www.last.fm/music/The+Beatles/The+Beatles+(Remastered)",
+        "artist": {
+          "name": "The Beatles",
+          "mbid": "b10bbbfc-cf9e-42e0-be17-e2c3e1d2600d",
+          "url": "https://www.last.fm/music/The+Beatles"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/34s/78bf9324efbc7583e6cae6f707568e59.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/64s/78bf9324efbc7583e6cae6f707568e59.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/174s/78bf9324efbc7583e6cae6f707568e59.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/78bf9324efbc7583e6cae6f707568e59.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "1 (Remastered)",
+        "playcount": 18182990,
+        "url": "https://www.last.fm/music/The+Beatles/1+(Remastered)",
+        "artist": {
+          "name": "The Beatles",
+          "mbid": "b10bbbfc-cf9e-42e0-be17-e2c3e1d2600d",
+          "url": "https://www.last.fm/music/The+Beatles"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/34s/207c9708aabfc084aee235ab2c8c4ee9.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/64s/207c9708aabfc084aee235ab2c8c4ee9.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/174s/207c9708aabfc084aee235ab2c8c4ee9.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/207c9708aabfc084aee235ab2c8c4ee9.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Help! (Remastered)",
+        "playcount": 14384915,
+        "url": "https://www.last.fm/music/The+Beatles/Help%21+(Remastered)",
+        "artist": {
+          "name": "The Beatles",
+          "mbid": "b10bbbfc-cf9e-42e0-be17-e2c3e1d2600d",
+          "url": "https://www.last.fm/music/The+Beatles"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/34s/4662c6e64e6a0669b14ab10b58054fad.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/64s/4662c6e64e6a0669b14ab10b58054fad.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/174s/4662c6e64e6a0669b14ab10b58054fad.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/4662c6e64e6a0669b14ab10b58054fad.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Sgt. Pepper's Lonely Hearts Club Band",
+        "playcount": 25899653,
+        "mbid": "44b7cab1-0ce1-404e-9089-b458eb3fa530",
+        "url": "https://www.last.fm/music/The+Beatles/Sgt.+Pepper%27s+Lonely+Hearts+Club+Band",
+        "artist": {
+          "name": "The Beatles",
+          "mbid": "b10bbbfc-cf9e-42e0-be17-e2c3e1d2600d",
+          "url": "https://www.last.fm/music/The+Beatles"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/34s/7fbe49d499107104e22e8d64a71d57a5.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/64s/7fbe49d499107104e22e8d64a71d57a5.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/174s/7fbe49d499107104e22e8d64a71d57a5.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/7fbe49d499107104e22e8d64a71d57a5.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Rubber Soul (Remastered)",
+        "playcount": 19940804,
+        "url": "https://www.last.fm/music/The+Beatles/Rubber+Soul+(Remastered)",
+        "artist": {
+          "name": "The Beatles",
+          "mbid": "b10bbbfc-cf9e-42e0-be17-e2c3e1d2600d",
+          "url": "https://www.last.fm/music/The+Beatles"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/34s/8fb15f6020014bbc85400a984a175b44.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/64s/8fb15f6020014bbc85400a984a175b44.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/174s/8fb15f6020014bbc85400a984a175b44.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/8fb15f6020014bbc85400a984a175b44.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Let It Be (remastered)",
+        "playcount": 12133297,
+        "url": "https://www.last.fm/music/The+Beatles/Let+It+Be+(remastered)",
+        "artist": {
+          "name": "The Beatles",
+          "mbid": "b10bbbfc-cf9e-42e0-be17-e2c3e1d2600d",
+          "url": "https://www.last.fm/music/The+Beatles"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/34s/62e2cf0b62d8c210c5d300edd0216ca3.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/64s/62e2cf0b62d8c210c5d300edd0216ca3.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/174s/62e2cf0b62d8c210c5d300edd0216ca3.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/62e2cf0b62d8c210c5d300edd0216ca3.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Revolver (Remastered)",
+        "playcount": 19357440,
+        "url": "https://www.last.fm/music/The+Beatles/Revolver+(Remastered)",
+        "artist": {
+          "name": "The Beatles",
+          "mbid": "b10bbbfc-cf9e-42e0-be17-e2c3e1d2600d",
+          "url": "https://www.last.fm/music/The+Beatles"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/34s/a975a7884ef088a7edac39d8d683e5a0.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/64s/a975a7884ef088a7edac39d8d683e5a0.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/174s/a975a7884ef088a7edac39d8d683e5a0.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/a975a7884ef088a7edac39d8d683e5a0.png",
+            "size": "extralarge"
+          }
+        ]
+      }
+    ],
+    "@attr": {
+      "artist": "The Beatles",
+      "page": "1",
+      "perPage": "9",
+      "totalPages": "31976",
+      "total": "287779"
+    },
+    "bio": {
+      "links": {
+        "link": {
+          "#text": "",
+          "rel": "original",
+          "href": "https://last.fm/music/The+Beatles/+wiki"
+        }
+      },
+      "published": "03 Feb 2006, 06:05",
+      "summary": "The Beatles were an English rock band formed in Liverpool in 1960. With the line-up comprising John Lennon, Paul McCartney,  George Harrison and Ringo Starr, they are regarded as one of the most influential bands of all time. The group was integral to the development of 1960s counterculture and popular music's recognition as an art form. Rooted in skiffle, beat and 1950s rock and roll, their sound incorporated elements of classical music and traditional \u003Ca href=\"https://www.last.fm/music/The+Beatles\"\u003ERead more on Last.fm\u003C/a\u003E",
+    }
+  }
+}

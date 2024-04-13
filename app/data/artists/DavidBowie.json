@@ -1,0 +1,108 @@
+{
+  "topalbums": {
+    "album": [
+      {
+        "name": "David Bowie (aka Space Oddity) [2015 Remaster]",
+        "playcount": 3890561,
+        "url": "https://www.last.fm/music/David+Bowie/David+Bowie+(aka+Space+Oddity)+%5B2015+Remaster%5D",
+        "artist": {
+          "name": "David Bowie",
+          "mbid": "5441c29d-3602-4898-b1a1-b77fa23b8e50",
+          "url": "https://www.last.fm/music/David+Bowie"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/34s/06077338206904418e0aa0b343705935.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/64s/06077338206904418e0aa0b343705935.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/174s/06077338206904418e0aa0b343705935.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/06077338206904418e0aa0b343705935.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Let's Dance (2018 remaster)",
+        "playcount": 4075899,
+        "url": "https://www.last.fm/music/David+Bowie/Let%27s+Dance+(2018+remaster)",
+        "artist": {
+          "name": "David Bowie",
+          "mbid": "5441c29d-3602-4898-b1a1-b77fa23b8e50",
+          "url": "https://www.last.fm/music/David+Bowie"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/34s/8e659d51c3695fa082b543fc4facfb50.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/64s/8e659d51c3695fa082b543fc4facfb50.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/174s/8e659d51c3695fa082b543fc4facfb50.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/8e659d51c3695fa082b543fc4facfb50.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Heroes",
+        "playcount": 4815518,
+        "url": "https://www.last.fm/music/David+Bowie/Heroes",
+        "artist": {
+          "name": "David Bowie",
+          "mbid": "5441c29d-3602-4898-b1a1-b77fa23b8e50",
+          "url": "https://www.last.fm/music/David+Bowie"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/34s/b46a670fb10f10de21e1f41251caa5e6.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/64s/b46a670fb10f10de21e1f41251caa5e6.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/174s/b46a670fb10f10de21e1f41251caa5e6.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/b46a670fb10f10de21e1f41251caa5e6.png",
+            "size": "extralarge"
+          }
+        ]
+      }
+    ],
+    "@attr": {
+      "artist": "David Bowie",
+      "page": "1",
+      "perPage": "9",
+      "totalPages": "17447",
+      "total": "157020"
+    },
+    "bio": {
+      "links": {
+        "link": {
+          "#text": "",
+          "rel": "original",
+          "href": "https://last.fm/music/David+Bowie/+wiki"
+        }
+      },
+      "published": "11 Feb 2006, 03:49",
+      "summary": "David Robert Jones (8 January 1947 – 10 January 2016), known professionally as David Bowie, was an English singer-songwriter and actor. A leading figure in the music industry, he is regarded as one of the most influential musicians of the 20th century. Bowie was acclaimed by critics and musicians, particularly for his innovative work during the 1970s. His career was marked by reinvention and visual presentation, and his music and stagecraft had a significant impact on popular music. \u003Ca href=\"https://www.last.fm/music/David+Bowie\"\u003ERead more on Last.fm\u003C/a\u003E",
+    }
+  }
+}
