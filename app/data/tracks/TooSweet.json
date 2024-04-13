@@ -1,0 +1,61 @@
+{
+  "track": {
+    "name": "Too Sweet",
+    "url": "https://www.last.fm/music/Hozier/_/Too+Sweet",
+    "duration": "251000",
+    "streamable": {
+      "#text": "0",
+      "fulltrack": "0"
+    },
+    "listeners": "368957",
+    "playcount": "3073758",
+    "artist": {
+      "name": "Hozier",
+      "mbid": "b4691384-50c3-4afd-9988-51d3ec5db65d",
+      "url": "https://www.last.fm/music/Hozier"
+    },
+    "album": {
+      "artist": "Hozier",
+      "title": "Unheard",
+      "url": "https://www.last.fm/music/Hozier/Unheard",
+      "image": [
+        {
+          "#text": "https://lastfm.freetls.fastly.net/i/u/34s/b6fca66574bfc4642d9ad279af5aa235.png",
+          "size": "small"
+        },
+        {
+          "#text": "https://lastfm.freetls.fastly.net/i/u/64s/b6fca66574bfc4642d9ad279af5aa235.png",
+          "size": "medium"
+        },
+        {
+          "#text": "https://lastfm.freetls.fastly.net/i/u/174s/b6fca66574bfc4642d9ad279af5aa235.png",
+          "size": "large"
+        },
+        {
+          "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/b6fca66574bfc4642d9ad279af5aa235.png",
+          "size": "extralarge"
+        }
+      ]
+    },
+    "toptags": {
+      "tag": [
+        {
+          "name": "pop rock",
+          "url": "https://www.last.fm/tag/pop+rock"
+        },
+        {
+          "name": "earworm",
+          "url": "https://www.last.fm/tag/earworm"
+        },
+        {
+          "name": "pop soul",
+          "url": "https://www.last.fm/tag/pop+soul"
+        },
+        {
+          "name": "best of 2024",
+          "url": "https://www.last.fm/tag/best+of+2024"
+        }
+      ]
+    }
+  }
+}

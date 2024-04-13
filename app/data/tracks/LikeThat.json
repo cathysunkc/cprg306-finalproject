@@ -1,0 +1,70 @@
+{
+  "track": {
+    "name": "Like That",
+    "url": "https://www.last.fm/music/Future/_/Like+That",
+    "duration": "267000",
+    "streamable": {
+      "#text": "0",
+      "fulltrack": "0"
+    },
+    "listeners": "430471",
+    "playcount": "3758517",
+    "artist": {
+      "name": "Future",
+      "mbid": "9f1195cf-9900-45db-bf9c-21c205672ae0",
+      "url": "https://www.last.fm/music/Future"
+    },
+    "album": {
+      "artist": "Future",
+      "title": "WE DON'T TRUST YOU",
+      "url": "https://www.last.fm/music/Future/WE+DON%27T+TRUST+YOU",
+      "image": [
+        {
+          "#text": "https://lastfm.freetls.fastly.net/i/u/34s/edba4e87b2ce983ee136723a809b0a0a.png",
+          "size": "small"
+        },
+        {
+          "#text": "https://lastfm.freetls.fastly.net/i/u/64s/edba4e87b2ce983ee136723a809b0a0a.png",
+          "size": "medium"
+        },
+        {
+          "#text": "https://lastfm.freetls.fastly.net/i/u/174s/edba4e87b2ce983ee136723a809b0a0a.png",
+          "size": "large"
+        },
+        {
+          "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/edba4e87b2ce983ee136723a809b0a0a.png",
+          "size": "extralarge"
+        }
+      ]
+    },
+    "toptags": {
+      "tag": [
+        {
+          "name": "kendrick lamar",
+          "url": "https://www.last.fm/tag/kendrick+lamar"
+        },
+        {
+          "name": "MySpotigramBot",
+          "url": "https://www.last.fm/tag/MySpotigramBot"
+        },
+        {
+          "name": "rap",
+          "url": "https://www.last.fm/tag/rap"
+        },
+        {
+          "name": "future",
+          "url": "https://www.last.fm/tag/future"
+        },
+        {
+          "name": "Diss",
+          "url": "https://www.last.fm/tag/Diss"
+        }
+      ]
+    },
+    "wiki": {
+      "published": "22 Mar 2024, 04:26",
+      "summary": "“Like That” sees Future & Metro Boomin enlist rap legend Kendrick Lamar for a hard-hitting track, where the two get a few things off their chest. Lamar takes it a step further, pronouncing himself alone as the best in the game.\n\nThe track samples Eazy-E’s 1988 hit single “Eazy-Duz-It” and the 1986 track “Everlasting Bass” by Rodney O & Joe Cooley. It also takes inspiration from E-40’s 1999 single “Look at Me,” which also sampled “Everlasting Bass.” \u003Ca href=\"http://www.last.fm/music/Future/_/Like+That\"\u003ERead more on Last.fm\u003C/a\u003E.",
+      "content": "“Like That” sees Future & Metro Boomin enlist rap legend Kendrick Lamar for a hard-hitting track, where the two get a few things off their chest. Lamar takes it a step further, pronouncing himself alone as the best in the game.\n\nThe track samples Eazy-E’s 1988 hit single “Eazy-Duz-It” and the 1986 track “Everlasting Bass” by Rodney O & Joe Cooley. It also takes inspiration from E-40’s 1999 single “Look at Me,” which also sampled “Everlasting Bass.”\n\nFuture & Metro Boomin first performed “Like That” at Rolling Loud California during the duo’s set with Travis Scott on March 17, 2024, just days before the song’s release with WE DON'T TRUST YOU on March 22. The live rendition featured a different cut of Future’s verse not present on the album version. \u003Ca href=\"http://www.last.fm/music/Future/_/Like+That\"\u003ERead more on Last.fm\u003C/a\u003E. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply."
+    }
+  }
+}
