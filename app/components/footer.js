@@ -9,6 +9,7 @@
 
 export default function Footer() {
     return (
-        <footer className='mx-auto px-6 bg-zinc-900 text-white text-xs pt-1 pb-1'>@2024 by Cathy Sun - CPRG306 - Final Project</footer>      
-    );
+        <div class="flex w-full flex-col items-center justify-center border-t bg-black border-zinc-700 py-8 px-4">
+            <div class="flex items-center text-white text-sm">@2024 by Cathy Sun - CPRG306 - Final Project</div></div>
+        );
   }

@@ -1,10 +1,11 @@
 /*
- * Web Development 2 - CPRG306D
- * Final Project
+ * Web Development 3 - CPRG306D
+ * Week 8 - Assignment
  * Name: Cathy Sun
- * Date: 2024 April 13
+ * Date: 2024 Mar 16
  */
 
+import { AuthContextProvider } from "./_utils/auth-context";
 
 import './globals.css';
 import Header from './components/header';
@@ -18,7 +19,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body><Header />{children}<Footer /></body>
+      <body><AuthContextProvider>{children}</AuthContextProvider><Footer /></body>
     </html>
   );
 }
+

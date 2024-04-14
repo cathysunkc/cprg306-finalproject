@@ -20,6 +20,7 @@ export const AuthContextProvider = ({ children }) => {
   };
  
   const firebaseSignOut = () => {
+    
     return signOut(auth);
   };
  

@@ -12,7 +12,9 @@ import Image from 'next/image';
 import arrowIcon from '../images/arrow-icon.png';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-
+import Header from '../components/header';
+import logo from '../images/music_world_logo.png';
+import { useUserAuth } from '../_utils/auth-context.js';
 
 async function fetchSingleArtist(artistName) {
    
@@ -44,7 +46,28 @@ export default function ArtistInfo({ searchParams }) {
   const [artistContent, setArtistContent] = useState('');
   const [artistAlbums, setArtistAlbums] = useState([]);
   const [error, setError] = useState(false);
+  const { user, gitHubSignIn, firebaseSignOut } = useUserAuth();
 
+  async function handleSignIn() {
+    try {
+        // Sign in to Firebase with GitHub authentication
+        await gitHubSignIn();
+    }
+    catch (error) {
+        console.log(error);
+    }
+}
+
+  async function handleSignOut() {
+    try {
+        // Sign out of Firebase
+        await firebaseSignOut();
+       
+    }
+    catch (error) {
+        console.log(error);
+    }
+}
 
   async function loadArtist(paramArtist) {
       try { 
@@ -79,6 +102,36 @@ export default function ArtistInfo({ searchParams }) {
   return (
     <>
     <main> 
+       <>
+        <div className="px-6 mx-auto bg-white">
+          <div className="relative flex flex-row justify-between py-4 align-center md:py-6">
+            <div className="flex items-center flex-1">
+              <a href="/"><Image src={logo} priority='false' alt='Music World Logo' className=' w-10/12' /></a> 
+              
+              { user && 
+              <nav className="ml-6 space-x-2 lg:block">
+                    <Link href='/' prefetch={false} className='relative w-1/2 bg-white shadow-sm border-2 border-purple-800 text-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap hover:bg-purple-800 hover:text-white ease-linear duration-200  sm:w-auto sm:px-8'>Home</Link>
+                    
+                    <Link href='/charts' prefetch={false} className='relative w-1/2 bg-white shadow-sm border-2 border-purple-800 text-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap hover:bg-purple-800 hover:text-white ease-linear duration-200  sm:w-auto sm:px-8'>Charts</Link>
+                    <Link href='/artists' prefetch={false}  className='relative w-1/2 bg-white shadow-sm border-2 border-purple-800 text-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap hover:bg-purple-800 hover:text-white ease-linear duration-200  sm:w-auto sm:px-8'>Artists</Link>
+                    <Link href='/tracks' prefetch={false}  className='relative w-1/2 bg-white shadow-sm border-2 border-purple-800 text-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap hover:bg-purple-800 hover:text-white ease-linear duration-200  sm:w-auto sm:px-8'>Tracks</Link>
+                    <Link href='../votes' prefetch={false} className='relative w-1/2 bg-white shadow-sm border-2 border-purple-800 text-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap hover:bg-purple-800 hover:text-white ease-linear duration-200  sm:w-auto sm:px-8'>Votes</Link>
+                    
+                    </nav> } 
+              </div>
+              <div className="flex items-center flex-end">
+              <div className="ml-6 space-x-2 lg:block">
+              { user && 
+              <button onClick={handleSignOut}
+                              className='relative w-1/2 shadow-sm text-white bg-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap focus:outline-none sm:w-auto sm:px-8'>
+                              Sign Out
+               </button>   
+            }
+            </div>
+            </div></div></div>
+        </>
+
+{     user && 
       <div className="py-8 mx-auto">
       <div className="sm:flex sm:flex-col sm:align-center">
       <div className="relative flex flex-row ml-24">
@@ -94,17 +147,16 @@ export default function ArtistInfo({ searchParams }) {
   <div className='flex flex-col  flex-1 '>
       { error && <div className='text-gray-800'>No Record Found</div> }         
             
-      {
-        !error && artistContent && <>
+      {  !error && artistContent && <>
             <h1 className='text-3xl leading-6 text-gray-800 mb-8'>{artistName}</h1>
             <div className='justify-normal text-gray-800' dangerouslySetInnerHTML={{__html:artistContent}}></div>   
-          </> 
-        }
+          </> }
   </div>
  </div>
-</div>
+</div> }
+
     {
-      !error && artistAlbums && <>
+      user && !error && artistAlbums && <>
       <div className='flex flex-wrap justify-center gap-6 ml-20 mr-20 mt-0 mb-10 bg-white rounded p-10'>
         <div className='flex flex-col flex-1 '>
           <h1 className='text-3xl leading-6 text-gray-800 mb-8'>Top Albums</h1>
@@ -126,6 +178,20 @@ export default function ArtistInfo({ searchParams }) {
               </div>    
             </>               
     } 
+
+
+{ !user && 
+  <div className='flex flex-wrap justify-center gap-6 ml-20 mr-20 mt-5 mb-5 bg-white rounded p-10'>
+  <div className='flex flex-col  flex-1 '>
+  <button onClick={handleSignIn} className="text-lg m-2 hover:underline">
+         Sign in with GitHub
+ </button>
+ </div>
+ </div>
+
+}
+
+    
   </main>  
   </>
   );
