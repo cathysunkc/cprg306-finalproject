@@ -34,8 +34,7 @@ async function fetchArtistAlbums(artistName) {
     //let response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.getTopAlbums&artist=${artistName}&limit=9&api_key=51de025812af79cb70f4a872936181a0&format=json`, {Method: 'POST',  cache: 'no-store' });
     let response = await fetch(url , {Method: 'POST', cache: 'no-store' });
     let data = await response.json();
-    return data.topalbums.album;
-  
+    return data.topalbums.album;  
    
 }
 
@@ -47,37 +46,33 @@ export default function ArtistInfo({ searchParams }) {
   const [error, setError] = useState(false);
 
 
-  async function loadArtist() {
+  async function loadArtist(paramArtist) {
       try { 
 
-        if(searchParams.artistName && searchParams.artistName != '')
-          setArtistName(searchParams.artistName);
+        //if(searchParams.artistName && searchParams.artistName != '')
+        setArtistName(paramArtist);
 
         if (artistName != '')        
         {
-            let artist = await fetchSingleArtist(artistName);
-            if (artist) {             
-              setArtistContent(artist.bio.summary);
-            }    
-            else
-              setArtistContent('');
+            let data = await fetchSingleArtist(artistName);
+            if (data) {             
+              setArtistContent(data.bio.summary);
+            }               
             
-            let albums = await fetchArtistAlbums(artistName);
-            if (albums) {             
-              setArtistAlbums(albums);
-            } 
-            else
-              setArtistAlbums([]);
+            let data2 = await fetchArtistAlbums(artistName);
+            if (data2) {             
+              setArtistAlbums(data2);
+            }             
         }             
       } 
       catch (error) { 
-        console.log(error);
+        //console.log(error);
         setError(true);
       }
   }
 
   useEffect(() => {   
-    loadArtist();
+    loadArtist(searchParams.artistName);
   });
   
   
@@ -91,7 +86,7 @@ export default function ArtistInfo({ searchParams }) {
         <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2' alt="arrow icon" /> 
         <Link prefetch={false} href='/artists' className='text-purple-800 underline '> Artist</Link> 
         <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2' alt='arrow icon' />
-        <div className='text-gray-800'>{artistName} 2</div>
+        <div className='text-gray-800'>{artistName}</div>
     </div>
     </div>
 
@@ -120,7 +115,7 @@ export default function ArtistInfo({ searchParams }) {
                                 {  
                                     item.image.map((item, index) => (
                                     index == 2 &&                             
-                                    <img key={index} src={Object.values(item).slice(0,1)} className='px-3'></img>
+                                    <img key={index} alt='image' src={Object.values(item).slice(0,1)} className='px-3'></img>
                               ))}  
                                <div className='w-5/6 text-base text-gray-800'>{item.name}</div>
                          </div>

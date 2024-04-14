@@ -14,9 +14,6 @@ import Image from 'next/image';
 import TrackImage from '../components/trackImage';
 import arrowIcon from '../images/arrow-icon.png';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-
-
 
 async function fetchTrack(trackName, artistName) {
     
@@ -26,64 +23,41 @@ async function fetchTrack(trackName, artistName) {
     let response = await fetch(url, {Method: 'POST', cache: 'no-store' });
     
     let data = await response.json();
-    return data.track; 
-     
+    return data.track;      
   }
 
+  
+
 export default function TrackInfo({ searchParams }) {
-  const router = useRouter();
+
   const [ trackName, setTrackName ] = useState('');
   const [ artistName, setArtistName ] = useState('');
   const [ album, setAlbum] = useState([]);
   const [ summary, setSummary ] = useState([]);
   const [ error, setError ] = useState(false);
 
-  async function loadTrack() {
+   async function loadTrack(paramTrack) {
       try {       
-        
-        if(searchParams.trackName && searchParams.trackName != '')
-        {
-          setTrackName(searchParams.trackName);
-        }
-
+        //const paramTrackName =  query.trackName;
+        //if(paramTrackName && paramTrackName != '')
+            setTrackName(paramTrack);
           
         if (trackName != '' )        
         {
             let data = await fetchTrack(trackName, artistName);
-            setAlbum(data.album);
-           
+            setAlbum(data.album);  
+            setSummary(data.wiki.summary);         
         }      
-
-      } catch (error) {
-
+      } 
+      catch (error) {
         setError(true);          
       }
   }
 
-  async function loadSummary() {
-    try {       
-      
-     
-      if(searchParams.trackName && searchParams.trackName != '')
-        setTrackName(searchParams.trackName);
-
-      
-    if (trackName != "" )         
-      {
-          let data = await fetchTrack(trackName, artistName);
-          setSummary(data.wiki.summary)
-                          
-      }      
-
-    } catch (error) {
-     console.log(error);
-      setError(true);          
-    }
-}
 
   useEffect(() => {   
-    loadTrack();
-    loadSummary();
+    loadTrack(searchParams.trackName);
+    
   });
 
   return (
@@ -96,7 +70,7 @@ export default function TrackInfo({ searchParams }) {
         <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2' alt="arrow icon" /> 
         <Link prefetch={false}  href='/tracks' className='text-purple-800 underline '>Track</Link> 
         <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2'  alt='arrow icon' />
-        <div className='text-gray-800'>{trackName} 2</div>
+        <div className='text-gray-800'>{trackName}</div>
       </div>
     </div>
   <div className='flex flex-wrap justify-center gap-6 ml-20 mr-20 mt-5 mb-5 bg-white rounded p-10'>

@@ -6,7 +6,6 @@
  */
 
 
-
 "use client"
 
 import React, { useState, useEffect, FormEvent } from 'react';
@@ -15,7 +14,7 @@ import searchIcon from '../images/search-icon.svg';
 import arrowIcon from '../images/arrow-icon.png';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-
+import { Suspense } from 'react';
 
 async function fetchTrendingTrack() {
     //let response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=chart.getTopTracks&api_key=&limit=28&format=json`, {Method: 'POST', cache: 'no-store' });
@@ -59,6 +58,12 @@ export default function Tracks() {
     loadTrack();
   }
 
+  /* pathname: '/track-info',
+    query: {
+      trackName: item.name,
+      artistName: item.artist.name,
+    }*/
+
   return (
     <>
     <main > 
@@ -92,6 +97,7 @@ export default function Tracks() {
                         trendingTrack.map((item, index) => (
                           <div key={index} className='m-3'>
                             <Link className='underline' href={{
+                                  
                                   pathname: '/track-info',
                                   query: {
                                     trackName: item.name,

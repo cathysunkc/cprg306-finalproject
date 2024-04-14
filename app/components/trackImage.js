@@ -38,7 +38,7 @@ export default function TrackImage({ track }) {
             }
   
         } catch (error) {
-            console.error('3' + error);
+            //console.error('3' + error);
         }
     } 
    
@@ -53,7 +53,7 @@ export default function TrackImage({ track }) {
             {
                 trackImage.map((item, index) => (
                     index == 3 &&     
-                    <img key={index} src={Object.values(item).slice(0,1)} style={{paddingLeft: '10px', paddingRight: '10px'}}></img>
+                    <img key={index} src={Object.values(item).slice(0,1)} alt='image' className='px-2'></img>
                     
                 ))
             }
