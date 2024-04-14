@@ -14,6 +14,7 @@ import Image from 'next/image';
 import TrackImage from '../components/trackImage';
 import arrowIcon from '../images/arrow-icon.png';
 import Link from 'next/link';
+import queryString from 'query-string';
 
 async function fetchTrack(trackName, artistName) {
     
@@ -56,8 +57,7 @@ export default function TrackInfo({ searchParams }) {
 
 
   useEffect(() => {   
-    loadTrack(searchParams.trackName);
-    
+    loadTrack(searchParams.trackName);    
   });
 
   return (
