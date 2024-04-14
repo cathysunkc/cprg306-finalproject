@@ -1,3 +1,11 @@
+/*
+ * Web Development 3 - CPRG306D
+ * Week 8 - Assignment
+ * Name: Cathy Sun
+ * Date: 2024 Mar 16
+ */
+
+
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use

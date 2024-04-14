@@ -13,8 +13,12 @@ import React from 'react';
 import logo from '../images/music_world_logo.png';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+// Import the useUserAuth hook
+import { useUserAuth } from "../_utils/auth-context";
 
 export default function Header() {
+  // Use the useUserAuth hook to get the user object and the login and logout functions
+
     return ( 
       <>
         <div className="px-6 mx-auto bg-white">
@@ -31,7 +35,7 @@ export default function Header() {
               </div>
               <div className="flex items-center flex-end">
               <div className="ml-6 space-x-2 lg:block">
-              <Link href='/' prefetch={false}  className='relative w-1/2 shadow-sm text-white bg-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap focus:outline-none sm:w-auto sm:px-8'>Login</Link>
+              <Link href='/signin' prefetch={false}  className='relative w-1/2 shadow-sm text-white bg-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap focus:outline-none sm:w-auto sm:px-8'>Sign In</Link>
               </div>
             </div></div></div>
         </>                
