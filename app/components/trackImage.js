@@ -38,7 +38,7 @@ export default function TrackImage({ track }) {
             }
   
         } catch (error) {
-            //console.error(error);
+            console.error('3' + error);
         }
     } 
    

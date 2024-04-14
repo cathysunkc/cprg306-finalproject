@@ -91,7 +91,7 @@ export default function ArtistInfo({ searchParams }) {
         <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2' alt="arrow icon" /> 
         <Link prefetch={false} href='/artists' className='text-purple-800 underline '> Artist</Link> 
         <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2' alt='arrow icon' />
-        <div className='text-gray-800'>{artistName} 1</div>
+        <div className='text-gray-800'>{artistName} 2</div>
     </div>
     </div>
 
