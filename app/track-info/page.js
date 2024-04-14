@@ -96,7 +96,7 @@ export default function TrackInfo({ searchParams }) {
         <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2' alt="arrow icon" /> 
         <Link prefetch={false}  href='/tracks' className='text-purple-800 underline '>Track</Link> 
         <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2'  alt='arrow icon' />
-        <div className='text-gray-800'>{trackName}</div>
+        <div className='text-gray-800'>{trackName} 1</div>
       </div>
     </div>
   <div className='flex flex-wrap justify-center gap-6 ml-20 mr-20 mt-5 mb-5 bg-white rounded p-10'>
