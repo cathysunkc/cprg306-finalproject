@@ -11,7 +11,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
-async function fetchTrackImage(track, artist) {
+async function fetchTrackImage(track) {
         let value = track.replace(/[\s\,\'\.\(\)]/g, '');
         let url = `https://raw.githubusercontent.com/cathysunkc/cprg306-finalproject/master/app/data/tracks/${value}.json`;
        // let response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key=51de025812af79cb70f4a872936181a0&artist=${artist}&track=${track}&format=json`, {Method: 'POST',  cache: 'no-store' });
@@ -23,17 +23,19 @@ async function fetchTrackImage(track, artist) {
 
   
 
-export default function TrackImage({ track}, {artist}) {
+export default function TrackImage({ track }) {
 
     const [trackImage, setTrackImage] = useState([]);
       
     async function loadTrackImage() {
         try {
-  
-            let data = await fetchTrackImage(track, artist);
+            if (track != '')
+            {
+                let data = await fetchTrackImage(track);
           
-            if (data)
-                setTrackImage(data);
+                if (data)
+                    setTrackImage(data);
+            }
   
         } catch (error) {
             //console.error(error);

@@ -42,7 +42,9 @@ export default function TrackInfo({ searchParams }) {
       try {       
         
         if(searchParams.trackName && searchParams.trackName != '')
+        {
           setTrackName(searchParams.trackName);
+        }
 
           
         if (trackName != '' )        
