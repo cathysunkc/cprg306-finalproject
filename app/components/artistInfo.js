@@ -100,7 +100,7 @@ export default function ArtistInfo({ artistParam }) {
            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
             <div><h1 className='text-3xl leading-6 text-gray-800 mb-8'>{artistName}</h1></div>
             <div>
-            <button onClick={handleVoteArtist}
+            <button onClick={()=>handleVoteArtist()}
                               className='relative w-1/8 shadow-sm text-white bg-yellow-400 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap focus:outline-none sm:w-auto sm:px-8'>
                               Vote</button></div>
            

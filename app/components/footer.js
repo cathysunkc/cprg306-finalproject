@@ -9,7 +9,7 @@
 
 export default function Footer() {
     return (
-        <div class="flex w-full flex-col items-center justify-center border-t bg-black border-zinc-700 py-8 px-4">
-            <div class="flex items-center text-white text-sm">@2024 by Cathy Sun - CPRG306 - Final Project</div></div>
+        <div className="flex w-full flex-col items-center justify-center border-t bg-black border-zinc-700 py-8 px-4">
+            <div className="flex items-center text-white text-sm">@2024 by Cathy Sun - CPRG306 - Final Project</div></div>
         );
   }

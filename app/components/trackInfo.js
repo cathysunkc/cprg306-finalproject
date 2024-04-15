@@ -15,7 +15,7 @@ import TrackImage from '../components/trackImage';
 import arrowIcon from '../images/arrow-icon.png';
 import ArtistInfo from './artistInfo';
 import Link from 'next/link';
-
+import { getArtists, addArtist } from '../_services/artist-vote';
 
 async function fetchTrack(trackName, artistName) {
     
@@ -79,6 +79,13 @@ export default function TrackInfo({ trackParam }) {
     loadTrack();    
   });
 
+  //Create an event handler function handleAddItem that adds a new item to items
+  const handleVoteTrack = async () => { 
+      
+    const itemId = await addArtist(user.uid, artistName);
+    alert('Vote success!');
+};
+
   return (
   <>
   {pageName == 'trackInfo' && 
@@ -94,8 +101,17 @@ export default function TrackInfo({ trackParam }) {
     <div className='flex flex-col  flex-1'>
     { error  && <div className='text-gray-800'>No Record Found</div> }           
     { !error && album && <>
-      <div className='text-3xl leading-6 text-gray-800 mb-8'>{trackName}</div>
-        <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6'><div>
+      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
+            <div><h1 className='text-3xl leading-6 text-gray-800 mb-8'>{trackName}</h1></div>
+            <div>
+            <button onClick={()=>handleVoteTrack()}
+                              className='relative w-1/8 shadow-sm text-white bg-yellow-400 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap focus:outline-none sm:w-auto sm:px-8'>
+                              Vote</button></div>
+           
+            </div>  
+      
+        <div className='grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6'><div>
+        
               <TrackImage  
                             track={trackName}
                             artist={album.artist}
