@@ -33,6 +33,8 @@ const Artists = forwardRef((props, ref) => {
   useImperativeHandle(ref, () => ({
     handlePageChange: () => handlePageChange('artists'),
   }));
+
+  Artists.displayName = 'artists';
   const router = useRouter();
   const [ artistName, setArtistName ] = useState('');
   const [trendingArtist, setTrendingArtist] = useState([]);

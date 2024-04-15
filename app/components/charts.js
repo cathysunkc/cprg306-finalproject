@@ -43,6 +43,8 @@ const Charts = forwardRef((props, ref) => {
   useImperativeHandle(ref, () => ({
     handlePageChange: () => handlePageChange('charts'),
   }));
+
+  Charts.displayName = 'charts';
     
     const router = useRouter();
     const [country, setCountry] = useState('canada');

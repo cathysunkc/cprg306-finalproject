@@ -50,7 +50,9 @@ export default function Home() {
         setPageName(value);
         if (pageName == 'charts' || pageName == 'artists' || pageName == 'tracks')
         {
+            childRef.displayName = pageName;
             childRef.current.handlePageChange(pageName);
+            
         }
         
     }

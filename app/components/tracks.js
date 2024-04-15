@@ -28,8 +28,9 @@ async function fetchTrendingTrack() {
 
 const Tracks = forwardRef((props, ref) => {
   useImperativeHandle(ref, () => ({
-    handlePageChange: () => handlePageChange('tracks'),
+    handlePageChange: () => handlePageChange('tracks'), 
   }));
+  Tracks.displayName = 'tracks';
   const router = useRouter();
   
   const [ trendingTrack, setTrendingTrack] = useState([]);
