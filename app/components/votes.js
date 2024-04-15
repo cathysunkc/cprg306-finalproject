@@ -18,14 +18,13 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
 
-
 const Votes = forwardRef((props, ref) => {
   useImperativeHandle(ref, () => ({
     handlePageChange: () => handlePageChange('votes'),
   }));
 
   Votes.displayName = 'votes';
-
+  
   const [ artistName, setArtistName ] = useState('');
   const [ trackName, setTrackName ] = useState('');
   const [pageName, setPageName] = useState('votes');

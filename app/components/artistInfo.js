@@ -13,6 +13,7 @@ import arrowIcon from '../images/arrow-icon.png';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { getArtists, addArtist } from '../_services/artist-vote';
+import { useUserAuth } from '../_utils/auth-context';
 
 async function fetchSingleArtist(artistName) {
    
@@ -41,10 +42,12 @@ async function fetchArtistAlbums(artistName) {
 export default function ArtistInfo({ artistParam }) {
   const router = useRouter();
   const [ artistName, setArtistName ] = useState('');
+  const [ artistMBID, setArtistMBID ] = useState('');
   const [ artistContent, setArtistContent] = useState('');
   const [ artistAlbums, setArtistAlbums] = useState([]);
   const [ error, setError] = useState(false);
- 
+  const { user } = useUserAuth();
+
   async function loadArtist() {
       try { 
 
@@ -56,16 +59,17 @@ export default function ArtistInfo({ artistParam }) {
             let data = await fetchSingleArtist(artistName);
             if (data) {             
               setArtistContent(data.bio.summary);
+              setArtistMBID(data.bio.mbid);
             }               
             
             let data2 = await fetchArtistAlbums(artistName);
             if (data2) {             
-              setArtistAlbums(data2);
+              setArtistAlbums(data2);              
             }             
         }             
       } 
       catch (error) { 
-        //console.log(error);
+        console.log(error);
         setError(true);
       }
   }
@@ -76,8 +80,11 @@ export default function ArtistInfo({ artistParam }) {
 
   //Create an event handler function handleAddItem that adds a new item to items
   const handleVoteArtist = async () => { 
-      
-    const itemId = await addArtist(user.uid, artistName);
+    const artist = {           
+        artistName,
+        artistMBID
+          };  
+    const itemId = await addArtist(user.uid, artist);
     alert('Vote success!');
 };
   
