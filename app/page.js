@@ -97,7 +97,7 @@ export default function Login() {
             </div></>
             }
             { pageName=='charts' && <Charts /> }
-            { pageName=='artists' && <Artists /> }
+            { pageName=='artists' && <Artists defaultPage={pageName} /> }
             { pageName=='tracks' && <Tracks /> }
         </>
             ) : (

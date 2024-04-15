@@ -30,12 +30,12 @@ async function fetchTrendingArtist() {
 }
 
 
-export default function Artists() {
+export default function Artists({defaultPage}) {
   const router = useRouter();
   const [ artistName, setArtistName ] = useState('');
   const [trendingArtist, setTrendingArtist] = useState([]);
   const [artistContent, setArtistContent] = useState('');
-  const [pageName, setPageName] = useState(inputParam);
+  const [pageName, setPageName] = useState(defaultPage);
 
  
   async function loadArtist() {
@@ -52,9 +52,6 @@ export default function Artists() {
   }
 
   useEffect(() => {
-    //if(inputParam == 'default')
-    //  window.location.reload();
-
     loadArtist();
   });
 
@@ -129,7 +126,7 @@ export default function Artists() {
     </div>
 }
 
-{pageName == 'artistInfo'  && <ArtistInfo artistParam={artistName} />} 
+{pageName == 'artistInfo'  && <ArtistInfo artistParam={artistName} defaultPage={pageName} />} 
 
 
   </main>  

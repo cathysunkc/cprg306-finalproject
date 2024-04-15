@@ -52,14 +52,7 @@ export default function Tracks() {
     loadTrack();
   }, []);
 
-  function handleSubmit(e) {
-    if (e.target.trackName.value && e.target.trackName.value != '') {
-      e.preventDefault();
-      setPageName('trackInfo')
-      setArtistName(e.target.trackName.value);    
-    }
-  }
-
+  
   function handlePageChange(page, param) {
     setPageName(page);
   
@@ -68,6 +61,14 @@ export default function Tracks() {
     else
       setTrackName('');  
   
+  }
+
+  function handleSubmit(e) {
+    if (e.target.trackName.value && e.target.trackName.value != '') {
+      e.preventDefault();
+      setPageName('trackInfo')
+      setArtistName(e.target.trackName.value);    
+    }
   }
 
   return (
