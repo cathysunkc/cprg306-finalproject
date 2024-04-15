@@ -1,308 +1,309 @@
 {
-   "topalbums":{
-      "album":[
+   "topalbums": {
+      "album": [
          {
-            "name":"Lover",
-            "playcount":205914061,
-            "url":"https://www.last.fm/music/Taylor+Swift/Lover",
-            "artist":{
-               "name":"Taylor Swift",
-               "mbid":"20244d07-534f-4eff-b4d4-930878889970",
-               "url":"https://www.last.fm/music/Taylor+Swift"
+            "name": "Lover",
+            "playcount": 205914061,
+            "url": "https://www.last.fm/music/Taylor+Swift/Lover",
+            "artist": {
+               "name": "Taylor Swift",
+               "mbid": "20244d07-534f-4eff-b4d4-930878889970",
+               "url": "https://www.last.fm/music/Taylor+Swift"
             },
-            "image":[
+            "image": [
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/34s/d3f083370c371a3ba1cddafaf193c27d.png",
-                  "size":"small"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/d3f083370c371a3ba1cddafaf193c27d.png",
+                  "size": "small"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/64s/d3f083370c371a3ba1cddafaf193c27d.png",
-                  "size":"medium"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/d3f083370c371a3ba1cddafaf193c27d.png",
+                  "size": "medium"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/174s/d3f083370c371a3ba1cddafaf193c27d.png",
-                  "size":"large"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/d3f083370c371a3ba1cddafaf193c27d.png",
+                  "size": "large"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/300x300/d3f083370c371a3ba1cddafaf193c27d.png",
-                  "size":"extralarge"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/d3f083370c371a3ba1cddafaf193c27d.png",
+                  "size": "extralarge"
                }
             ]
          },
          {
-            "name":"Reputation",
-            "playcount":179822019,
-            "url":"https://www.last.fm/music/Taylor+Swift/Reputation",
-            "artist":{
-               "name":"Taylor Swift",
-               "mbid":"20244d07-534f-4eff-b4d4-930878889970",
-               "url":"https://www.last.fm/music/Taylor+Swift"
+            "name": "Reputation",
+            "playcount": 179822019,
+            "url": "https://www.last.fm/music/Taylor+Swift/Reputation",
+            "artist": {
+               "name": "Taylor Swift",
+               "mbid": "20244d07-534f-4eff-b4d4-930878889970",
+               "url": "https://www.last.fm/music/Taylor+Swift"
             },
-            "image":[
+            "image": [
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/34s/dddb96a470fecc69d281f45c81a44d2a.png",
-                  "size":"small"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/dddb96a470fecc69d281f45c81a44d2a.png",
+                  "size": "small"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/64s/dddb96a470fecc69d281f45c81a44d2a.png",
-                  "size":"medium"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/dddb96a470fecc69d281f45c81a44d2a.png",
+                  "size": "medium"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/174s/dddb96a470fecc69d281f45c81a44d2a.png",
-                  "size":"large"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/dddb96a470fecc69d281f45c81a44d2a.png",
+                  "size": "large"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/300x300/dddb96a470fecc69d281f45c81a44d2a.png",
-                  "size":"extralarge"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/dddb96a470fecc69d281f45c81a44d2a.png",
+                  "size": "extralarge"
                }
             ]
          },
          {
-            "name":"FOlKlORE",
-            "playcount":172031600,
-            "url":"https://www.last.fm/music/Taylor+Swift/FOlKlORE",
-            "artist":{
-               "name":"Taylor Swift",
-               "mbid":"20244d07-534f-4eff-b4d4-930878889970",
-               "url":"https://www.last.fm/music/Taylor+Swift"
+            "name": "FOlKlORE",
+            "playcount": 172031600,
+            "url": "https://www.last.fm/music/Taylor+Swift/FOlKlORE",
+            "artist": {
+               "name": "Taylor Swift",
+               "mbid": "20244d07-534f-4eff-b4d4-930878889970",
+               "url": "https://www.last.fm/music/Taylor+Swift"
             },
-            "image":[
+            "image": [
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/34s/b8da93ab6d8aa00384998fdae7451d92.png",
-                  "size":"small"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/b8da93ab6d8aa00384998fdae7451d92.png",
+                  "size": "small"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/64s/b8da93ab6d8aa00384998fdae7451d92.png",
-                  "size":"medium"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/b8da93ab6d8aa00384998fdae7451d92.png",
+                  "size": "medium"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/174s/b8da93ab6d8aa00384998fdae7451d92.png",
-                  "size":"large"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/b8da93ab6d8aa00384998fdae7451d92.png",
+                  "size": "large"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/300x300/b8da93ab6d8aa00384998fdae7451d92.png",
-                  "size":"extralarge"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/b8da93ab6d8aa00384998fdae7451d92.png",
+                  "size": "extralarge"
                }
             ]
          },
          {
-            "name":"1989",
-            "playcount":47891780,
-            "mbid":"b15d9a20-5fe8-4b35-ad58-bf686787d950",
-            "url":"https://www.last.fm/music/Taylor+Swift/1989",
-            "artist":{
-               "name":"Taylor Swift",
-               "mbid":"20244d07-534f-4eff-b4d4-930878889970",
-               "url":"https://www.last.fm/music/Taylor+Swift"
+            "name": "1989",
+            "playcount": 47891780,
+            "mbid": "b15d9a20-5fe8-4b35-ad58-bf686787d950",
+            "url": "https://www.last.fm/music/Taylor+Swift/1989",
+            "artist": {
+               "name": "Taylor Swift",
+               "mbid": "20244d07-534f-4eff-b4d4-930878889970",
+               "url": "https://www.last.fm/music/Taylor+Swift"
             },
-            "image":[
+            "image": [
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/34s/b71ba6cf5881d8cf143e0ad0b4f28d9f.png",
-                  "size":"small"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/b71ba6cf5881d8cf143e0ad0b4f28d9f.png",
+                  "size": "small"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/64s/b71ba6cf5881d8cf143e0ad0b4f28d9f.png",
-                  "size":"medium"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/b71ba6cf5881d8cf143e0ad0b4f28d9f.png",
+                  "size": "medium"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/174s/b71ba6cf5881d8cf143e0ad0b4f28d9f.png",
-                  "size":"large"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/b71ba6cf5881d8cf143e0ad0b4f28d9f.png",
+                  "size": "large"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/300x300/b71ba6cf5881d8cf143e0ad0b4f28d9f.png",
-                  "size":"extralarge"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/b71ba6cf5881d8cf143e0ad0b4f28d9f.png",
+                  "size": "extralarge"
                }
             ]
          },
          {
-            "name":"Fearless",
-            "playcount":27384023,
-            "mbid":"6caf2472-3922-403e-90bf-19a45d98d065",
-            "url":"https://www.last.fm/music/Taylor+Swift/Fearless",
-            "artist":{
-               "name":"Taylor Swift",
-               "mbid":"20244d07-534f-4eff-b4d4-930878889970",
-               "url":"https://www.last.fm/music/Taylor+Swift"
+            "name": "Fearless",
+            "playcount": 27384023,
+            "mbid": "6caf2472-3922-403e-90bf-19a45d98d065",
+            "url": "https://www.last.fm/music/Taylor+Swift/Fearless",
+            "artist": {
+               "name": "Taylor Swift",
+               "mbid": "20244d07-534f-4eff-b4d4-930878889970",
+               "url": "https://www.last.fm/music/Taylor+Swift"
             },
-            "image":[
+            "image": [
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/34s/d8888f990ce044e4c856550a7041c83e.png",
-                  "size":"small"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/d8888f990ce044e4c856550a7041c83e.png",
+                  "size": "small"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/64s/d8888f990ce044e4c856550a7041c83e.png",
-                  "size":"medium"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/d8888f990ce044e4c856550a7041c83e.png",
+                  "size": "medium"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/174s/d8888f990ce044e4c856550a7041c83e.png",
-                  "size":"large"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/d8888f990ce044e4c856550a7041c83e.png",
+                  "size": "large"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/300x300/d8888f990ce044e4c856550a7041c83e.png",
-                  "size":"extralarge"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/d8888f990ce044e4c856550a7041c83e.png",
+                  "size": "extralarge"
                }
             ]
          },
          {
-            "name":"Midnights",
-            "playcount":104301526,
-            "url":"https://www.last.fm/music/Taylor+Swift/Midnights",
-            "artist":{
-               "name":"Taylor Swift",
-               "mbid":"20244d07-534f-4eff-b4d4-930878889970",
-               "url":"https://www.last.fm/music/Taylor+Swift"
+            "name": "Midnights",
+            "playcount": 104301526,
+            "url": "https://www.last.fm/music/Taylor+Swift/Midnights",
+            "artist": {
+               "name": "Taylor Swift",
+               "mbid": "20244d07-534f-4eff-b4d4-930878889970",
+               "url": "https://www.last.fm/music/Taylor+Swift"
             },
-            "image":[
+            "image": [
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/34s/8914bab2a0e4e454c6892f151d57208f.png",
-                  "size":"small"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/8914bab2a0e4e454c6892f151d57208f.png",
+                  "size": "small"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/64s/8914bab2a0e4e454c6892f151d57208f.png",
-                  "size":"medium"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/8914bab2a0e4e454c6892f151d57208f.png",
+                  "size": "medium"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/174s/8914bab2a0e4e454c6892f151d57208f.png",
-                  "size":"large"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/8914bab2a0e4e454c6892f151d57208f.png",
+                  "size": "large"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/300x300/8914bab2a0e4e454c6892f151d57208f.png",
-                  "size":"extralarge"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/8914bab2a0e4e454c6892f151d57208f.png",
+                  "size": "extralarge"
                }
             ]
          },
          {
-            "name":"1989 (Deluxe)",
-            "playcount":83663324,
-            "url":"https://www.last.fm/music/Taylor+Swift/1989+(Deluxe)",
-            "artist":{
-               "name":"Taylor Swift",
-               "mbid":"20244d07-534f-4eff-b4d4-930878889970",
-               "url":"https://www.last.fm/music/Taylor+Swift"
+            "name": "1989 (Deluxe)",
+            "playcount": 83663324,
+            "url": "https://www.last.fm/music/Taylor+Swift/1989+(Deluxe)",
+            "artist": {
+               "name": "Taylor Swift",
+               "mbid": "20244d07-534f-4eff-b4d4-930878889970",
+               "url": "https://www.last.fm/music/Taylor+Swift"
             },
-            "image":[
+            "image": [
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/34s/33a04bf99f129b944dd641dbfb4ba433.png",
-                  "size":"small"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/33a04bf99f129b944dd641dbfb4ba433.png",
+                  "size": "small"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/64s/33a04bf99f129b944dd641dbfb4ba433.png",
-                  "size":"medium"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/33a04bf99f129b944dd641dbfb4ba433.png",
+                  "size": "medium"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/174s/33a04bf99f129b944dd641dbfb4ba433.png",
-                  "size":"large"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/33a04bf99f129b944dd641dbfb4ba433.png",
+                  "size": "large"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/300x300/33a04bf99f129b944dd641dbfb4ba433.png",
-                  "size":"extralarge"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/33a04bf99f129b944dd641dbfb4ba433.png",
+                  "size": "extralarge"
                }
             ]
          },
          {
-            "name":"Speak Now",
-            "playcount":48131654,
-            "mbid":"829d9e28-e7a8-4f91-a21a-1eef17da356d",
-            "url":"https://www.last.fm/music/Taylor+Swift/Speak+Now",
-            "artist":{
-               "name":"Taylor Swift",
-               "mbid":"20244d07-534f-4eff-b4d4-930878889970",
-               "url":"https://www.last.fm/music/Taylor+Swift"
+            "name": "Speak Now",
+            "playcount": 48131654,
+            "mbid": "829d9e28-e7a8-4f91-a21a-1eef17da356d",
+            "url": "https://www.last.fm/music/Taylor+Swift/Speak+Now",
+            "artist": {
+               "name": "Taylor Swift",
+               "mbid": "20244d07-534f-4eff-b4d4-930878889970",
+               "url": "https://www.last.fm/music/Taylor+Swift"
             },
-            "image":[
+            "image": [
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/34s/a9ff4f81e3402e5fdd3c8e85681ad606.png",
-                  "size":"small"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/a9ff4f81e3402e5fdd3c8e85681ad606.png",
+                  "size": "small"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/64s/a9ff4f81e3402e5fdd3c8e85681ad606.png",
-                  "size":"medium"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/a9ff4f81e3402e5fdd3c8e85681ad606.png",
+                  "size": "medium"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/174s/a9ff4f81e3402e5fdd3c8e85681ad606.png",
-                  "size":"large"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/a9ff4f81e3402e5fdd3c8e85681ad606.png",
+                  "size": "large"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/300x300/a9ff4f81e3402e5fdd3c8e85681ad606.png",
-                  "size":"extralarge"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/a9ff4f81e3402e5fdd3c8e85681ad606.png",
+                  "size": "extralarge"
                }
             ]
          },
          {
-            "name":"RED (Taylor's Version)",
-            "playcount":164657095,
-            "url":"https://www.last.fm/music/Taylor+Swift/RED+(Taylor%27s+Version)",
-            "artist":{
-               "name":"Taylor Swift",
-               "mbid":"20244d07-534f-4eff-b4d4-930878889970",
-               "url":"https://www.last.fm/music/Taylor+Swift"
+            "name": "RED (Taylor's Version)",
+            "playcount": 164657095,
+            "url": "https://www.last.fm/music/Taylor+Swift/RED+(Taylor%27s+Version)",
+            "artist": {
+               "name": "Taylor Swift",
+               "mbid": "20244d07-534f-4eff-b4d4-930878889970",
+               "url": "https://www.last.fm/music/Taylor+Swift"
             },
-            "image":[
+            "image": [
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/34s/b0962b3df3e930c581bc69618d6c3281.png",
-                  "size":"small"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/b0962b3df3e930c581bc69618d6c3281.png",
+                  "size": "small"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/64s/b0962b3df3e930c581bc69618d6c3281.png",
-                  "size":"medium"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/b0962b3df3e930c581bc69618d6c3281.png",
+                  "size": "medium"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/174s/b0962b3df3e930c581bc69618d6c3281.png",
-                  "size":"large"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/b0962b3df3e930c581bc69618d6c3281.png",
+                  "size": "large"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/300x300/b0962b3df3e930c581bc69618d6c3281.png",
-                  "size":"extralarge"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/b0962b3df3e930c581bc69618d6c3281.png",
+                  "size": "extralarge"
                }
             ]
          },
          {
-            "name":"evermore",
-            "playcount":104241964,
-            "url":"https://www.last.fm/music/Taylor+Swift/evermore",
-            "artist":{
-               "name":"Taylor Swift",
-               "mbid":"20244d07-534f-4eff-b4d4-930878889970",
-               "url":"https://www.last.fm/music/Taylor+Swift"
+            "name": "evermore",
+            "playcount": 104241964,
+            "url": "https://www.last.fm/music/Taylor+Swift/evermore",
+            "artist": {
+               "name": "Taylor Swift",
+               "mbid": "20244d07-534f-4eff-b4d4-930878889970",
+               "url": "https://www.last.fm/music/Taylor+Swift"
             },
-            "image":[
+            "image": [
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/34s/3fc71aa25ab1242571c841c75f764d10.png",
-                  "size":"small"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/34s/3fc71aa25ab1242571c841c75f764d10.png",
+                  "size": "small"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/64s/3fc71aa25ab1242571c841c75f764d10.png",
-                  "size":"medium"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/64s/3fc71aa25ab1242571c841c75f764d10.png",
+                  "size": "medium"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/174s/3fc71aa25ab1242571c841c75f764d10.png",
-                  "size":"large"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/174s/3fc71aa25ab1242571c841c75f764d10.png",
+                  "size": "large"
                },
                {
-                  "#text":"https://lastfm.freetls.fastly.net/i/u/300x300/3fc71aa25ab1242571c841c75f764d10.png",
-                  "size":"extralarge"
+                  "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/3fc71aa25ab1242571c841c75f764d10.png",
+                  "size": "extralarge"
                }
             ]
          }
       ],
-      "@attr":{
-         "artist":"Taylor Swift",
-         "page":"1",
-         "perPage":"10",
-         "totalPages":"8609",
-         "total":"86088"
+      "@attr": {
+         "artist": "Taylor Swift",
+         "page": "1",
+         "perPage": "10",
+         "totalPages": "8609",
+         "total": "86088"
       },
-      "bio":{
-         "links":{
-            "link":{
-               "#text":"",
-               "rel":"original",
-               "href":"https://last.fm/music/Taylor+Swift/+wiki"
+      "bio": {
+         "links": {
+            "link": {
+               "#text": "",
+               "rel": "original",
+               "href": "https://last.fm/music/Taylor+Swift/+wiki"
             }
          },
-         "published":"16 Aug 2006, 21:31",
-         "summary":"Taylor Alison Swift is an American singer-songwriter. Her discography spans multiple genres, and her narrative songwriting, which is often inspired by her personal life, has received widespread media coverage and critical praise.\n\nBorn in West Reading, Pennsylvania, Swift relocated to Nashville, Tennessee in 2004 to pursue a career in country music. She broke into the country music scene with her eponymous self-titled debut studio album, Taylor Swift in 2006, which included the singles \"Teardrops on My Guitar\" and \"Our Song\". <a href=\"https://www.last.fm/music/Taylor+Swift\">Read more on Last.fm</a>",
-         "content":"Taylor Alison Swift is an American singer-songwriter. Her discography spans multiple genres, and her narrative songwriting, which is often inspired by her personal life, has received widespread media coverage and critical praise.\n\nBorn in West Reading, Pennsylvania, Swift relocated to Nashville, Tennessee in 2004 to pursue a career in country music. She broke into the country music scene with her eponymous self-titled debut studio album, Taylor Swift in 2006, which included the singles \"Teardrops on My Guitar\" and \"Our Song\". Swift also released the holiday album, Sounds of the Season: The Taylor Swift Holiday Collection, later titled as The Taylor Swift Holiday Collection in October 2007.\n\nSwift rose to mainstream prominence with her sophomore studio album, Fearless (2008), a country pop record with crossover appeal. Aided by the top-five singles \"Love Story\" and \"You Belong with Me\", Fearless was certified Diamond by the Recording Industry Recording Industry Association of America (RIAA). Swift's third studio album, Speak Now (2010), blended country pop with elements of rock and featured the top-ten singles \"Mine\" and \"Back to December\". \n\nDrawing inspiration from various pop, rock, and electronic genres, Swift's fourth studio album Red (2012) saw her transcending her country roots. She completely moved to pop with her synth-pop fifth studio album, 1989 (2014), and expanded the electropop sound on her next two studio albums, reputation (2017) and Lover (2019), which respectively embraced urban and retro styles. The four albums spawned a string of international top-five singles, including \"We Are Never Ever Getting Back Together\", \"I Knew You Were Trouble\", \"Shake It Off\", \"Blank Space\", \"Bad Blood\", \"Look What You Made Me Do\", \"ME! (feat. Brendon Urie of Panic! at the Disco)\", \"You Need to Calm Down\", and \"Lover\". \n\nIn the midst of the COVID-19 pandemic, Swift experimented with folk and alternative rock on her eighth and ninth studio albums, folklore and evermore (both 2020), whose lead singles \"cardigan\" and \"willow\" topped charts around the world. She also released the critically acclaimed documentaries Miss Americana and Folklore: The Long Pond Studio Sessions that year. Swift's tenth studio album, Midnights (2022), marked her triumphant return to pop after two folk albums. The album set the record for biggest first day and first week ever on Spotify, spawned the hits Anti-Hero and Lavender Haze, and sold over 1.5 million copies in its first week becoming not only the biggest debut of the decade but also Swift's biggest debut ever. She would make history by becoming the first artist to occupy the entire top ten of the Billboard Hot 100 with tracks from Midnights. Following Midnights, Taylor Swift announced her upcoming eleventh studio album, “The Tortured Poets Department” (2024) which is set to be released on April 19, 2024. She announced this record at 66th Annual Grammy Award Show accepting the award for Best Pop Vocal Album for her previous album, Midnights (2022) in honour of receiving her 13th Grammy.\n\nAdditionally, Swift began re-recording her back catalog in November 2020 as a result of a publicized dispute with talent manager Scooter Braun and her former label Big Machine, regarding the acquisition of the masters of her back catalog. In April 2021, Swift released a re-recorded issue of her 2008 album Fearless, titled Fearless (Taylor's Version). It debuted at number one in the US. Swift continued releasing re-recorded versions of her back catalog in November, 2021 with the release of Red (Taylor's Version), a 30 track re-issue of her 2012 critical smash. The album debuted at #1 in the US, spawned the #1 hit All Too Well (10 Minute Version) (Taylor's Version) (From the Vault), and broke the record at the time for biggest first day for a female album on Spotify. Red (Taylor's Version) was a critical and commercial hit, and proved that Swift's ambitious plan to re-record her first 6 albums was well worth it.\n\nAlong with the release of Red (Taylor's Version) came All Too Well: The Short Film (2021), Swift's filmmaking debut. The 15 minute romantic drama was based on the lyrical content from Swift's 2012 fan favorite \"All Too Well\" starring Sadie Sink and Dylan O'Brien. It had a limited theatrical release in major cities, and Swift held special screenings of the film throughout 2022 at various film festivals. In December, 2022 Taylor announced that she would be making her feature directorial debut with Oscar-winning studio Searchlight Pictures. \n\nFollowing the release of Midnights, Swift would embark on her first tour in five years, The Eras Tour.\n\nSwift has released several songs for film soundtracks. She co-wrote two songs for the Hannah Montana: The Movie soundtrack— \"You'll Always Find Your Way Back Home\" and \"Crazier\", and contributed two songs to the Valentine's Day soundtrack, including the single \"Today Was a Fairytale\", which was her first number one on the Canadian Hot 100, and peaked at number two on the Billboard Hot 100. She also contributed two original songs to The Hunger Games soundtrack album: \"Safe & Sound - from The Hunger Games Soundtrack\", co-written and recorded with The Civil Wars and T-Bone Burnett, and \"Eyes Open\". \"Safe & Sound\" won the Grammy Award for Best Song Written for Visual Media and was nominated for the Golden Globe Award for Best Original Song. In 2013, Swift recorded \"Sweeter than Fiction\", a song she wrote and produced with Jack Antonoff for the One Chance film soundtrack, which received a Best Original Song nomination at the 71st Golden Globe Awards. Swift and English singer Zayn Malik, mononymously known as Zayn, released a single together, \"I Don't Wanna Live Forever\", for the soundtrack of the film Fifty Shades Darker (2017). She also recorded an original song called \"Beautiful Ghosts\", which she wrote with Andrew Lloyd Webber for the Cats's soundtrack (2019). In 2020, Swift's documentary Miss Americana featured the song \"Only the Young\" which was written after the 2018 United States elections. In 2022, she released an original song titled \"Carolina\" for Where The Crawdads Sing (2022) inspired by the novel written by Delia Owens. \n\nWith sales of over 200 million records worldwide, Swift is a best-selling music artist. Her accolades include 14 Grammy Awards, including four Album of the Year wins, which makes \nSwift the artist with the most awards for that category in history, two Brit Awards (including a Global Icon award), an Emmy Award, 28 [https://guinnessworldrecords.com/]Guinness World Records, 32 American Music Awards (the most wins by an artist), and 23 Billboard Music Awards (the most wins by a woman). She ranked eighth on Billboard's Greatest of All Time Artists Chart (2019) and was listed on Rolling Stone's 100 Greatest Songwriters of All Time (2015). Swift has been included in various power rankings, such as Time's annual list of the 100 most influential people in the world (2010, 2015 and 2019) and Forbes Celebrity 100 (placing first in 2016 and 2019). She was named Woman of the Decade (2010s) by Billboard, Artist of the Decade (2010s) by the American Music Awards, and Person of the Year (2023) by Time Magazine. <a href=\"https://www.last.fm/music/Taylor+Swift\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply."
+         "mbid": "20244d07-534f-4eff-b4d4-930878889970",
+         "published": "16 Aug 2006, 21:31",
+         "summary": "Taylor Alison Swift is an American singer-songwriter. Her discography spans multiple genres, and her narrative songwriting, which is often inspired by her personal life, has received widespread media coverage and critical praise.\n\nBorn in West Reading, Pennsylvania, Swift relocated to Nashville, Tennessee in 2004 to pursue a career in country music. She broke into the country music scene with her eponymous self-titled debut studio album, Taylor Swift in 2006, which included the singles \"Teardrops on My Guitar\" and \"Our Song\". <a href=\"https://www.last.fm/music/Taylor+Swift\">Read more on Last.fm</a>",
+         "content": "Taylor Alison Swift is an American singer-songwriter. Her discography spans multiple genres, and her narrative songwriting, which is often inspired by her personal life, has received widespread media coverage and critical praise.\n\nBorn in West Reading, Pennsylvania, Swift relocated to Nashville, Tennessee in 2004 to pursue a career in country music. She broke into the country music scene with her eponymous self-titled debut studio album, Taylor Swift in 2006, which included the singles \"Teardrops on My Guitar\" and \"Our Song\". Swift also released the holiday album, Sounds of the Season: The Taylor Swift Holiday Collection, later titled as The Taylor Swift Holiday Collection in October 2007.\n\nSwift rose to mainstream prominence with her sophomore studio album, Fearless (2008), a country pop record with crossover appeal. Aided by the top-five singles \"Love Story\" and \"You Belong with Me\", Fearless was certified Diamond by the Recording Industry Recording Industry Association of America (RIAA). Swift's third studio album, Speak Now (2010), blended country pop with elements of rock and featured the top-ten singles \"Mine\" and \"Back to December\". \n\nDrawing inspiration from various pop, rock, and electronic genres, Swift's fourth studio album Red (2012) saw her transcending her country roots. She completely moved to pop with her synth-pop fifth studio album, 1989 (2014), and expanded the electropop sound on her next two studio albums, reputation (2017) and Lover (2019), which respectively embraced urban and retro styles. The four albums spawned a string of international top-five singles, including \"We Are Never Ever Getting Back Together\", \"I Knew You Were Trouble\", \"Shake It Off\", \"Blank Space\", \"Bad Blood\", \"Look What You Made Me Do\", \"ME! (feat. Brendon Urie of Panic! at the Disco)\", \"You Need to Calm Down\", and \"Lover\". \n\nIn the midst of the COVID-19 pandemic, Swift experimented with folk and alternative rock on her eighth and ninth studio albums, folklore and evermore (both 2020), whose lead singles \"cardigan\" and \"willow\" topped charts around the world. She also released the critically acclaimed documentaries Miss Americana and Folklore: The Long Pond Studio Sessions that year. Swift's tenth studio album, Midnights (2022), marked her triumphant return to pop after two folk albums. The album set the record for biggest first day and first week ever on Spotify, spawned the hits Anti-Hero and Lavender Haze, and sold over 1.5 million copies in its first week becoming not only the biggest debut of the decade but also Swift's biggest debut ever. She would make history by becoming the first artist to occupy the entire top ten of the Billboard Hot 100 with tracks from Midnights. Following Midnights, Taylor Swift announced her upcoming eleventh studio album, “The Tortured Poets Department” (2024) which is set to be released on April 19, 2024. She announced this record at 66th Annual Grammy Award Show accepting the award for Best Pop Vocal Album for her previous album, Midnights (2022) in honour of receiving her 13th Grammy.\n\nAdditionally, Swift began re-recording her back catalog in November 2020 as a result of a publicized dispute with talent manager Scooter Braun and her former label Big Machine, regarding the acquisition of the masters of her back catalog. In April 2021, Swift released a re-recorded issue of her 2008 album Fearless, titled Fearless (Taylor's Version). It debuted at number one in the US. Swift continued releasing re-recorded versions of her back catalog in November, 2021 with the release of Red (Taylor's Version), a 30 track re-issue of her 2012 critical smash. The album debuted at #1 in the US, spawned the #1 hit All Too Well (10 Minute Version) (Taylor's Version) (From the Vault), and broke the record at the time for biggest first day for a female album on Spotify. Red (Taylor's Version) was a critical and commercial hit, and proved that Swift's ambitious plan to re-record her first 6 albums was well worth it.\n\nAlong with the release of Red (Taylor's Version) came All Too Well: The Short Film (2021), Swift's filmmaking debut. The 15 minute romantic drama was based on the lyrical content from Swift's 2012 fan favorite \"All Too Well\" starring Sadie Sink and Dylan O'Brien. It had a limited theatrical release in major cities, and Swift held special screenings of the film throughout 2022 at various film festivals. In December, 2022 Taylor announced that she would be making her feature directorial debut with Oscar-winning studio Searchlight Pictures. \n\nFollowing the release of Midnights, Swift would embark on her first tour in five years, The Eras Tour.\n\nSwift has released several songs for film soundtracks. She co-wrote two songs for the Hannah Montana: The Movie soundtrack— \"You'll Always Find Your Way Back Home\" and \"Crazier\", and contributed two songs to the Valentine's Day soundtrack, including the single \"Today Was a Fairytale\", which was her first number one on the Canadian Hot 100, and peaked at number two on the Billboard Hot 100. She also contributed two original songs to The Hunger Games soundtrack album: \"Safe & Sound - from The Hunger Games Soundtrack\", co-written and recorded with The Civil Wars and T-Bone Burnett, and \"Eyes Open\". \"Safe & Sound\" won the Grammy Award for Best Song Written for Visual Media and was nominated for the Golden Globe Award for Best Original Song. In 2013, Swift recorded \"Sweeter than Fiction\", a song she wrote and produced with Jack Antonoff for the One Chance film soundtrack, which received a Best Original Song nomination at the 71st Golden Globe Awards. Swift and English singer Zayn Malik, mononymously known as Zayn, released a single together, \"I Don't Wanna Live Forever\", for the soundtrack of the film Fifty Shades Darker (2017). She also recorded an original song called \"Beautiful Ghosts\", which she wrote with Andrew Lloyd Webber for the Cats's soundtrack (2019). In 2020, Swift's documentary Miss Americana featured the song \"Only the Young\" which was written after the 2018 United States elections. In 2022, she released an original song titled \"Carolina\" for Where The Crawdads Sing (2022) inspired by the novel written by Delia Owens. \n\nWith sales of over 200 million records worldwide, Swift is a best-selling music artist. Her accolades include 14 Grammy Awards, including four Album of the Year wins, which makes \nSwift the artist with the most awards for that category in history, two Brit Awards (including a Global Icon award), an Emmy Award, 28 [https://guinnessworldrecords.com/]Guinness World Records, 32 American Music Awards (the most wins by an artist), and 23 Billboard Music Awards (the most wins by a woman). She ranked eighth on Billboard's Greatest of All Time Artists Chart (2019) and was listed on Rolling Stone's 100 Greatest Songwriters of All Time (2015). Swift has been included in various power rankings, such as Time's annual list of the 100 most influential people in the world (2010, 2015 and 2019) and Forbes Celebrity 100 (placing first in 2016 and 2019). She was named Woman of the Decade (2010s) by Billboard, Artist of the Decade (2010s) by the American Music Awards, and Person of the Year (2023) by Time Magazine. <a href=\"https://www.last.fm/music/Taylor+Swift\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply."
       }
    }
 }

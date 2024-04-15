@@ -91,7 +91,6 @@ export default function ArtistInfo({ artistParam }) {
   
   return (
     <>
-     
      <div className='relative flex flex-row ml-24'>
         <div className='text-gray-800 ml-20 -mt-6'> Artists</div> 
        </div>
