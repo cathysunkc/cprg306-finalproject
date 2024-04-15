@@ -8,7 +8,7 @@
 
 "use client"
 
-import React, { useState, useEffect, FormEvent } from 'react';
+import React, { useState, useEffect, forwardRef, useImperativeHandle } from 'react';
 import Image from 'next/image';
 import Header from '../components/header';
 import logo from '../images/music_world_logo.png';
@@ -26,7 +26,10 @@ async function fetchTrendingTrack() {
     return data.tracks.track;  
 }
 
-export default function Tracks() {
+const Tracks = forwardRef((props, ref) => {
+  useImperativeHandle(ref, () => ({
+    handlePageChange: () => handlePageChange('tracks'),
+  }));
   const router = useRouter();
   
   const [ trendingTrack, setTrendingTrack] = useState([]);
@@ -61,7 +64,9 @@ export default function Tracks() {
     else
       setTrackName(''); 
     
-      return;
+      if (page == 'tracks') {
+        loadTrack();
+      }
     
   }
 
@@ -132,6 +137,8 @@ export default function Tracks() {
 
 
  
-  </>
+</>
   );
-}
+});
+
+export default Tracks;

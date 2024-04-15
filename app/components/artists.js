@@ -8,7 +8,7 @@
 
 "use client"
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, forwardRef, useImperativeHandle } from 'react';
 import Image from 'next/image';
 import searchIcon from '../images/search-icon.svg';
 import arrowIcon from '../images/arrow-icon.png';
@@ -29,13 +29,15 @@ async function fetchTrendingArtist() {
   
 }
 
-
-export default function Artists({defaultPage}) {
+const Artists = forwardRef((props, ref) => {
+  useImperativeHandle(ref, () => ({
+    handlePageChange: () => handlePageChange('artists'),
+  }));
   const router = useRouter();
   const [ artistName, setArtistName ] = useState('');
   const [trendingArtist, setTrendingArtist] = useState([]);
   const [artistContent, setArtistContent] = useState('');
-  const [pageName, setPageName] = useState(defaultPage);
+  const [pageName, setPageName] = useState('artists');
 
  
   async function loadArtist() {
@@ -61,7 +63,11 @@ export default function Artists({defaultPage}) {
     if (page == 'artistInfo')
       setArtistName(param);
     else
-      setArtistName('');  
+      setArtistName('');
+    
+    if (page == 'artists') {
+      loadArtist();
+    }
   
   }
 
@@ -132,13 +138,12 @@ export default function Artists({defaultPage}) {
     </div>
 }
 
-{pageName == 'artistInfo'  &&
-  
+{pageName == 'artistInfo'  && 
 
   <ArtistInfo artistParam={artistName} />} 
-
-
  
-  </>
+</>
   );
-}
+});
+
+export default Artists;

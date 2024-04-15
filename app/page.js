@@ -48,7 +48,7 @@ export default function Home() {
 
     function handlePageChange(value) {
         setPageName(value);
-        if (pageName == 'charts')
+        if (pageName == 'charts' || pageName == 'artists' || pageName == 'tracks')
         {
             childRef.current.handlePageChange(pageName);
         }
@@ -121,7 +121,7 @@ export default function Home() {
                     </div> 
                          
                     </div> 
-                    <Artists defaultPage={pageName} />  </>  }
+                    <Artists ref={childRef} />  </>  }
             { pageName=='tracks' && 
                     <><div className='sm:flex sm:flex-col sm:align-center'>
                     <div className='relative flex flex-row ml-24'>
@@ -129,7 +129,7 @@ export default function Home() {
                     <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2' alt="arrow icon" /> 
                     </div>        
                     </div> 
-                    <Tracks /></> }
+                    <Tracks ref={childRef} /></> }
         </>
             ) : (
                 <div className='flex flex-wrap justify-center gap-6 ml-20 mr-20 mt-5 mb-5 bg-white rounded p-10'>
