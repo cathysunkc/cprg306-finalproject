@@ -59,20 +59,23 @@ export default function Tracks() {
     if (page == 'trackInfo')
       setTrackName(param);
     else
-      setTrackName('');  
-  
+      setTrackName(''); 
+    
+      return;
+    
   }
 
   function handleSubmit(e) {
+    e.preventDefault();
     if (e.target.trackName.value && e.target.trackName.value != '') {
-      e.preventDefault();
+      
       setPageName('trackInfo');
       setTrackName(e.target.trackName.value);    
     }
     else {
-      alert('Please enter the track name!');
-      return;
+      alert('Please enter the track name!');      
     }
+    
   }
 
   return (

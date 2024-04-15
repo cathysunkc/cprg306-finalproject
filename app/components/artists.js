@@ -66,12 +66,16 @@ export default function Artists({defaultPage}) {
   }
 
   function handleSubmit(e) {
+    e.preventDefault();
     if (e.target.artistName.value && e.target.artistName.value != '')
     {
-      e.preventDefault();
       setPageName('artistInfo');
-      setArtistName(e.target.artistName.value);   
+      setArtistName(e.target.artistName.value);
     }
+    else {
+      alert('Please enter the artist name!');      
+    }
+    return;
   }
 
 

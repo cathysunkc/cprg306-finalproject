@@ -71,7 +71,7 @@ export default function ArtistInfo({ artistParam }) {
   }
 
   useEffect(() => {   
-    loadArtist();
+     loadArtist();
   });
 
   //Create an event handler function handleAddItem that adds a new item to items
