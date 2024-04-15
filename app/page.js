@@ -97,8 +97,8 @@ export default function Login() {
             </div></>
             }
             { pageName=='charts' && <Charts /> }
-            { pageName=='artists' && <Artists inputParam='artists' /> }
-            { pageName=='tracks' && <Tracks  /> }
+            { pageName=='artists' && <Artists /> }
+            { pageName=='tracks' && <Tracks /> }
         </>
             ) : (
                 <div className='flex flex-wrap justify-center gap-6 ml-20 mr-20 mt-5 mb-5 bg-white rounded p-10'>
