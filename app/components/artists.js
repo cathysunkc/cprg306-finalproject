@@ -78,14 +78,16 @@ export default function Artists({defaultPage}) {
   
    return (
     <>
-    <main>
+    <div className='relative flex flex-row ml-24'>
+        <div className='text-gray-800 ml-20 -mt-6'> Artists</div> 
+       </div>
     {pageName == 'artists'  && 
       
         <div className='py-2 mx-auto'>
         <div className='sm:flex sm:flex-col sm:align-center'>
           <div className='relative flex flex-row ml-24'>
-            <Link prefetch={false} href='/' className='text-purple-800 underline '>Home</Link>
-            <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2' alt='arrow icon' /> <div className='text-gray-800 '>Artist</div>
+            <Link prefetch={false} href='/' className='text-purple-800 underline '></Link>
+            <div className='text-gray-800 '></div>
         </div>
         <div className='relative self-center bg-white mt-6 rounded-lg p-0.5 flex border'>
         <div className='w-full max-w-md space-y-4 duration-1200 ease-in-out animate-in fade-in slide-in-from-bottom-4'>
@@ -126,10 +128,13 @@ export default function Artists({defaultPage}) {
     </div>
 }
 
-{pageName == 'artistInfo'  && <ArtistInfo artistParam={artistName} />} 
+{pageName == 'artistInfo'  &&
+  
+
+  <ArtistInfo artistParam={artistName} />} 
 
 
-  </main>  
+ 
   </>
   );
 }

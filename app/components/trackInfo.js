@@ -81,22 +81,18 @@ export default function TrackInfo({ trackParam }) {
 
   return (
   <>
-  <main> 
+  {pageName == 'trackInfo' && 
+    <div className='relative flex flex-row ml-24'>
+        <div className='text-gray-800 ml-20 -mt-6'> Tracks</div> 
+       </div>}
+
   {pageName == 'trackInfo'  && 
     
   <div className='py-2 mx-auto'>
-    <div className='sm:flex sm:flex-col sm:align-center'>
-      <div className='relative flex flex-row ml-24'>  
-        <Link prefetch={false} href='/' className='text-purple-800 underline '>Home</Link>
-        <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2' alt="arrow icon" /> 
-        <Link prefetch={false}  href='/tracks' className='text-purple-800 underline '>Track</Link> 
-        <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2'  alt='arrow icon' />
-        <div className='text-gray-800'>{trackName}</div>
-      </div>
-    </div>
+    
   <div className='flex flex-wrap justify-center gap-6 ml-20 mr-20 mt-5 mb-5 bg-white rounded p-10'>
     <div className='flex flex-col  flex-1'>
-    { error && <div className='text-gray-800'>No Record Found</div> }           
+    { error  && <div className='text-gray-800'>No Record Found</div> }           
     { !error && album && <>
       <div className='text-3xl leading-6 text-gray-800 mb-8'>{trackName}</div>
         <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6'><div>
@@ -125,7 +121,7 @@ export default function TrackInfo({ trackParam }) {
 { pageName == 'artistInfo'  && <ArtistInfo artistParam={artistName} />}
 
 
-  </main>  
+  
   </>
   );
 }

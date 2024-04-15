@@ -84,20 +84,13 @@ export default function ArtistInfo({ artistParam }) {
   
   return (
     <>
-    <main> 
-       
-
+     
+     <div className='relative flex flex-row ml-24'>
+        <div className='text-gray-800 ml-20 -mt-6'> Artists</div> 
+       </div>
 
       <div className="py-2 mx-auto">
-      <div className="sm:flex sm:flex-col sm:align-center">
-      <div className="relative flex flex-row ml-24">
-      <Link prefetch={false} href='/' className='text-purple-800 underline '>Home</Link>
-        <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2' alt="arrow icon" /> 
-        <Link prefetch={false} href='/artists' className='text-purple-800 underline '> Artist</Link> 
-        <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2' alt='arrow icon' />
-        <div className='text-gray-800'>{artistName}</div>
-    </div>
-    </div>
+      
 
 <div className='flex flex-wrap justify-center gap-6 ml-20 mr-20 mt-5 mb-5 bg-white rounded p-10'>
   <div className='flex flex-col  flex-1 '>
@@ -144,7 +137,7 @@ export default function ArtistInfo({ artistParam }) {
 
 
     
-  </main>  
+ 
   </>
   );
 }

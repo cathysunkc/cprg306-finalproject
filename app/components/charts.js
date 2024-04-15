@@ -90,13 +90,10 @@ function handlePageChange(page, param) {
     setTrackName(param);
   else
     setTrackName('');
-
-
 }
 
-
 useEffect(() => {
-    setArtistName('charts');
+  
     loadTopTrack();
     loadTopArtist();
 });
@@ -104,15 +101,12 @@ useEffect(() => {
 
   return (
     <>
-    <main>
+     <div className='relative flex flex-row ml-24'>
+     {pageName == 'charts'  &&      <div className='text-gray-800 ml-20 -mt-6'> Charts</div> }
+       </div>
     {pageName == 'charts'  && 
         <div className='py-2 mx-auto'>
-          <div className='sm:flex sm:flex-col sm:align-center'>
-          <div className='relative flex flex-row ml-24'>
-            <Link prefetch={false} href='/' className='text-purple-800 underline '>Home</Link>
-            <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2' alt='arrow icon' /> <div className='text-gray-800 '>Charts</div>
-        </div>
-          </div>
+          
       <div className='flex flex-wrap justify-center gap-6'>
         <div className='flex flex-col flex-1 ml-24'>
           <div className='pt-10'>    
@@ -182,7 +176,7 @@ useEffect(() => {
 { pageName == 'artistInfo'  && <ArtistInfo artistParam={artistName} />}
 { pageName == 'trackInfo'  && <TrackInfo trackParam={trackName} />}
 
-  </main>  
+ 
   </>
   );
 }
