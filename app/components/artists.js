@@ -126,7 +126,7 @@ export default function Artists({defaultPage}) {
     </div>
 }
 
-{pageName == 'artistInfo'  && <ArtistInfo artistParam={artistName} defaultPage={pageName} />} 
+{pageName == 'artistInfo'  && <ArtistInfo artistParam={artistName} />} 
 
 
   </main>  
