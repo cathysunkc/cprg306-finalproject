@@ -12,9 +12,7 @@ import Image from 'next/image';
 import arrowIcon from '../images/arrow-icon.png';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import Header from '../components/header';
-import logo from '../images/music_world_logo.png';
-import { useUserAuth } from '../_utils/auth-context.js';
+import { getArtists, addArtist } from '../_services/artist-vote';
 
 async function fetchSingleArtist(artistName) {
    
@@ -40,40 +38,18 @@ async function fetchArtistAlbums(artistName) {
    
 }
 
-export default function ArtistInfo({ searchParams }) {
+export default function ArtistInfo({ artistParam }) {
   const router = useRouter();
   const [ artistName, setArtistName ] = useState('');
-  const [artistContent, setArtistContent] = useState('');
-  const [artistAlbums, setArtistAlbums] = useState([]);
-  const [error, setError] = useState(false);
-  const { user, gitHubSignIn, firebaseSignOut } = useUserAuth();
-
-  async function handleSignIn() {
-    try {
-        // Sign in to Firebase with GitHub authentication
-        await gitHubSignIn();
-    }
-    catch (error) {
-        console.log(error);
-    }
-}
-
-  async function handleSignOut() {
-    try {
-        // Sign out of Firebase
-        await firebaseSignOut();
-       
-    }
-    catch (error) {
-        console.log(error);
-    }
-}
-
-  async function loadArtist(paramArtist) {
+  const [ artistContent, setArtistContent] = useState('');
+  const [ artistAlbums, setArtistAlbums] = useState([]);
+  const [ error, setError] = useState(false);
+ 
+  async function loadArtist() {
       try { 
 
         //if(searchParams.artistName && searchParams.artistName != '')
-        setArtistName(paramArtist);
+        setArtistName(artistParam);
 
         if (artistName != '')        
         {
@@ -95,44 +71,24 @@ export default function ArtistInfo({ searchParams }) {
   }
 
   useEffect(() => {   
-    loadArtist(searchParams.artistName);
+    loadArtist();
   });
+
+  //Create an event handler function handleAddItem that adds a new item to items
+  const handleVoteArtist = async () => { 
+      
+    const itemId = await addArtist(user.uid, artistName);
+    alert('Vote success!');
+};
   
   
   return (
     <>
     <main> 
-       <>
-        <div className="px-6 mx-auto bg-white">
-          <div className="relative flex flex-row justify-between py-4 align-center md:py-6">
-            <div className="flex items-center flex-1">
-              <a href="/"><Image src={logo} priority='false' alt='Music World Logo' className=' w-10/12' /></a> 
-              
-              { user && 
-              <nav className="ml-6 space-x-2 lg:block">
-                    <Link href='/' prefetch={false} className='relative w-1/2 bg-white shadow-sm border-2 border-purple-800 text-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap hover:bg-purple-800 hover:text-white ease-linear duration-200  sm:w-auto sm:px-8'>Home</Link>
-                    
-                    <Link href='/charts' prefetch={false} className='relative w-1/2 bg-white shadow-sm border-2 border-purple-800 text-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap hover:bg-purple-800 hover:text-white ease-linear duration-200  sm:w-auto sm:px-8'>Charts</Link>
-                    <Link href='/artists' prefetch={false}  className='relative w-1/2 bg-white shadow-sm border-2 border-purple-800 text-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap hover:bg-purple-800 hover:text-white ease-linear duration-200  sm:w-auto sm:px-8'>Artists</Link>
-                    <Link href='/tracks' prefetch={false}  className='relative w-1/2 bg-white shadow-sm border-2 border-purple-800 text-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap hover:bg-purple-800 hover:text-white ease-linear duration-200  sm:w-auto sm:px-8'>Tracks</Link>
-                    <Link href='../votes' prefetch={false} className='relative w-1/2 bg-white shadow-sm border-2 border-purple-800 text-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap hover:bg-purple-800 hover:text-white ease-linear duration-200  sm:w-auto sm:px-8'>Votes</Link>
-                    
-                    </nav> } 
-              </div>
-              <div className="flex items-center flex-end">
-              <div className="ml-6 space-x-2 lg:block">
-              { user && 
-              <button onClick={handleSignOut}
-                              className='relative w-1/2 shadow-sm text-white bg-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap focus:outline-none sm:w-auto sm:px-8'>
-                              Sign Out
-               </button>   
-            }
-            </div>
-            </div></div></div>
-        </>
+       
 
-{     user && 
-      <div className="py-8 mx-auto">
+
+      <div className="py-2 mx-auto">
       <div className="sm:flex sm:flex-col sm:align-center">
       <div className="relative flex flex-row ml-24">
       <Link prefetch={false} href='/' className='text-purple-800 underline '>Home</Link>
@@ -148,15 +104,22 @@ export default function ArtistInfo({ searchParams }) {
       { error && <div className='text-gray-800'>No Record Found</div> }         
             
       {  !error && artistContent && <>
-            <h1 className='text-3xl leading-6 text-gray-800 mb-8'>{artistName}</h1>
-            <div className='justify-normal text-gray-800' dangerouslySetInnerHTML={{__html:artistContent}}></div>   
+           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+            <div><h1 className='text-3xl leading-6 text-gray-800 mb-8'>{artistName}</h1></div>
+            <div>
+            <button onClick={handleVoteArtist}
+                              className='relative w-1/8 shadow-sm text-white bg-yellow-400 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap focus:outline-none sm:w-auto sm:px-8'>
+                              Vote</button></div>
+           
+            </div>
+           <div className='justify-normal text-gray-800' dangerouslySetInnerHTML={{__html:artistContent}}></div>   
           </> }
   </div>
  </div>
-</div> }
+</div> 
 
     {
-      user && !error && artistAlbums && <>
+     !error && artistAlbums && <>
       <div className='flex flex-wrap justify-center gap-6 ml-20 mr-20 mt-0 mb-10 bg-white rounded p-10'>
         <div className='flex flex-col flex-1 '>
           <h1 className='text-3xl leading-6 text-gray-800 mb-8'>Top Albums</h1>
@@ -179,17 +142,6 @@ export default function ArtistInfo({ searchParams }) {
             </>               
     } 
 
-
-{ !user && 
-  <div className='flex flex-wrap justify-center gap-6 ml-20 mr-20 mt-5 mb-5 bg-white rounded p-10'>
-  <div className='flex flex-col  flex-1 '>
-  <button onClick={handleSignIn} className="text-lg m-2 hover:underline">
-         Sign in with GitHub
- </button>
- </div>
- </div>
-
-}
 
     
   </main>  

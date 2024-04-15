@@ -1,11 +1,12 @@
 /*
- * Web Development 3 - CPRG306D
- * Week 8 - Assignment
+ * Web Development 2 - CPRG306D
+ * Final Project
  * Name: Cathy Sun
- * Date: 2024 Mar 16
+ * Date: 2024 April 13
  */
 
-
+// Import to add Cloud Firestore
+import { getFirestore } from "firebase/firestore";
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -25,3 +26,4 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
+export const db = getFirestore(app);

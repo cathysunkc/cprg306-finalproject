@@ -10,6 +10,9 @@
 import React, { useState, useEffect, FormEvent } from 'react';
 import Image from 'next/image';
 import Header from './components/header';
+import Charts from './components/charts';
+import Artists from './components/artists';
+import Tracks from './components/tracks';
 import { useUserAuth } from "./_utils/auth-context";
 import logo from './images/music_world_logo.png';
 import Link from 'next/link';
@@ -19,6 +22,7 @@ import searchIcon from './images/search-icon.svg';
 export default function Login() {
     // Use the useUserAuth hook to get the user object and the login and logout functions
     const { user, gitHubSignIn, firebaseSignOut } = useUserAuth();
+    const [pageName, setPageName] = useState('home');
     
     async function handleSignIn() {
         try {
@@ -41,8 +45,11 @@ export default function Login() {
         }
     }
 
-    return (
-        
+    function handlePageChange(value) {
+        setPageName(value);
+    }
+
+    return (       
 
 <>
     <main > <>
@@ -54,10 +61,9 @@ export default function Login() {
               { user && 
               <nav className="ml-6 space-x-2 lg:block">
                     <Link href='/' prefetch={false} className='relative w-1/2 bg-white shadow-sm border-2 border-purple-800 text-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap hover:bg-purple-800 hover:text-white ease-linear duration-200  sm:w-auto sm:px-8'>Home</Link>
-                    
-                    <Link href='/charts' prefetch={false} className='relative w-1/2 bg-white shadow-sm border-2 border-purple-800 text-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap hover:bg-purple-800 hover:text-white ease-linear duration-200  sm:w-auto sm:px-8'>Charts</Link>
-                    <Link href='/artists' prefetch={false}  className='relative w-1/2 bg-white shadow-sm border-2 border-purple-800 text-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap hover:bg-purple-800 hover:text-white ease-linear duration-200  sm:w-auto sm:px-8'>Artists</Link>
-                    <Link href='/tracks' prefetch={false}  className='relative w-1/2 bg-white shadow-sm border-2 border-purple-800 text-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap hover:bg-purple-800 hover:text-white ease-linear duration-200  sm:w-auto sm:px-8'>Tracks</Link>
+                    <button onClick={()=>handlePageChange('charts')} className='relative w-1/2 bg-white shadow-sm border-2 border-purple-800 text-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap hover:bg-purple-800 hover:text-white ease-linear duration-200  sm:w-auto sm:px-8'>Charts</button>
+                    <button onClick={()=>handlePageChange('artists')}  className='relative w-1/2 bg-white shadow-sm border-2 border-purple-800 text-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap hover:bg-purple-800 hover:text-white ease-linear duration-200  sm:w-auto sm:px-8'>Artists</button>
+                    <button onClick={()=>handlePageChange('tracks')}  className='relative w-1/2 bg-white shadow-sm border-2 border-purple-800 text-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap hover:bg-purple-800 hover:text-white ease-linear duration-200  sm:w-auto sm:px-8'>Tracks</button>
                     <Link href='../votes' prefetch={false} className='relative w-1/2 bg-white shadow-sm border-2 border-purple-800 text-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap hover:bg-purple-800 hover:text-white ease-linear duration-200  sm:w-auto sm:px-8'>Votes</Link>
                     
                     </nav> } 
@@ -66,8 +72,8 @@ export default function Login() {
               <div className="ml-6 space-x-2 lg:block">
               { user && 
               <button onClick={handleSignOut}
-                              className='relative w-1/2 shadow-sm text-white bg-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap focus:outline-none sm:w-auto sm:px-8'>
-                              Sign Out
+                  className='relative w-1/2 shadow-sm text-white bg-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap focus:outline-none sm:w-auto sm:px-8'>
+                  Sign Out
                </button>   
             }
             </div>
@@ -78,29 +84,30 @@ export default function Login() {
     <div className='py-8 mx-auto'>
       
     {user ? (
-        <><div className='sm:flex sm:flex-col sm:align-center'>
-        <div className='relative flex flex-row ml-24'>
-          <Link prefetch={false} href='/' className='text-gray-800'>Home</Link>
-        </div>        
-        </div> 
-        <div className='flex flex-wrap justify-center gap-6 ml-20 mr-20 mt-5 mb-5 bg-white rounded p-10'>
-            <div className='flex flex-col  flex-1 '>
-        
-                
-                    <p>
-                        Signed in as {user.displayName} {user.email}
-                    </p>                                                              
-                       
-                    
-              </div></div>  </>
+        <>
+           {pageName=='home' &&
+            <><div className='sm:flex sm:flex-col sm:align-center'>
+                <div className='relative flex flex-row ml-24'>
+                <Link prefetch={false} href='/' className='text-gray-800'>Home</Link>
+                </div>        
+            </div> 
+            <div className='flex flex-wrap justify-center gap-6 ml-20 mr-20 mt-5 mb-5 bg-white rounded p-10'>
+                <div className='flex flex-col  flex-1 '><p>Signed in as {user.displayName} {user.email}</p>
+                </div>
+            </div></>
+            }
+            { pageName=='charts' && <Charts /> }
+            { pageName=='artists' && <Artists inputParam='artists' /> }
+            { pageName=='tracks' && <Tracks  /> }
+        </>
             ) : (
                 <div className='flex flex-wrap justify-center gap-6 ml-20 mr-20 mt-5 mb-5 bg-white rounded p-10'>
                     <div className='flex flex-col  flex-1 '>
                     <button onClick={handleSignIn} className="text-lg m-2 hover:underline">
                             Sign in with GitHub
                     </button>
-                    </div>
-                    </div>
+                   </div>
+                </div>
             )
         }  
     </div>
