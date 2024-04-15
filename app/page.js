@@ -7,7 +7,7 @@
 "use client";
 
 // Import the useUserAuth hook
-import React, { useState, useEffect, FormEvent } from 'react';
+import React, { useState, useEffect, FormEvent,useRef } from 'react';
 import Image from 'next/image';
 import Header from './components/header';
 import Charts from './components/charts';
@@ -19,10 +19,11 @@ import Link from 'next/link';
 import arrowIcon from './images/arrow-icon.png';
 import searchIcon from './images/search-icon.svg';
 
-export default function Login() {
+export default function Home() {
     // Use the useUserAuth hook to get the user object and the login and logout functions
     const { user, gitHubSignIn, firebaseSignOut } = useUserAuth();
     const [pageName, setPageName] = useState('home');
+    let childRef = useRef();
     
     async function handleSignIn() {
         try {
@@ -47,6 +48,11 @@ export default function Login() {
 
     function handlePageChange(value) {
         setPageName(value);
+        if (pageName == 'charts')
+        {
+           (Charts.ref).handlePageChange(pageName);
+        }
+        
     }
 
     return (       
@@ -105,7 +111,7 @@ export default function Login() {
                      
                     </div>        
                     </div> 
-                    <Charts defaultPage={pageName} /></> 
+                    <Charts ref={childRef} /></> 
             }
             { pageName=='artists' &&             
                     <><div className='sm:flex sm:flex-col sm:align-center'>

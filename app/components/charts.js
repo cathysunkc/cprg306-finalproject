@@ -8,7 +8,7 @@
 
 "use client"
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, forwardRef, useImperativeHandle } from 'react';
 import logo from '../images/music_world_logo.png';
 import Image from 'next/image';
 import Header from '../components/header';
@@ -39,14 +39,18 @@ async function fetchTopTrack() {
   return data.tracks.track;
 } 
 
-export default function Page() {
+const Charts = forwardRef((props, ref) => {
+  useImperativeHandle(ref, () => ({
+    handlePageChange: () => handlePageChange(),
+  }));
+    
     const router = useRouter();
     const [country, setCountry] = useState('canada');
     const [countries, setCountries] = useState(Countries);
     const [topArtist, setTopArtist] = useState([]);
     const [topTrack, setTopTrack] = useState([]);
     
-    const [pageName, setPageName] = useState('charts');
+   const [pageName, setPageName] = useState('charts');
     const [artistName, setArtistName] = useState('');
     const [trackName, setTrackName] = useState('');
 
@@ -80,7 +84,7 @@ export default function Page() {
 
 function handlePageChange(page, param) {
   setPageName(page);
-
+  
   if (page == 'artistInfo')
     setArtistName(param);
   else
@@ -99,7 +103,7 @@ useEffect(() => {
 });
 
 
-  return (
+  return ( 
     <>
      <div className='relative flex flex-row ml-24'>
      {pageName == 'charts'  &&      <div className='text-gray-800 ml-20 -mt-6'> Charts</div> }
@@ -179,4 +183,6 @@ useEffect(() => {
  
   </>
   );
-}
+});
+
+export default Charts;
