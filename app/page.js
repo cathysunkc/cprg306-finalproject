@@ -13,6 +13,7 @@ import Header from './components/header';
 import Charts from './components/charts';
 import Artists from './components/artists';
 import Tracks from './components/tracks';
+import Votes from './components/votes';
 import { useUserAuth } from "./_utils/auth-context";
 import logo from './images/music_world_logo.png';
 import Link from 'next/link';
@@ -48,11 +49,10 @@ export default function Home() {
 
     function handlePageChange(value) {
         setPageName(value);
-        if (pageName == 'charts' || pageName == 'artists' || pageName == 'tracks')
+        if (pageName == 'charts' || pageName == 'artists' || pageName == 'tracks' || pageName=='votes')
         {
             childRef.displayName = pageName;
-            childRef.current.handlePageChange(pageName);
-            
+            childRef.current.handlePageChange(pageName);            
         }
         
     }
@@ -72,7 +72,7 @@ export default function Home() {
                     <button onClick={()=>handlePageChange('charts')} className='relative w-1/2 bg-white shadow-sm border-2 border-purple-800 text-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap hover:bg-purple-800 hover:text-white ease-linear duration-200  sm:w-auto sm:px-8'>Charts</button>
                     <button onClick={()=>handlePageChange('artists')}  className='relative w-1/2 bg-white shadow-sm border-2 border-purple-800 text-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap hover:bg-purple-800 hover:text-white ease-linear duration-200  sm:w-auto sm:px-8'>Artists</button>
                     <button onClick={()=>handlePageChange('tracks')}  className='relative w-1/2 bg-white shadow-sm border-2 border-purple-800 text-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap hover:bg-purple-800 hover:text-white ease-linear duration-200  sm:w-auto sm:px-8'>Tracks</button>
-                    <Link href='../votes' prefetch={false} className='relative w-1/2 bg-white shadow-sm border-2 border-purple-800 text-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap hover:bg-purple-800 hover:text-white ease-linear duration-200  sm:w-auto sm:px-8'>Votes</Link>
+                    <button onClick={()=>handlePageChange('votes')}   className='relative w-1/2 bg-white shadow-sm border-2 border-purple-800 text-purple-800 rounded-md m-1 py-2 text-s font-medium whitespace-nowrap hover:bg-purple-800 hover:text-white ease-linear duration-200  sm:w-auto sm:px-8'>Votes</button>
                     
                     </nav> } 
               </div>
@@ -132,6 +132,14 @@ export default function Home() {
                     </div>        
                     </div> 
                     <Tracks ref={childRef} /></> }
+            { pageName=='votes' && 
+                    <><div className='sm:flex sm:flex-col sm:align-center'>
+                    <div className='relative flex flex-row ml-24'>
+                    <button onClick={()=>handlePageChange('home')}  prefetch={false}   className='text-purple-800 underline '>Home</button>
+                    <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2' alt="arrow icon" /> 
+                    </div>        
+                    </div> 
+                    <Votes ref={childRef} /></> }
         </>
             ) : (
                 <div className='flex flex-wrap justify-center gap-6 ml-20 mr-20 mt-5 mb-5 bg-white rounded p-10'>

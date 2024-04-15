@@ -83,7 +83,7 @@ const Artists = forwardRef((props, ref) => {
     else {
       alert('Please enter the artist name!');      
     }
-    return;
+  
   }
 
 
