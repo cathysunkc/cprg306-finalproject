@@ -41,7 +41,7 @@ async function fetchTopTrack() {
 
 const Charts = forwardRef((props, ref) => {
   useImperativeHandle(ref, () => ({
-    handlePageChange: () => handlePageChange(),
+    handlePageChange: () => handlePageChange('charts'),
   }));
     
     const router = useRouter();
@@ -94,6 +94,11 @@ function handlePageChange(page, param) {
     setTrackName(param);
   else
     setTrackName('');
+
+  if (page == 'charts') {
+    loadTopTrack();
+    loadTopArtist();
+  }
 }
 
 useEffect(() => {
@@ -106,7 +111,7 @@ useEffect(() => {
   return ( 
     <>
      <div className='relative flex flex-row ml-24'>
-     {pageName == 'charts'  &&      <div className='text-gray-800 ml-20 -mt-6'> Charts</div> }
+     {pageName == 'charts'  &&  <div className='text-gray-800 ml-20 -mt-6'> Charts</div> }
        </div>
     {pageName == 'charts'  && 
         <div className='py-2 mx-auto'>

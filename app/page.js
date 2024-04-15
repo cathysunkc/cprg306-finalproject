@@ -23,7 +23,7 @@ export default function Home() {
     // Use the useUserAuth hook to get the user object and the login and logout functions
     const { user, gitHubSignIn, firebaseSignOut } = useUserAuth();
     const [pageName, setPageName] = useState('home');
-    let childRef = useRef();
+    const childRef = useRef();
     
     async function handleSignIn() {
         try {
@@ -50,7 +50,7 @@ export default function Home() {
         setPageName(value);
         if (pageName == 'charts')
         {
-           (Charts.ref).handlePageChange(pageName);
+            childRef.current.handlePageChange(pageName);
         }
         
     }
