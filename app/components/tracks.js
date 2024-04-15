@@ -66,8 +66,8 @@ export default function Tracks() {
   function handleSubmit(e) {
     if (e.target.trackName.value && e.target.trackName.value != '') {
       e.preventDefault();
-      setPageName('trackInfo')
-      setArtistName(e.target.trackName.value);    
+      setPageName('trackInfo');
+      setTrackName(e.target.trackName.value);    
     }
   }
 
@@ -100,7 +100,7 @@ export default function Tracks() {
     <div className='flex flex-wrap justify-center gap-6 ml-20 mr-20 mt-5 mb-10 bg-white rounded p-10'>
       <div className='flex flex-col  flex-1 '>
         {
-              !trackName && <>
+              trackName == '' && <>
                 <h1 className='text-3xl leading-6 text-gray-800 mb-8'># Trending Tracks</h1>
                  <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6'>                      
                       { 
@@ -118,7 +118,7 @@ export default function Tracks() {
   </div> 
   }
 
-{pageName == 'trackInfo'  && <TrackInfo trackParam={trackName} />} 
+{trackName != ''  && <TrackInfo trackParam={trackName} />} 
 
 
   </main>  

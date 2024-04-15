@@ -69,7 +69,7 @@ export default function Artists({defaultPage}) {
     if (e.target.artistName.value && e.target.artistName.value != '')
     {
       e.preventDefault();
-      setPageName('artistInfo')
+      setPageName('artistInfo');
       setArtistName(e.target.artistName.value);   
     }
   }
