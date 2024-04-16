@@ -43,7 +43,6 @@ export default function ArtistInfo({ artistParam }) {
   const router = useRouter();
   const [ artistName, setArtistName ] = useState('');
   const [ artistMBID, setArtistMBID ] = useState('');
-  const [ voteDate, setVoteDate ] = useState(null);
   const [ artistContent, setArtistContent] = useState('');
   const [ artistAlbums, setArtistAlbums] = useState([]);
   const [ error, setError] = useState(false);
@@ -88,7 +87,8 @@ export default function ArtistInfo({ artistParam }) {
         now
           };  
     const artistID = await addArtist(user.uid, artist);
-    alert('Vote success!');
+    if (artistID)
+      alert('Vote success!');
   };
   
   

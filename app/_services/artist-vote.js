@@ -12,7 +12,8 @@ export const getArtists = async (userId) => {
       const artists = [];
 
       docSnap.forEach((doc) => {
-        artists.push({id: doc.id, ...doc.data() });
+      artists.push({id: doc.id, ...doc.data() });
+      
       });
      
       return artists;      

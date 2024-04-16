@@ -28,8 +28,8 @@ const Votes = forwardRef((props, ref) => {
   
   const [ artistName, setArtistName ] = useState('');
   const [ trackName, setTrackName ] = useState('');
-  const [pageName, setPageName] = useState('votes');
-  const [artistVotes, setArtistVotes] = useState([]);
+  const [ pageName, setPageName] = useState('votes');
+  const [ artistVotes, setArtistVotes] = useState([]);
   const { user } = useUserAuth();
 
   function handlePageChange(page, param) {
