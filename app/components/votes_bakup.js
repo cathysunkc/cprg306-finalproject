@@ -94,17 +94,18 @@ const Votes = forwardRef((props, ref) => {
   });
 
   
-  return ( 
-    <>
-     <div className='relative flex flex-row ml-24'>
-     {pageName == 'votes'  &&  <div className='text-gray-800 ml-20 -mt-6'> Votes</div> }
-       </div>
+   return (
+    <> 
     {pageName == 'votes'  && 
-        <div className='py-2 mx-auto'>
-          
-      <div className='flex flex-wrap justify-center gap-6'>
+      <><div className='relative flex flex-row ml-24'>
+      <div className='text-gray-800 ml-20 -mt-6'> Votes</div> 
+     </div>
+
+        
+        <div className='flex flex-wrap justify-center gap-6'>
         <div className='flex flex-col flex-1 ml-24'>
-        <div className='relative self-center bg-white mt-6 rounded-lg p-0.5 flex border'>
+          
+          <div className='relative self-center bg-white mt-6 rounded-lg p-0.5 flex border'>
         <div className=' max-w-md space-y-4 duration-1200 ease-in-out animate-in fade-in slide-in-from-bottom-4'>
           <form onSubmit={handleArtistSubmit} className='flex h-fit  flex-row items-center rounded-xl px-1 '>
               <input className='h-10  resize-none bg-transparent px-2 text-base sm:text-sm  transition-all duration-300' 
@@ -118,32 +119,25 @@ const Votes = forwardRef((props, ref) => {
           </form>
           </div>          
         </div>
-          <div className='pt-10'>    
-          {
-              <>
-               {  artistVotes.length > 0 && <h1 className=' text-lg leading-6 text-gray-800 mb-8'>Latest Vote Records - Artists</h1> }
-                  <ul>                    
-                      { artistVotes && artistVotes.map((item, index) => (
-                          <li key={index} className='text-xl'>
+        
+        { artistVotes && artistVotes.map((item, index) => (
+                       <> <div>Lastest 10 Artist Vote records:</div>
                              <div className=' flex p-4 m-1 rounded bg-white h-28 '>
                               <div className=' w-8 h-8 bg-black text-white rounded text-center'>{index + 1}</div>
                                    
                                    
                                    <div className='grid flex-row'>
                                     <div className="ml-2 flex-1 text-l"><button onClick={()=>handlePageChange('artistInfo', item.artistName)} className='underline ml-3' >{item.artistName}</button></div>
-                                    <div className="ml-2 flex-1 text-base ">Voted by: {item.userName}</div></div>
+                                    <div className="ml-2 flex-1 text-base"></div></div>
 
                                 </div>
-                              </li> 
+                         </>
                             ))
                       }
-                  </ul>     
-              </>               
-            } 
         </div>
-      </div>
-      <div className='flex flex-col flex-1 mr-24'>
-      <div className='relative self-center bg-white mt-6 rounded-lg p-0.5 flex border'>
+
+        <div className='flex flex-col flex-1 ml-24'>
+        <div className='relative self-center bg-white mt-6 rounded-lg p-0.5 flex border'>
           <div className='max-w-md space-y-4 duration-1200 ease-in-out animate-in fade-in slide-in-from-bottom-4'>
             <form onSubmit={handleTrackSubmit} className='flex h-fit  flex-row items-center rounded-xl px-1 '>
               <input className='h-10 resize-none bg-transparent px-2 text-base sm:text-sm  transition-all duration-300' 
@@ -156,47 +150,24 @@ const Votes = forwardRef((props, ref) => {
         </form>
         </div>
       </div>
-        <div className='pt-10'> 
-           
-        {
-         <> 
-                     
-                   {  artistVotes.length > 0 && <h1 className=' text-lg leading-6 text-gray-800 mb-8'>Latest Vote Records - Tracks</h1> }
-              <ul>                    
-                      {
-                           trackVotes && trackVotes.map((item, index) => (
-                             
-                              <li key={index} className='text-xl'>
-                                  <div className=' flex p-4 m-1 rounded bg-white h-28 '>
-                                    <div className=' w-8 h-8 bg-black text-white rounded text-center'>{index + 1}</div>
-                                    
-                                      <div style={{display: 'grid', flexDirection: 'row'}}>
-                                        
-                                      <div className='ml-2 flex-1 text-l'>
-                                          <button onClick={()=>handlePageChange('trackInfo', item.name)} className='underline'>{item.trackName}</button>
-                                      </div>
-                                      <div className='ml-2 flex-1 text-base'>
-                                      Voted by: {item.userName}
-                                      </div>
-                                      </div>
-                                  </div>
-                              </li> 
-                            ))
-                      }
-                  </ul>     
-              </>               
-            }  
+      { 
+               trackVotes.map((vote, index) => (
+                  vote.trackName
+                    
+                    
+                ))
+            }
         </div>
-    </div> 
-  </div>
-  </div>
+        </div>       
+        
+     </>
 }
 
-{ pageName == 'artistInfo'  && <ArtistInfo artistParam={artistName} />}
-{ pageName == 'trackInfo'  && <TrackInfo trackParam={trackName} />}
+{pageName == 'artistInfo'  && <ArtistInfo artistParam={artistName} />} 
 
+{pageName == 'trackInfo'  && <TrackInfo trackParam={trackName} />} 
  
-  </>
+</>
   );
 });
 

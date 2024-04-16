@@ -80,14 +80,17 @@ export default function TrackInfo({ trackParam }) {
 
    //Create an event handler function to add new track vote
   const handleVoteTrack = async () => { 
-    const now = new Date();
+    let voteDate = new Date();
+    let userName = user.displayName;
     const track = {           
         trackName,
         trackMBID,
-        now
+        voteDate,
+        userName
           };  
     const trackID = await addTrack(user.uid, track);
-    alert('Vote success!');
+    if (trackID)
+      alert('Vote success!');
   };
 
   useEffect(() => {   

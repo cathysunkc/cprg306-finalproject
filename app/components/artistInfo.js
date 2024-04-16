@@ -80,11 +80,13 @@ export default function ArtistInfo({ artistParam }) {
 
   //Create an event handler function to add new artist vote
   const handleVoteArtist = async () => {
-    const now = new Date(); 
+    let voteDate = new Date();
+    let userName = user.displayName;
     const artist = {           
         artistName,
         artistMBID,
-        now
+        voteDate,
+        userName
           };  
     const artistID = await addArtist(user.uid, artist);
     if (artistID)

@@ -6,7 +6,7 @@ import { collection, getDocs, addDoc } from "firebase/firestore";
 // Retrieve all tracks for a specific user from Firestore
 export const getTracks = async (userId) => {
     try {
-      const docRef = collection(db, "userId", userId, "tracks");
+      const docRef = collection(db, "users", userId, "tracks");
       const docSnap = await getDocs(docRef);
       
       const tracks = [];

@@ -123,7 +123,7 @@ useEffect(() => {
           <div className='pt-10'>    
           {
               <>
-               <h1 className='text-3xl leading-6 text-gray-800 mb-8'>Top 5 Artists</h1>
+               <h1 className='text-2xl leading-6 text-gray-800 mb-8'>Top 5 Artists</h1>
                   <ul>                    
                       { topArtist && topArtist.map((item, index) => (
                           <li key={index} className='text-xl'>
@@ -148,7 +148,7 @@ useEffect(() => {
         <div className='pt-10'>    
         {
          <>             
-           <h1 className='text-3xl leading-6 text-gray-800 mb-8'>Top 5 Tracks</h1>
+           <h1 className='text-2xl leading-6 text-gray-800 mb-8'>Top 5 Tracks</h1>
               <ul>                    
                       {
                            topTrack && topTrack.map((item, index) => (

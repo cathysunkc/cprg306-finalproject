@@ -6,7 +6,7 @@ import { collection, getDocs, addDoc } from "firebase/firestore";
 // Retrieve all artists for a specific user from Firestore
 export const getArtists = async (userId) => {
     try {
-      const docRef = collection(db, "userId", userId, "artists");
+      const docRef = collection(db, "users", userId, "artists");
       const docSnap = await getDocs(docRef);
       
       const artists = [];
