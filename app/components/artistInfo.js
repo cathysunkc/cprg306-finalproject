@@ -69,7 +69,7 @@ export default function ArtistInfo({ artistParam }) {
         }             
       } 
       catch (error) { 
-        console.log(error);
+        //console.log(error);
         setError(true);
       }
   }
@@ -78,15 +78,15 @@ export default function ArtistInfo({ artistParam }) {
      loadArtist();
   });
 
-  //Create an event handler function handleAddItem that adds a new item to items
+  //Create an event handler function to add new artist vote
   const handleVoteArtist = async () => { 
     const artist = {           
         artistName,
         artistMBID
           };  
-    const itemId = await addArtist(user.uid, artist);
+    const artistID = await addArtist(user.uid, artist);
     alert('Vote success!');
-};
+  };
   
   
   return (

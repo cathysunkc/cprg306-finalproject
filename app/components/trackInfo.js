@@ -15,7 +15,8 @@ import TrackImage from '../components/trackImage';
 import arrowIcon from '../images/arrow-icon.png';
 import ArtistInfo from './artistInfo';
 import Link from 'next/link';
-import { getArtists, addArtist } from '../_services/artist-vote';
+import { getTracks, addTrack } from '../_services/track-vote';
+import { useUserAuth } from '../_utils/auth-context';
 
 async function fetchTrack(trackName, artistName) {
     
@@ -37,9 +38,10 @@ export default function TrackInfo({ trackParam }) {
   const [ summary, setSummary ] = useState([]);
   const [ error, setError ] = useState(false);
   const [ trackName, setTrackName ] = useState('');
+  const [ trackMBID, setTrackMBID ] = useState('');
   const [ artistName, setArtistName ] = useState('');
   const [ pageName, setPageName] = useState('trackInfo');
-
+  const { user } = useUserAuth();
 
    async function loadTrack() {
       try {       
@@ -51,10 +53,12 @@ export default function TrackInfo({ trackParam }) {
         {
             let data = await fetchTrack(trackName, artistName);
             setAlbum(data.album);  
-            setSummary(data.wiki.summary);         
+            setSummary(data.wiki.summary);
+            setTrackMBID(data.mbid);         
         }      
       } 
       catch (error) {
+        console.log(error);
         setError(true);          
       }
   }
@@ -73,21 +77,24 @@ export default function TrackInfo({ trackParam }) {
       setTrackName('');
   }
   
-
+   //Create an event handler function to add new track vote
+  const handleVoteTrack = async () => { 
+    const track = {           
+        trackName,
+        trackMBID
+          };  
+    const trackID = await addTrack(user.uid, track);
+    alert('Vote success!');
+  };
 
   useEffect(() => {   
     loadTrack();    
   });
 
-  //Create an event handler function handleAddItem that adds a new item to items
-  const handleVoteTrack = async () => { 
-      
-    const itemId = await addArtist(user.uid, artistName);
-    alert('Vote success!');
-};
+  
 
   return (
-  <>
+  <>{trackMBID}
   {pageName == 'trackInfo' && 
     <div className='relative flex flex-row ml-24'>
         <div className='text-gray-800 ml-20 -mt-6'> Tracks</div> 
