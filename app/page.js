@@ -19,12 +19,14 @@ import logo from './images/music_world_logo.png';
 import Link from 'next/link';
 import arrowIcon from './images/arrow-icon.png';
 import searchIcon from './images/search-icon.svg';
+import { getArtists } from './_services/artist-vote';
 
 export default function Home() {
     // Use the useUserAuth hook to get the user object and the login and logout functions
     const { user, gitHubSignIn, firebaseSignOut } = useUserAuth();
     const [pageName, setPageName] = useState('home');
     const childRef = useRef();
+    const [artistVotes, setArtistVotes] = useState([]);
     
     async function handleSignIn() {
         try {
@@ -53,9 +55,24 @@ export default function Home() {
         {
             childRef.displayName = pageName;
             childRef.current.handlePageChange(pageName);            
-        }
+        }        
         
     }
+
+    const loadVotes = async () => {
+        if (user)
+        {
+            const data = await getArtists(user.uid);
+              
+            if (data) 
+                setArtistVotes(data);
+        }
+          
+     };
+
+    useEffect(() => {
+        loadVotes();
+      },[user]);
 
     return (       
 
@@ -139,7 +156,7 @@ export default function Home() {
                     <Image src={arrowIcon} className='w-3.5 h-3.5 mt-1 ml-2 mr-2' alt="arrow icon" /> 
                     </div>        
                     </div> 
-                    <Votes ref={childRef} /></> }
+                    <Votes artistVotes={artistVotes} ref={childRef} /></> }
         </>
             ) : (
                 <div className='flex flex-wrap justify-center gap-6 ml-20 mr-20 mt-5 mb-5 bg-white rounded p-10'>

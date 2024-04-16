@@ -77,11 +77,14 @@ export default function TrackInfo({ trackParam }) {
       setTrackName('');
   }
   
+
    //Create an event handler function to add new track vote
   const handleVoteTrack = async () => { 
+    const now = new Date();
     const track = {           
         trackName,
-        trackMBID
+        trackMBID,
+        now
           };  
     const trackID = await addTrack(user.uid, track);
     alert('Vote success!');
@@ -94,7 +97,7 @@ export default function TrackInfo({ trackParam }) {
   
 
   return (
-  <>{trackMBID}
+  <>
   {pageName == 'trackInfo' && 
     <div className='relative flex flex-row ml-24'>
         <div className='text-gray-800 ml-20 -mt-6'> Tracks</div> 

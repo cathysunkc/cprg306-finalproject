@@ -43,6 +43,7 @@ export default function ArtistInfo({ artistParam }) {
   const router = useRouter();
   const [ artistName, setArtistName ] = useState('');
   const [ artistMBID, setArtistMBID ] = useState('');
+  const [ voteDate, setVoteDate ] = useState(null);
   const [ artistContent, setArtistContent] = useState('');
   const [ artistAlbums, setArtistAlbums] = useState([]);
   const [ error, setError] = useState(false);
@@ -79,10 +80,12 @@ export default function ArtistInfo({ artistParam }) {
   });
 
   //Create an event handler function to add new artist vote
-  const handleVoteArtist = async () => { 
+  const handleVoteArtist = async () => {
+    const now = new Date(); 
     const artist = {           
         artistName,
-        artistMBID
+        artistMBID,
+        now
           };  
     const artistID = await addArtist(user.uid, artist);
     alert('Vote success!');
