@@ -6,7 +6,7 @@
  */
 
 "use client"
-
+import dateFormat from 'dateformat';
 import React, { useState, useEffect, FormEvent } from 'react';
 import Image from 'next/image';
 import arrowIcon from '../images/arrow-icon.png';
@@ -80,7 +80,7 @@ export default function ArtistInfo({ artistParam }) {
 
   //Create an event handler function to add new artist vote
   const handleVoteArtist = async () => {
-    let voteDate = new Date();
+    let voteDate = dateFormat(new Date());
     let userName = user.displayName;
     const artist = {           
         artistName,

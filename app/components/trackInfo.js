@@ -8,7 +8,7 @@
 
 
 "use client"
-
+import dateFormat from 'dateformat';
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import TrackImage from '../components/trackImage';
@@ -80,7 +80,8 @@ export default function TrackInfo({ trackParam }) {
 
    //Create an event handler function to add new track vote
   const handleVoteTrack = async () => { 
-    let voteDate = new Date();
+    let voteDate = dateFormat(new Date());
+
     let userName = user.displayName;
     const track = {           
         trackName,

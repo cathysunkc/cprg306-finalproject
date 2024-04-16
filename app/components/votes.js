@@ -121,18 +121,19 @@ const Votes = forwardRef((props, ref) => {
           <div className='pt-10'>    
           {
               <>
-               {  artistVotes.length > 0 && <h1 className=' text-lg leading-6 text-gray-800 mb-8'>Latest Vote Records - Artists</h1> }
+               {  artistVotes && <h1 className=' text-lg leading-6 text-gray-800 mb-4'>Latest Vote Records - Artists</h1> }
                   <ul>                    
                       { artistVotes && artistVotes.map((item, index) => (
                           <li key={index} className='text-xl'>
-                             <div className=' flex p-4 m-1 rounded bg-white h-28 '>
-                              <div className=' w-8 h-8 bg-black text-white rounded text-center'>{index + 1}</div>
+                               <div className=' flex p-4 m-1 rounded bg-white h-28 '>
+                                    <div className=' w-8 h-8 bg-black text-white rounded text-center'>{index + 1}</div>
                                    
                                    
                                    <div className='grid flex-row'>
-                                    <div className="ml-2 flex-1 text-l"><button onClick={()=>handlePageChange('artistInfo', item.artistName)} className='underline ml-3' >{item.artistName}</button></div>
-                                    <div className="ml-2 flex-1 text-base ">Voted by: {item.userName}</div></div>
-
+                                    <div className="ml-2 flex-1 text-base">
+                                      <button onClick={()=>handlePageChange('artistInfo', item.artistName)} className='underline ' >{item.artistName}</button></div>
+                                    <div className="ml-2 flex-1 text-sm text-gray-800">Voted by: {item.userName}</div>
+                                    <div className="ml-2 flex-1 text-sm text-gray-800">{item.voteDate}</div></div>
                                 </div>
                               </li> 
                             ))
@@ -161,7 +162,7 @@ const Votes = forwardRef((props, ref) => {
         {
          <> 
                      
-                   {  artistVotes.length > 0 && <h1 className=' text-lg leading-6 text-gray-800 mb-8'>Latest Vote Records - Tracks</h1> }
+                   {  trackVotes && <h1 className=' text-lg leading-6 text-gray-800 mb-4'>Latest Vote Records - Tracks</h1> }
               <ul>                    
                       {
                            trackVotes && trackVotes.map((item, index) => (
@@ -170,14 +171,13 @@ const Votes = forwardRef((props, ref) => {
                                   <div className=' flex p-4 m-1 rounded bg-white h-28 '>
                                     <div className=' w-8 h-8 bg-black text-white rounded text-center'>{index + 1}</div>
                                     
-                                      <div style={{display: 'grid', flexDirection: 'row'}}>
+                                    <div className='grid flex-row'>
                                         
-                                      <div className='ml-2 flex-1 text-l'>
+                                      <div className='ml-2 flex-1 text-base'>
                                           <button onClick={()=>handlePageChange('trackInfo', item.name)} className='underline'>{item.trackName}</button>
                                       </div>
-                                      <div className='ml-2 flex-1 text-base'>
-                                      Voted by: {item.userName}
-                                      </div>
+                                      <div className='ml-2 flex-1 text-sm text-gray-800'>Voted by: {item.userName}</div>
+                                      <div className="ml-2 flex-1 text-sm text-gray-800">{item.voteDate}</div>
                                       </div>
                                   </div>
                               </li> 
